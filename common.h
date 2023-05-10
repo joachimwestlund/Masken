@@ -1,10 +1,13 @@
 #ifndef __COMMON_H__
 #define __COMMON_H__
 
-#include <stdint.h>
 #include <SDL2/SDL.h>
 
 #include "debug.h"
+
+#define TRUE 1
+#define FALSE 0
+
 
 /**
  * @brief Initializes the SDL2 graphics library for this game.

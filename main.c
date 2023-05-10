@@ -18,6 +18,7 @@
 
 #include "debug.h"
 #include "common.h"
+#include "input.h"
 
 /**
  * @brief This is the main entry of the program.
@@ -29,14 +30,16 @@ int main()
     SDL_Surface* surface;
     SDL_Surface* picture;
 
-    SDL_Event e;
+    SDL_Event event;
 
-    char quit = 0;
+    struct inputs* input;
+
+    char quit = FALSE;
 
     printf("Masken. A worm clone made by Joachim Westlund.\n\n");
 
     #ifdef DEBUG
-        printf("DEBUGING INFORMATION IS ON\n\n");
+        printf("DEBUGING INFORMATION ON\n\n");
     #endif // DEBUG
 
     if ((window = sdl_init()) == NULL)
@@ -51,14 +54,19 @@ int main()
     SDL_BlitSurface(picture, NULL, surface, NULL);
     SDL_UpdateWindowSurface(window);
 
-    //Hack to get window to stay up
-    while( quit == 0 )
+    // Main event and game loop.
+    // Input
+    // GameLogic
+    // Render
+    while(!quit)
     {
-        while( SDL_PollEvent( &e ) )
-        {
-            if( e.type == SDL_QUIT )
-                quit = 1;
-        }
+        input = get_inputs(&event);
+        if (input->ESCAPE == TRUE)
+            quit = TRUE;
+
+        //game_logic();
+
+        //Render();
     }
 
     // free stuff and quit

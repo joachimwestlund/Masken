@@ -37,6 +37,15 @@
 			<Add library="SDL2-2.26.5/x86_64-w64-mingw32/lib/libSDL2.dll.a" />
 			<Add directory="SDL2-2.26.5/x86_64-w64-mingw32/lib" />
 		</Linker>
+		<Unit filename="common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common.h" />
+		<Unit filename="debug.h" />
+		<Unit filename="input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="input.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

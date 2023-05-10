@@ -2,8 +2,7 @@
 1683730037 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
 	"common.h"
 
-1683730001 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
-	<stdint.h>
+1683745596 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
 	<SDL2/SDL.h>
 	"debug.h"
 
@@ -396,11 +395,21 @@
 	"begin_code.h"
 	"close_code.h"
 
-1683729383 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
+1683747089 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
 	<stdio.h>
 	<stdlib.h>
 	<SDL2/SDL.h>
+	"debug.h"
 	"common.h"
+	"input.h"
 
 1683729965 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
+
+1683747030 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
+	"input.h"
+
+1683746759 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h
+	<SDL2/SDL.h>
+	"debug.h"
+	"common.h"
 
