@@ -1,24 +1,30 @@
 var indexSectionsWithContent =
 {
-  0: "cdms",
-  1: "cm",
-  2: "ms",
-  3: "ds"
+  0: "cdefgilmrstu",
+  1: "i",
+  2: "cdim",
+  3: "glms",
+  4: "deilru",
+  5: "dfst"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "functions",
-  3: "defines"
+  1: "classes",
+  2: "files",
+  3: "functions",
+  4: "variables",
+  5: "defines"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Files",
-  2: "Functions",
-  3: "Macros"
+  1: "Data Structures",
+  2: "Files",
+  3: "Functions",
+  4: "Variables",
+  5: "Macros"
 };
 

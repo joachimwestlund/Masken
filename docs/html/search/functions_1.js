@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sdl_5finit',['sdl_init',['../common_8c.html#af860ba91d971e43c689a13331a168388',1,'sdl_init(void):&#160;common.c'],['../common_8h.html#af860ba91d971e43c689a13331a168388',1,'sdl_init(void):&#160;common.c']]]
+  ['load_5fbmp',['load_bmp',['../common_8c.html#ad870ef04e6cb0ebb550fd6495604c0bb',1,'load_bmp(char *path):&#160;common.c'],['../common_8h.html#ad870ef04e6cb0ebb550fd6495604c0bb',1,'load_bmp(char *path):&#160;common.c']]]
 ];

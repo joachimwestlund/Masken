@@ -73,14 +73,14 @@ $(function() {
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;SDL2/SDL.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="input_8h_source.html">input.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a51f528deaaeb973f417b46a2ec36f850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a51f528deaaeb973f417b46a2ec36f850">SDL_MAIN_HANDLED</a></td></tr>
 <tr class="separator:a51f528deaaeb973f417b46a2ec36f850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72dbcf6d0153db1b8d8a58001feed83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a></td></tr>
-<tr class="separator:ad72dbcf6d0153db1b8d8a58001feed83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -89,20 +89,6 @@ Functions</h2></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ad72dbcf6d0153db1b8d8a58001feed83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72dbcf6d0153db1b8d8a58001feed83">&#9670;&nbsp;</a></span>DEBUG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEBUG</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a51f528deaaeb973f417b46a2ec36f850"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51f528deaaeb973f417b46a2ec36f850">&#9670;&nbsp;</a></span>SDL_MAIN_HANDLED</h2>
 
@@ -134,7 +120,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This is the main entry of the program. </p>
-<dl class="section return"><dt>Returns</dt><dd>It returns 0 at all times. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success and -1 on failure. </dd></dl>
 
 </div>
 </div>

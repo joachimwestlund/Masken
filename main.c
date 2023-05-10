@@ -1,6 +1,6 @@
 /**
  *      @mainpage
- *      @brief Masken is a worm clone written in C for educational pourposes.
+ *      @brief Masken is a worm clone written in C for educational purposes.
  *
  *      @details It uses the SDL2 library version 2.26.5 for the graphics.
  *               https://www.libsdl.org
