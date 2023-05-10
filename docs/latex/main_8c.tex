@@ -3,13 +3,13 @@
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{main_8c_a51f528deaaeb973f417b46a2ec36f850}{S\+D\+L\+\_\+\+M\+A\+I\+N\+\_\+\+H\+A\+N\+D\+L\+ED}}
-\item 
-\#define \mbox{\hyperlink{main_8c_ad72dbcf6d0153db1b8d8a58001feed83}{D\+E\+B\+UG}}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -19,12 +19,6 @@ int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 
 
 \subsection{Macro Definition Documentation}
-\mbox{\Hypertarget{main_8c_ad72dbcf6d0153db1b8d8a58001feed83}\label{main_8c_ad72dbcf6d0153db1b8d8a58001feed83}} 
-\index{main.c@{main.c}!DEBUG@{DEBUG}}
-\index{DEBUG@{DEBUG}!main.c@{main.c}}
-\subsubsection{\texorpdfstring{DEBUG}{DEBUG}}
-{\footnotesize\ttfamily \#define D\+E\+B\+UG}
-
 \mbox{\Hypertarget{main_8c_a51f528deaaeb973f417b46a2ec36f850}\label{main_8c_a51f528deaaeb973f417b46a2ec36f850}} 
 \index{main.c@{main.c}!SDL\_MAIN\_HANDLED@{SDL\_MAIN\_HANDLED}}
 \index{SDL\_MAIN\_HANDLED@{SDL\_MAIN\_HANDLED}!main.c@{main.c}}
@@ -45,5 +39,5 @@ int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 This is the main entry of the program. 
 
 \begin{DoxyReturn}{Returns}
-It returns 0 at all times. 
+0 on success and -\/1 on failure. 
 \end{DoxyReturn}

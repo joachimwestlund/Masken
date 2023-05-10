@@ -4,26 +4,29 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-uint8\+\_\+t \mbox{\hyperlink{common_8c_af860ba91d971e43c689a13331a168388}{sdl\+\_\+init}} (void)
-\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+L2 graphics library for this game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{common_8c_a3aad31e40815defd4a43af38f14bbcf6}{sdl\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+L2 graphics library for this game. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8c_ad870ef04e6cb0ebb550fd6495604c0bb}{load\+\_\+bmp}} (char $\ast$path)
+\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{common_8c_af860ba91d971e43c689a13331a168388}\label{common_8c_af860ba91d971e43c689a13331a168388}} 
+\mbox{\Hypertarget{common_8c_ad870ef04e6cb0ebb550fd6495604c0bb}\label{common_8c_ad870ef04e6cb0ebb550fd6495604c0bb}} 
+\index{common.c@{common.c}!load\_bmp@{load\_bmp}}
+\index{load\_bmp@{load\_bmp}!common.c@{common.c}}
+\subsubsection{\texorpdfstring{load\_bmp()}{load\_bmp()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ load\+\_\+bmp (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{common_8c_a3aad31e40815defd4a43af38f14bbcf6}\label{common_8c_a3aad31e40815defd4a43af38f14bbcf6}} 
 \index{common.c@{common.c}!sdl\_init@{sdl\_init}}
 \index{sdl\_init@{sdl\_init}!common.c@{common.c}}
 \subsubsection{\texorpdfstring{sdl\_init()}{sdl\_init()}}
-{\footnotesize\ttfamily uint8\+\_\+t sdl\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ sdl\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
 Initializes the S\+D\+L2 graphics library for this game. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em nothing} & \\
-\hline
-\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-success = 0 and failure = 1 
+success = S\+D\+L\+\_\+\+Window pointer failure = N\+U\+LL 
 \end{DoxyReturn}

@@ -1,30 +1,55 @@
 \hypertarget{common_8h}{}\section{C\+:/\+Users/jocke/\+One\+Drive/\+Dokument/\+Skola/10. Programmeringsmetodik/masken/common.h File Reference}
 \label{common_8h}\index{C:/Users/jocke/OneDrive/Dokument/Skola/10. Programmeringsmetodik/masken/common.h@{C:/Users/jocke/OneDrive/Dokument/Skola/10. Programmeringsmetodik/masken/common.h}}
-{\ttfamily \#include $<$stdint.\+h$>$}\newline
 {\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{common_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+UE}}~1
+\item 
+\#define \mbox{\hyperlink{common_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE}}~0
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-uint8\+\_\+t \mbox{\hyperlink{common_8h_af860ba91d971e43c689a13331a168388}{sdl\+\_\+init}} (void)
-\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+L2 graphics library for this game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{common_8h_a3aad31e40815defd4a43af38f14bbcf6}{sdl\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+L2 graphics library for this game. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8h_ad870ef04e6cb0ebb550fd6495604c0bb}{load\+\_\+bmp}} (char $\ast$path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{common_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{common_8h_aa93f0eb578d23995850d61f7d61c55c1}} 
+\index{common.h@{common.h}!FALSE@{FALSE}}
+\index{FALSE@{FALSE}!common.h@{common.h}}
+\subsubsection{\texorpdfstring{FALSE}{FALSE}}
+{\footnotesize\ttfamily \#define F\+A\+L\+SE~0}
+
+\mbox{\Hypertarget{common_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{common_8h_aa8cecfc5c5c054d2875c03e77b7be15d}} 
+\index{common.h@{common.h}!TRUE@{TRUE}}
+\index{TRUE@{TRUE}!common.h@{common.h}}
+\subsubsection{\texorpdfstring{TRUE}{TRUE}}
+{\footnotesize\ttfamily \#define T\+R\+UE~1}
+
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{common_8h_af860ba91d971e43c689a13331a168388}\label{common_8h_af860ba91d971e43c689a13331a168388}} 
+\mbox{\Hypertarget{common_8h_ad870ef04e6cb0ebb550fd6495604c0bb}\label{common_8h_ad870ef04e6cb0ebb550fd6495604c0bb}} 
+\index{common.h@{common.h}!load\_bmp@{load\_bmp}}
+\index{load\_bmp@{load\_bmp}!common.h@{common.h}}
+\subsubsection{\texorpdfstring{load\_bmp()}{load\_bmp()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ load\+\_\+bmp (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{common_8h_a3aad31e40815defd4a43af38f14bbcf6}\label{common_8h_a3aad31e40815defd4a43af38f14bbcf6}} 
 \index{common.h@{common.h}!sdl\_init@{sdl\_init}}
 \index{sdl\_init@{sdl\_init}!common.h@{common.h}}
 \subsubsection{\texorpdfstring{sdl\_init()}{sdl\_init()}}
-{\footnotesize\ttfamily uint8\+\_\+t sdl\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ sdl\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
 Initializes the S\+D\+L2 graphics library for this game. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em nothing} & \\
-\hline
-\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-success = 0 and failure = 1 
+success = S\+D\+L\+\_\+\+Window pointer failure = N\+U\+LL 
 \end{DoxyReturn}
