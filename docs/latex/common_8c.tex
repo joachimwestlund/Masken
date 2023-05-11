@@ -13,7 +13,9 @@ S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8c_acb97cbd03475631aab91f8
 T\+T\+F\+\_\+\+Font $\ast$ \mbox{\hyperlink{common_8c_abd552a7f4932221f1527394cdbb450c9}{load\+\_\+font}} (char $\ast$path, int size)
 \begin{DoxyCompactList}\small\item\em Loads a true type font. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{common_8c_ad794f7778df193a3f1c3e0abfb3ca482}{print\+\_\+text}} (T\+T\+F\+\_\+\+Font $\ast$fnt, char $\ast$text, S\+D\+L\+\_\+\+Color $\ast$color, S\+D\+L\+\_\+\+Surface $\ast$destination, int x, int y)
-\begin{DoxyCompactList}\small\item\em Blits a font to a surface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Blits a font to a surface. \end{DoxyCompactList}\item 
+Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{common_8c_aab46d4a34c2d80343c934bc1d41d23ec}{load\+\_\+music}} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads an vorbis ogg file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
@@ -52,6 +54,24 @@ Loads a true type font.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Returns a pointer to a T\+T\+F\+\_\+\+Font containing the font or N\+U\+LL on failiure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{common_8c_aab46d4a34c2d80343c934bc1d41d23ec}\label{common_8c_aab46d4a34c2d80343c934bc1d41d23ec}} 
+\index{common.c@{common.c}!load\_music@{load\_music}}
+\index{load\_music@{load\_music}!common.c@{common.c}}
+\subsubsection{\texorpdfstring{load\_music()}{load\_music()}}
+{\footnotesize\ttfamily Mix\+\_\+\+Music$\ast$ load\+\_\+music (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads an vorbis ogg file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Path} & to the ogg-\/file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to M\+I\+X\+\_\+\+Music containing the music or N\+U\+LL on failiure. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{common_8c_acb97cbd03475631aab91f8d002de3f5b}\label{common_8c_acb97cbd03475631aab91f8d002de3f5b}} 
 \index{common.c@{common.c}!load\_png@{load\_png}}

@@ -30,7 +30,7 @@ int main()
     SDL_Window* window;
     SDL_Surface* screen_surface;
     SDL_Surface* picture;
-    SDL_Surface* elephant;
+    SDL_Surface* worm_logo;
     SDL_Event event;
     TTF_Font* fnt;
     SDL_Color color;
@@ -59,14 +59,14 @@ int main()
     SDL_UpdateWindowSurface(window);
 
 
-    elephant = load_png("worm.png");
+    worm_logo = load_png("worm.png");
 
     SDL_Rect rect;
-    rect.x = (screen_surface->w / 2) - (elephant->w / 2);
-    rect.y = (screen_surface->h / 2) - (elephant->h / 2);
-    rect.h = elephant->h;
-    rect.w = elephant->w;
-    SDL_BlitSurface(elephant, NULL, screen_surface, &rect);
+    rect.x = (screen_surface->w / 2) - (worm_logo->w / 2);
+    rect.y = (screen_surface->h / 2) - (worm_logo->h / 2);
+    rect.h = worm_logo->h;
+    rect.w = worm_logo->w;
+    SDL_BlitSurface(worm_logo, NULL, screen_surface, &rect);
     SDL_UpdateWindowSurface(window);
 
     fnt = load_font("Butterflies Free.ttf", 200);
@@ -83,7 +83,7 @@ int main()
 
     SDL_UpdateWindowSurface(window);
 
-    music = load_music("medc64-mania.ogg");
+    music = load_music("childrenhard.ogg");
     if (Mix_PlayMusic(music, 10) == -1)
     {
         #ifdef DEBUG
@@ -108,9 +108,11 @@ int main()
     }
 
     // free stuff and quit
+    Mix_CloseAudio();
+    Mix_FreeMusic(music);
     TTF_CloseFont(fnt);
-    SDL_FreeSurface(elephant);
-    elephant = NULL;
+    SDL_FreeSurface(worm_logo);
+    worm_logo = NULL;
     SDL_FreeSurface(picture);
     picture = NULL;
     SDL_FreeSurface(screen_surface);

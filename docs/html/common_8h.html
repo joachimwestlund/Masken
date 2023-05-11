@@ -74,6 +74,7 @@ $(function() {
 <code>#include &lt;SDL2/SDL.h&gt;</code><br />
 <code>#include &lt;SDL2/SDL_image.h&gt;</code><br />
 <code>#include &lt;SDL2/SDL_ttf.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_mixer.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br />
 </div>
 <p><a href="common_8h_source.html">Go to the source code of this file.</a></p>
@@ -102,6 +103,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad794f7778df193a3f1c3e0abfb3ca482"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ad794f7778df193a3f1c3e0abfb3ca482">print_text</a> (TTF_Font *fnt, char *text, SDL_Color *color, SDL_Surface *destination, int x, int y)</td></tr>
 <tr class="memdesc:ad794f7778df193a3f1c3e0abfb3ca482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blits a font to a surface.  <a href="#ad794f7778df193a3f1c3e0abfb3ca482">More...</a><br /></td></tr>
 <tr class="separator:ad794f7778df193a3f1c3e0abfb3ca482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab46d4a34c2d80343c934bc1d41d23ec"><td class="memItemLeft" align="right" valign="top">Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#aab46d4a34c2d80343c934bc1d41d23ec">load_music</a> (char *filename)</td></tr>
+<tr class="memdesc:aab46d4a34c2d80343c934bc1d41d23ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an vorbis ogg file.  <a href="#aab46d4a34c2d80343c934bc1d41d23ec">More...</a><br /></td></tr>
+<tr class="separator:aab46d4a34c2d80343c934bc1d41d23ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa93f0eb578d23995850d61f7d61c55c1"></a>
@@ -194,6 +198,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a pointer to a TTF_Font containing the font or NULL on failiure. </dd></dl>
+
+</div>
+</div>
+<a id="aab46d4a34c2d80343c934bc1d41d23ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab46d4a34c2d80343c934bc1d41d23ec">&#9670;&nbsp;</a></span>load_music()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Music* load_music </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads an vorbis ogg file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Path</td><td>to the ogg-file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to MIX_Music containing the music or NULL on failiure. </dd></dl>
 
 </div>
 </div>
