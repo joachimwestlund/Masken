@@ -32,9 +32,12 @@ int main()
     SDL_Surface* picture;
     SDL_Surface* elephant;
     SDL_Event event;
+    TTF_Font* fnt;
+    SDL_Color color;
 
     struct inputs* input;
     char quit = FALSE;
+    char ret;
 
     printf("Masken. A worm clone made by Joachim Westlund.\n\n");
 
@@ -55,7 +58,7 @@ int main()
     SDL_UpdateWindowSurface(window);
 
 
-    elephant = loadPNG("elephant.png");
+    elephant = load_png("elephant.png");
 
     SDL_Rect rect;
     rect.x = (screen_surface->w / 2) - (elephant->w / 2);
@@ -65,6 +68,19 @@ int main()
     SDL_BlitSurface(elephant, NULL, screen_surface, &rect);
     SDL_UpdateWindowSurface(window);
 
+    fnt = load_font("Butterflies Free.ttf", 200);
+    if (fnt == NULL)
+        return -1;
+
+    color.r = 0xaa;
+    color.g = 0x44;
+    color.b = 0x44;
+    color.a = 0x00;
+    ret = print_text(fnt, "Masken", &color, screen_surface, 10, 400);
+    if (ret == FALSE)
+        return -1;
+
+    SDL_UpdateWindowSurface(window);
 
     // Main event and game loop.
     // Input
@@ -82,12 +98,17 @@ int main()
     }
 
     // free stuff and quit
+    TTF_CloseFont(fnt);
+    SDL_FreeSurface(elephant);
+    elephant = NULL;
     SDL_FreeSurface(picture);
     picture = NULL;
     SDL_FreeSurface(screen_surface);
     screen_surface = NULL;
     SDL_DestroyWindow(window);
     window = NULL;
+    TTF_Quit();
+    IMG_Quit();
     SDL_Quit();
 
     return 0;

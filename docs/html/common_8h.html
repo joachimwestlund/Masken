@@ -70,7 +70,10 @@ $(function() {
 <div class="title">C:/Users/jocke/OneDrive/Dokument/Skola/10. Programmeringsmetodik/masken/common.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;SDL2/SDL.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_image.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_ttf.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br />
 </div>
 <p><a href="common_8h_source.html">Go to the source code of this file.</a></p>
@@ -88,7 +91,17 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3aad31e40815defd4a43af38f14bbcf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SDL2 graphics library for this game.  <a href="#a3aad31e40815defd4a43af38f14bbcf6">More...</a><br /></td></tr>
 <tr class="separator:a3aad31e40815defd4a43af38f14bbcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad870ef04e6cb0ebb550fd6495604c0bb"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ad870ef04e6cb0ebb550fd6495604c0bb">load_bmp</a> (char *path)</td></tr>
+<tr class="memdesc:ad870ef04e6cb0ebb550fd6495604c0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an image of BMP format to an RGB format SDL_surface.  <a href="#ad870ef04e6cb0ebb550fd6495604c0bb">More...</a><br /></td></tr>
 <tr class="separator:ad870ef04e6cb0ebb550fd6495604c0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb97cbd03475631aab91f8d002de3f5b"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#acb97cbd03475631aab91f8d002de3f5b">load_png</a> (char *path)</td></tr>
+<tr class="memdesc:acb97cbd03475631aab91f8d002de3f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an image of PNG format to an RGBA format SDL_surface.  <a href="#acb97cbd03475631aab91f8d002de3f5b">More...</a><br /></td></tr>
+<tr class="separator:acb97cbd03475631aab91f8d002de3f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3671c7f0eb959ceec21b927efb2ef7"><td class="memItemLeft" align="right" valign="top">TTF_Font *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a7c3671c7f0eb959ceec21b927efb2ef7">load_font</a> (char *, int)</td></tr>
+<tr class="memdesc:a7c3671c7f0eb959ceec21b927efb2ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a true type font.  <a href="#a7c3671c7f0eb959ceec21b927efb2ef7">More...</a><br /></td></tr>
+<tr class="separator:a7c3671c7f0eb959ceec21b927efb2ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad794f7778df193a3f1c3e0abfb3ca482"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ad794f7778df193a3f1c3e0abfb3ca482">print_text</a> (TTF_Font *fnt, char *text, SDL_Color *color, SDL_Surface *destination, int x, int y)</td></tr>
+<tr class="memdesc:ad794f7778df193a3f1c3e0abfb3ca482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blits a font to a surface.  <a href="#ad794f7778df193a3f1c3e0abfb3ca482">More...</a><br /></td></tr>
+<tr class="separator:ad794f7778df193a3f1c3e0abfb3ca482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa93f0eb578d23995850d61f7d61c55c1"></a>
@@ -135,6 +148,145 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Loads an image of BMP format to an RGB format SDL_surface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Path</td><td>to the image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to a SDL_Surface containing the image. </dd></dl>
+
+</div>
+</div>
+<a id="a7c3671c7f0eb959ceec21b927efb2ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c3671c7f0eb959ceec21b927efb2ef7">&#9670;&nbsp;</a></span>load_font()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TTF_Font* load_font </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a true type font. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Path</td><td>to the font </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to a TTF_Font containing the font or NULL on failiure. </dd></dl>
+
+</div>
+</div>
+<a id="acb97cbd03475631aab91f8d002de3f5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb97cbd03475631aab91f8d002de3f5b">&#9670;&nbsp;</a></span>load_png()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* load_png </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads an image of PNG format to an RGBA format SDL_surface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Path</td><td>to the image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to a SDL_Surface containing the image or NULL on failiure. </dd></dl>
+
+</div>
+</div>
+<a id="ad794f7778df193a3f1c3e0abfb3ca482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad794f7778df193a3f1c3e0abfb3ca482">&#9670;&nbsp;</a></span>print_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char print_text </td>
+          <td>(</td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>fnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color *&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blits a font to a surface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fnt</td><td>that should be rendered. </td></tr>
+    <tr><td class="paramname">text</td><td>the text to be rendered. </td></tr>
+    <tr><td class="paramname">color</td><td>SDL_Color to color the thing. </td></tr>
+    <tr><td class="paramname">destination</td><td>surface that the font should be blitted to. </td></tr>
+    <tr><td class="paramname">x</td><td>coordinate on the destination. </td></tr>
+    <tr><td class="paramname">y</td><td>coordinate on the destination. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns TRUE if success and FALSE on failiure. </dd></dl>
 
 </div>
 </div>

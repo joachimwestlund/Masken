@@ -33,16 +33,19 @@ SDL_Window* sdl_init(void)
         return NULL;
     }
 
+    if (TTF_Init() == -1)
+    {
+        #ifdef DEBUG
+            printf("Unable to initialize SDL2_ttf: %s\n", TTF_GetError());
+        #endif // DEBUG
+        return NULL;
+    }
+
     SDL_UpdateWindowSurface(window);
 
     return window;
 }
 
-/**
- * @brief Loads an image of BMP format to an RGB format SDL_surface
- * @param Path to the image
- * @return Returns a pointer to a SDL_Surface containing the image.
- */
 SDL_Surface* load_bmp(char* path)
 {
     SDL_Surface* img = NULL;
@@ -57,12 +60,7 @@ SDL_Surface* load_bmp(char* path)
     return img;
 }
 
-/**
- * @brief Loads an image of PNG format to an RGBA format SDL_surface
- * @param Path to the image
- * @return Returns a pointer to a SDL_Surface containing the image or NULL on failiure.
- */
-SDL_Surface* loadPNG(char *path)
+SDL_Surface* load_png(char *path)
 {
     SDL_Surface *img = NULL;
 
@@ -75,4 +73,41 @@ SDL_Surface* loadPNG(char *path)
         return NULL;
     }
     return img;
+}
+
+TTF_Font* load_font(char* path, int size)
+{
+    TTF_Font* fnt = NULL;
+
+    fnt = TTF_OpenFont(path, size);
+    if (fnt == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to load font: %s. %s\n", path, TTF_GetError());
+        #endif // DEBUG
+        return NULL;
+    }
+    return fnt;
+}
+
+char print_text(TTF_Font* fnt, char* text, SDL_Color* color, SDL_Surface* destination, int x, int y)
+{
+    SDL_Surface* text_surface = NULL;
+
+    text_surface = TTF_RenderText_Solid(fnt, text, *color);
+    if (text_surface == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to render font: %s\n", TTF_GetError());
+        #endif // DEBUG
+        return FALSE;
+    }
+    SDL_Rect rect;
+    rect.x = x;
+    rect.y = y;
+    rect.w = text_surface->w;
+    rect.h = text_surface->h;
+    SDL_BlitSurface(text_surface, NULL, destination, &rect);
+
+    return TRUE;
 }

@@ -1,6 +1,9 @@
 \hypertarget{common_8h}{}\section{C\+:/\+Users/jocke/\+One\+Drive/\+Dokument/\+Skola/10. Programmeringsmetodik/masken/common.h File Reference}
 \label{common_8h}\index{C:/Users/jocke/OneDrive/Dokument/Skola/10. Programmeringsmetodik/masken/common.h@{C:/Users/jocke/OneDrive/Dokument/Skola/10. Programmeringsmetodik/masken/common.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\newline
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
@@ -15,7 +18,13 @@
 S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{common_8h_a3aad31e40815defd4a43af38f14bbcf6}{sdl\+\_\+init}} (void)
 \begin{DoxyCompactList}\small\item\em Initializes the S\+D\+L2 graphics library for this game. \end{DoxyCompactList}\item 
 S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8h_ad870ef04e6cb0ebb550fd6495604c0bb}{load\+\_\+bmp}} (char $\ast$path)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Loads an image of B\+MP format to an R\+GB format S\+D\+L\+\_\+surface. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8h_acb97cbd03475631aab91f8d002de3f5b}{load\+\_\+png}} (char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Loads an image of P\+NG format to an R\+G\+BA format S\+D\+L\+\_\+surface. \end{DoxyCompactList}\item 
+T\+T\+F\+\_\+\+Font $\ast$ \mbox{\hyperlink{common_8h_a7c3671c7f0eb959ceec21b927efb2ef7}{load\+\_\+font}} (char $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Loads a true type font. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{common_8h_ad794f7778df193a3f1c3e0abfb3ca482}{print\+\_\+text}} (T\+T\+F\+\_\+\+Font $\ast$fnt, char $\ast$text, S\+D\+L\+\_\+\+Color $\ast$color, S\+D\+L\+\_\+\+Surface $\ast$destination, int x, int y)
+\begin{DoxyCompactList}\small\item\em Blits a font to a surface. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Macro Definition Documentation}
@@ -40,6 +49,82 @@ S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8h_ad870ef04e6cb0ebb550fd6
 \subsubsection{\texorpdfstring{load\_bmp()}{load\_bmp()}}
 {\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ load\+\_\+bmp (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
 
+
+
+Loads an image of B\+MP format to an R\+GB format S\+D\+L\+\_\+surface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Path} & to the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to a S\+D\+L\+\_\+\+Surface containing the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{common_8h_a7c3671c7f0eb959ceec21b927efb2ef7}\label{common_8h_a7c3671c7f0eb959ceec21b927efb2ef7}} 
+\index{common.h@{common.h}!load\_font@{load\_font}}
+\index{load\_font@{load\_font}!common.h@{common.h}}
+\subsubsection{\texorpdfstring{load\_font()}{load\_font()}}
+{\footnotesize\ttfamily T\+T\+F\+\_\+\+Font$\ast$ load\+\_\+font (\begin{DoxyParamCaption}\item[{char $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Loads a true type font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Path} & to the font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to a T\+T\+F\+\_\+\+Font containing the font or N\+U\+LL on failiure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{common_8h_acb97cbd03475631aab91f8d002de3f5b}\label{common_8h_acb97cbd03475631aab91f8d002de3f5b}} 
+\index{common.h@{common.h}!load\_png@{load\_png}}
+\index{load\_png@{load\_png}!common.h@{common.h}}
+\subsubsection{\texorpdfstring{load\_png()}{load\_png()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ load\+\_\+png (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Loads an image of P\+NG format to an R\+G\+BA format S\+D\+L\+\_\+surface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Path} & to the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to a S\+D\+L\+\_\+\+Surface containing the image or N\+U\+LL on failiure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{common_8h_ad794f7778df193a3f1c3e0abfb3ca482}\label{common_8h_ad794f7778df193a3f1c3e0abfb3ca482}} 
+\index{common.h@{common.h}!print\_text@{print\_text}}
+\index{print\_text@{print\_text}!common.h@{common.h}}
+\subsubsection{\texorpdfstring{print\_text()}{print\_text()}}
+{\footnotesize\ttfamily char print\+\_\+text (\begin{DoxyParamCaption}\item[{T\+T\+F\+\_\+\+Font $\ast$}]{fnt,  }\item[{char $\ast$}]{text,  }\item[{S\+D\+L\+\_\+\+Color $\ast$}]{color,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{destination,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Blits a font to a surface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fnt} & that should be rendered. \\
+\hline
+{\em text} & the text to be rendered. \\
+\hline
+{\em color} & S\+D\+L\+\_\+\+Color to color the thing. \\
+\hline
+{\em destination} & surface that the font should be blitted to. \\
+\hline
+{\em x} & coordinate on the destination. \\
+\hline
+{\em y} & coordinate on the destination. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns T\+R\+UE if success and F\+A\+L\+SE on failiure. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{common_8h_a3aad31e40815defd4a43af38f14bbcf6}\label{common_8h_a3aad31e40815defd4a43af38f14bbcf6}} 
 \index{common.h@{common.h}!sdl\_init@{sdl\_init}}
 \index{sdl\_init@{sdl\_init}!common.h@{common.h}}
