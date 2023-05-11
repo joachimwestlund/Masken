@@ -1,9 +1,11 @@
 # depslib dependency file v1.0
-1683730037 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
+1683794781 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
 	"common.h"
 
-1683745596 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
+1683793527 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
+	<stdio.h>
 	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
 	"debug.h"
 
 1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl.h
@@ -395,7 +397,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1683747089 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
+1683795827 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
 	<stdio.h>
 	<stdlib.h>
 	<SDL2/SDL.h>
@@ -403,13 +405,21 @@
 	"common.h"
 	"input.h"
 
-1683729965 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
+1683786892 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
 
-1683747030 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
+1683747152 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
 	"input.h"
 
-1683746759 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h
+1683793454 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h
 	<SDL2/SDL.h>
 	"debug.h"
 	"common.h"
+
+1683786811 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.c
+
+1675734272 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
 

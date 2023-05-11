@@ -6,7 +6,7 @@
 #include "common.h"
 
 /**< Structure containing key presses */
-extern struct inputs
+struct inputs
 {
     char LEFT;
     char RIGHT;
@@ -20,7 +20,7 @@ extern struct inputs
  * @details Arrow keys for controlling the worm and escape key to quit.
  * @return Structure containing the pressed buttons.
  */
-extern struct inputs* get_inputs(SDL_Event*);
+struct inputs* get_inputs(SDL_Event*);
 
 
 #endif // __INPUT_H__
