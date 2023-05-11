@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1683807417 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
+1683813299 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
 	"common.h"
 
-1683806513 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
+1683813909 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
 	<stdio.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
@@ -399,7 +399,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1683808163 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
+1683813338 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
 	<stdio.h>
 	<stdlib.h>
 	<SDL2/SDL.h>
@@ -409,7 +409,7 @@
 
 1683786892 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
 
-1683747152 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
+1683813712 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
 	"input.h"
 
 1683793454 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h

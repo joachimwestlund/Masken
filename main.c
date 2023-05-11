@@ -25,7 +25,7 @@
  * @brief This is the main entry of the program.
  * @return 0 on success and -1 on failure.
  */
-int main()
+int main(void)
 {
     SDL_Window* window;
     SDL_Surface* screen_surface;
@@ -34,7 +34,7 @@ int main()
     SDL_Event event;
     TTF_Font* fnt;
     SDL_Color color;
-    Mix_Music* music;
+
 
     struct inputs* input;
     char quit = FALSE;
@@ -81,16 +81,11 @@ int main()
     if (ret == FALSE)
         return -1;
 
+
+    change_music(1);
+
     SDL_UpdateWindowSurface(window);
 
-    music = load_music("childrenhard.ogg");
-    if (Mix_PlayMusic(music, 10) == -1)
-    {
-        #ifdef DEBUG
-            printf("Unable to play music");
-        #endif // DEBUG
-        return -1;
-    }
 
     // Main event and game loop.
     // Input
@@ -108,8 +103,6 @@ int main()
     }
 
     // free stuff and quit
-    Mix_CloseAudio();
-    Mix_FreeMusic(music);
     TTF_CloseFont(fnt);
     SDL_FreeSurface(worm_logo);
     worm_logo = NULL;
@@ -119,6 +112,7 @@ int main()
     screen_surface = NULL;
     SDL_DestroyWindow(window);
     window = NULL;
+    Mix_Quit();
     TTF_Quit();
     IMG_Quit();
     SDL_Quit();

@@ -51,6 +51,42 @@ struct inputs* get_inputs(SDL_Event* event)
                     printf("ESCAPE\n");
                 #endif // DEBUG
                 break;
+            case SDLK_1:
+                change_music(1);
+                #ifdef DEBUG
+                    printf("1\n");
+                #endif // DEBUG
+                break;
+            case SDLK_2:
+                change_music(2);
+                #ifdef DEBUG
+                    printf("2\n");
+                #endif // DEBUG
+                break;
+            case SDLK_3:
+                change_music(3);
+                #ifdef DEBUG
+                    printf("3\n");
+                #endif // DEBUG
+                break;
+            case SDLK_4:
+                change_music(4);
+                #ifdef DEBUG
+                    printf("4\n");
+                #endif // DEBUG
+                break;
+            case SDLK_5:
+                change_music(5);
+                #ifdef DEBUG
+                    printf("5\n");
+                #endif // DEBUG
+                break;
+            case SDLK_0:
+                change_music(0);
+                #ifdef DEBUG
+                    printf("0\n");
+                #endif // DEBUG
+                break;
             default:
                 break;
             }

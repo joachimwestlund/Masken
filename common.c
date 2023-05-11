@@ -56,6 +56,13 @@ SDL_Window* sdl_init(void)
         return NULL;
     }
 
+    if (init_music() == FALSE)
+    {
+        #ifdef DEBUG
+            printf("Unable to initialize songs: %s\n", Mix_GetError());
+        #endif // DEBUG
+        return NULL;
+    }
 
     SDL_UpdateWindowSurface(window);
 
@@ -141,4 +148,113 @@ Mix_Music* load_music(char *filename)
         return NULL;
     }
     return music;
+}
+
+char init_music(void)
+{
+    song1 = Mix_LoadMUS("1990chip.ogg");
+    if(song1 == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to load song1: %s\n", Mix_GetError());
+        #endif // DEBUG
+        return FALSE;
+    }
+
+    song2 = Mix_LoadMUS("c64theme.ogg");
+    if(song2 == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to load song2: %s\n", Mix_GetError());
+        #endif // DEBUG
+        return FALSE;
+    }
+
+    song3 = Mix_LoadMUS("childrenhard.ogg");
+    if(song3 == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to load song3: %s\n", Mix_GetError());
+        #endif // DEBUG
+        return FALSE;
+    }
+
+    song4 = Mix_LoadMUS("medc64-mania.ogg");
+    if(song4 == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to load song4: %s\n", Mix_GetError());
+        #endif // DEBUG
+        return FALSE;
+    }
+
+    song5 = Mix_LoadMUS("c64_tune_odkin.ogg");
+    if(song5 == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to load song5: %s\n", Mix_GetError());
+        #endif // DEBUG
+        return FALSE;
+    }
+    return TRUE;
+}
+
+char change_music(int nr)
+{
+    if (nr == 1)
+    {
+        if (Mix_PlayMusic(song1, 100) == -1)
+        {
+            #ifdef DEBUG
+                printf("Unable to play song1");
+            #endif // DEBUG
+            return FALSE;
+        }
+    }
+    else if(nr == 2)
+    {
+        if (Mix_PlayMusic(song2, 100) == -1)
+        {
+            #ifdef DEBUG
+                printf("Unable to play song2");
+            #endif // DEBUG
+            return FALSE;
+        }
+    }
+    else if(nr == 3)
+    {
+        if (Mix_PlayMusic(song3, 100) == -1)
+        {
+            #ifdef DEBUG
+                printf("Unable to play song3");
+            #endif // DEBUG
+            return FALSE;
+        }
+    }
+    else if(nr == 4)
+    {
+        if (Mix_PlayMusic(song4, 100) == -1)
+        {
+            #ifdef DEBUG
+                printf("Unable to play song4");
+            #endif // DEBUG
+            return FALSE;
+        }
+    }
+    else if(nr == 5)
+    {
+        if (Mix_PlayMusic(song5, 100) == -1)
+        {
+            #ifdef DEBUG
+                printf("Unable to play song5");
+            #endif // DEBUG
+            return FALSE;
+        }
+    }
+    else if (nr == 0)
+    {
+        Mix_PauseMusic();
+    }
+
+    return TRUE;
 }
