@@ -5,6 +5,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_mixer.h>
 
 #include "debug.h"
 
@@ -52,5 +53,12 @@ TTF_Font* load_font(char*, int);
  * @return Returns TRUE if success and FALSE on failiure.
  */
 char print_text(TTF_Font* fnt, char* text, SDL_Color* color, SDL_Surface* destination, int x, int y);
+
+/**
+ * @brief Loads an vorbis ogg file.
+ * @param Path to the ogg-file
+ * @return Returns a pointer to MIX_Music containing the music or NULL on failiure.
+ */
+Mix_Music* load_music(char *filename);
 
 #endif // __COMMON_H__

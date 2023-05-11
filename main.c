@@ -34,6 +34,7 @@ int main()
     SDL_Event event;
     TTF_Font* fnt;
     SDL_Color color;
+    Mix_Music* music;
 
     struct inputs* input;
     char quit = FALSE;
@@ -58,7 +59,7 @@ int main()
     SDL_UpdateWindowSurface(window);
 
 
-    elephant = load_png("elephant.png");
+    elephant = load_png("worm.png");
 
     SDL_Rect rect;
     rect.x = (screen_surface->w / 2) - (elephant->w / 2);
@@ -81,6 +82,15 @@ int main()
         return -1;
 
     SDL_UpdateWindowSurface(window);
+
+    music = load_music("medc64-mania.ogg");
+    if (Mix_PlayMusic(music, 10) == -1)
+    {
+        #ifdef DEBUG
+            printf("Unable to play music");
+        #endif // DEBUG
+        return -1;
+    }
 
     // Main event and game loop.
     // Input

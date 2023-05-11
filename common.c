@@ -7,7 +7,7 @@ SDL_Window* sdl_init(void)
     int SCREEN_WIDTH = 800;
     int SCREEN_HEIGHT = 600;
 
-    if (SDL_Init(SDL_INIT_VIDEO) < 0)
+    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) < 0)
     {
         #ifdef DEBUG
             printf("Unable to init SDL: %s\n", SDL_GetError());
@@ -40,6 +40,22 @@ SDL_Window* sdl_init(void)
         #endif // DEBUG
         return NULL;
     }
+
+    if (Mix_Init(MIX_INIT_OGG) != MIX_INIT_OGG)
+    {
+        #ifdef DEBUG
+            printf("Unable to initialize sound system: %s\n", Mix_GetError());
+        #endif // DEBUG
+        return NULL;
+    }
+    if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 512) != 0)
+    {
+        #ifdef DEBUG
+            printf("Unable to initialize default audio device for playback: %s\n", Mix_GetError());
+        #endif // DEBUG
+        return NULL;
+    }
+
 
     SDL_UpdateWindowSurface(window);
 
@@ -110,4 +126,19 @@ char print_text(TTF_Font* fnt, char* text, SDL_Color* color, SDL_Surface* destin
     SDL_BlitSurface(text_surface, NULL, destination, &rect);
 
     return TRUE;
+}
+
+Mix_Music* load_music(char *filename)
+{
+    Mix_Music* music = NULL;
+
+    music = Mix_LoadMUS(filename);
+    if(music == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to load music: %s. %s\n", filename, Mix_GetError());
+        #endif // DEBUG
+        return NULL;
+    }
+    return music;
 }
