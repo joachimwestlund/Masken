@@ -2,8 +2,8 @@
  *      @mainpage
  *      @brief Masken is a worm clone written in C for educational purposes.
  *
- *      @details It uses the SDL2 library version 2.26.5 for the graphics.
- *               https://www.libsdl.org
+ *      @details It uses the SDL2 library version 2.26.5 for the graphics
+ *               https://www.libsdl.org.
  *
  *      @date 2023-05-10
  *      @author Joachim Westlund
