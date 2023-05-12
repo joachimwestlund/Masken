@@ -132,6 +132,8 @@ char print_text(TTF_Font* fnt, char* text, SDL_Color* color, SDL_Surface* destin
     rect.h = text_surface->h;
     SDL_BlitSurface(text_surface, NULL, destination, &rect);
 
+    SDL_FreeSurface(text_surface);
+
     return TRUE;
 }
 
