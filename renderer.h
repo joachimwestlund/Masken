@@ -7,6 +7,7 @@ struct render_objects
 {
     SDL_Texture* texture;
     SDL_Rect dest;
+    int angle;
 };
 
 struct render_objects r_objects[100];
@@ -34,8 +35,9 @@ void render(void);
  * @param texture the texture to be rendered.
  * @param x coordinate where it will be rendered.
  * @param y coordinate where it will be rendered.
+ * @param angle of rotation of the texture.
  */
-void add_to_render_queue(SDL_Texture* texture, int x, int y);
+void add_to_render_queue(SDL_Texture* texture, int x, int y, int angle);
 
 /**
  * @brief This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer.

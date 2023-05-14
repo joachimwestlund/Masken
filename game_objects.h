@@ -14,6 +14,8 @@ struct player_object
     int y;
     /** number of body sections currently */
     int no_body_sections;
+    /** head angle */
+    int angle;
 };
 
 /** structure to hold food data for the worm. */
@@ -25,6 +27,8 @@ struct food_object
     int x;
     /** y position */
     int y;
+    /** angle of food */
+    int angle;
     /** the score that this food will give when eaten */
     int score;
 };

@@ -428,6 +428,7 @@ char init_player(void)
     player.x = 400;
     player.y = 300;
     player.no_body_sections = 0;
+    player.angle = 0;
 
     return TRUE;
 }
@@ -446,4 +447,5 @@ char init_food(void)
     food.x = 100;
     food.y = 500;
     food.score = 10;
+    food.angle = 0;
 }

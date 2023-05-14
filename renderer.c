@@ -37,12 +37,12 @@ void render_queue(void)
 {
     for(int i = 0; i < r_objects_count; i++)
     {
-       SDL_RenderCopy(renderer, r_objects[i].texture, NULL, &r_objects[i].dest);
+       SDL_RenderCopyEx(renderer, r_objects[i].texture, NULL, &r_objects[i].dest, r_objects[i].angle, NULL, SDL_FLIP_NONE);
     }
     r_objects_count = 0;
 }
 
-void add_to_render_queue(SDL_Texture* texture, int x, int y)
+void add_to_render_queue(SDL_Texture* texture, int x, int y, int angle)
 {
     SDL_Rect dest;
     int w;
@@ -55,5 +55,6 @@ void add_to_render_queue(SDL_Texture* texture, int x, int y)
 
     r_objects[r_objects_count].dest = dest;
     r_objects[r_objects_count].texture = texture;
+    r_objects[r_objects_count].angle = angle;
     r_objects_count++;
 }

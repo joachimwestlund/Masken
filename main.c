@@ -66,7 +66,7 @@ int main(void)
     init_player();
     init_food();
 
-    //change_music(1);
+    change_music(1);
 
     // Main event and game loop.
     // Input
@@ -82,8 +82,8 @@ int main(void)
         if (is_playing) // this is so that the we don't just add stuff to the render queue to make it overflow. we need to fix this better.
         {
             move_player();
-            add_to_render_queue(player.head, player.x, player.y);
-            add_to_render_queue(food.texture, food.x, food.y);
+            add_to_render_queue(player.head, player.x, player.y, player.angle);
+            add_to_render_queue(food.texture, food.x, food.y, food.angle);
         }
 
         render();
