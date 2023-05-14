@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['handle_5finput',['handle_input',['../game__logic_8c.html#a98ae56f79ae954e0d3a2ff2bfd47edbd',1,'handle_input(void):&#160;game_logic.c'],['../game__logic_8h.html#a98ae56f79ae954e0d3a2ff2bfd47edbd',1,'handle_input(void):&#160;game_logic.c']]],
-  ['head',['head',['../structplayer__object.html#a156af47b8be9c09879c063ad443877a5',1,'player_object']]]
+  ['game_5flogic_2ec',['game_logic.c',['../game__logic_8c.html',1,'']]],
+  ['game_5flogic_2eh',['game_logic.h',['../game__logic_8h.html',1,'']]],
+  ['game_5fobjects_2eh',['game_objects.h',['../game__objects_8h.html',1,'']]],
+  ['game_5fover',['game_over',['../common_8h.html#ad839fd1118e650472705a7c286a0177c',1,'common.h']]],
+  ['game_5fscreen',['game_screen',['../game__objects_8h.html#a4396cf124f193202515929dbffb3202c',1,'game_objects.h']]],
+  ['get_5finputs',['get_inputs',['../input_8c.html#a178a9385826399caf427d8455bbfe6f8',1,'get_inputs(SDL_Event *event):&#160;input.c'],['../input_8h.html#a5a1b42a279f919a7287d5f5156856243',1,'get_inputs(SDL_Event *):&#160;input.c']]]
 ];

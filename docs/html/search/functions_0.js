@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['change_5fmusic',['change_music',['../common_8c.html#a3f7d079ae164240677e5fc1c6f435c9a',1,'change_music(int nr):&#160;common.c'],['../common_8h.html#a3f7d079ae164240677e5fc1c6f435c9a',1,'change_music(int nr):&#160;common.c']]]
+  ['add_5fto_5frender_5fqueue',['add_to_render_queue',['../renderer_8c.html#a28c729fff73fdf7e9aff018517509fcf',1,'add_to_render_queue(SDL_Texture *texture, int x, int y):&#160;renderer.c'],['../renderer_8h.html#a28c729fff73fdf7e9aff018517509fcf',1,'add_to_render_queue(SDL_Texture *texture, int x, int y):&#160;renderer.c']]]
 ];

@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['left',['LEFT',['../structinputs.html#abf3a99e39f90b8c0b0adb499e8be44cb',1,'inputs']]],
-  ['load_5fbmp',['load_bmp',['../common_8c.html#ad870ef04e6cb0ebb550fd6495604c0bb',1,'load_bmp(char *path):&#160;common.c'],['../common_8h.html#ad870ef04e6cb0ebb550fd6495604c0bb',1,'load_bmp(char *path):&#160;common.c']]],
-  ['load_5ffont',['load_font',['../common_8c.html#abd552a7f4932221f1527394cdbb450c9',1,'load_font(char *path, int size):&#160;common.c'],['../common_8h.html#abd552a7f4932221f1527394cdbb450c9',1,'load_font(char *path, int size):&#160;common.c']]],
-  ['load_5fmusic',['load_music',['../common_8c.html#aab46d4a34c2d80343c934bc1d41d23ec',1,'load_music(char *filename):&#160;common.c'],['../common_8h.html#aab46d4a34c2d80343c934bc1d41d23ec',1,'load_music(char *filename):&#160;common.c']]],
-  ['load_5fpng',['load_png',['../common_8c.html#acb97cbd03475631aab91f8d002de3f5b',1,'load_png(char *path):&#160;common.c'],['../common_8h.html#acb97cbd03475631aab91f8d002de3f5b',1,'load_png(char *path):&#160;common.c']]],
-  ['load_5ftexture',['load_texture',['../common_8c.html#a36ebe304df124b309e2528ac98b9b96b',1,'load_texture(char *path, SDL_Renderer *r):&#160;common.c'],['../common_8h.html#a36ebe304df124b309e2528ac98b9b96b',1,'load_texture(char *path, SDL_Renderer *r):&#160;common.c']]]
+  ['init_5fgame_5fscreen',['init_game_screen',['../common_8c.html#ae91aea3417ef6310746cd4e2aa4c7387',1,'init_game_screen(SDL_Renderer *renderer):&#160;common.c'],['../common_8h.html#ae91aea3417ef6310746cd4e2aa4c7387',1,'init_game_screen(SDL_Renderer *renderer):&#160;common.c']]],
+  ['init_5fmusic',['init_music',['../common_8c.html#a96e70232c7c96eb4b821fb26037f36b5',1,'init_music(void):&#160;common.c'],['../common_8h.html#a96e70232c7c96eb4b821fb26037f36b5',1,'init_music(void):&#160;common.c']]],
+  ['init_5fplayer',['init_player',['../common_8c.html#a119bd4ef50181b6e984da9d9d265ccc9',1,'init_player(void):&#160;common.c'],['../common_8h.html#a119bd4ef50181b6e984da9d9d265ccc9',1,'init_player(void):&#160;common.c']]],
+  ['init_5frenderer',['init_renderer',['../renderer_8c.html#a8211bb7e3d7bf5e33f03d2200b3e23f0',1,'init_renderer(SDL_Window *window):&#160;renderer.c'],['../renderer_8h.html#a8211bb7e3d7bf5e33f03d2200b3e23f0',1,'init_renderer(SDL_Window *window):&#160;renderer.c']]],
+  ['init_5ftitle_5fscreen',['init_title_screen',['../common_8c.html#ad1c960adbe60d68cd658b40ef4c82f78',1,'init_title_screen(SDL_Renderer *renderer):&#160;common.c'],['../common_8h.html#ad1c960adbe60d68cd658b40ef4c82f78',1,'init_title_screen(SDL_Renderer *renderer):&#160;common.c']]],
+  ['input',['input',['../input_8h.html#ae1ed9db130fe9ca146ca57f836d42fa9',1,'input.h']]],
+  ['input_2ec',['input.c',['../input_8c.html',1,'']]],
+  ['input_2eh',['input.h',['../input_8h.html',1,'']]],
+  ['inputs',['inputs',['../structinputs.html',1,'']]],
+  ['is_5fplaying',['is_playing',['../common_8h.html#a8a0e41ebf383fb6e16be0a137661b364',1,'common.h']]]
 ];

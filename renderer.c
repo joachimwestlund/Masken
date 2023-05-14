@@ -34,7 +34,6 @@ void render(void)
 
 void render_queue(void)
 {
-    printf("%d\n", r_objects_count);
     for(int i = 0; i < r_objects_count; i++)
     {
        SDL_RenderCopy(renderer, r_objects[i].texture, NULL, r_objects[i].dest);

@@ -1,0 +1,118 @@
+\hypertarget{renderer_8h}{}\section{renderer.\+h File Reference}
+\label{renderer_8h}\index{renderer.h@{renderer.h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrender__objects}{render\+\_\+objects}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}{init\+\_\+renderer}} (S\+D\+L\+\_\+\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em Initialize the renerer for the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{renderer_8h_a6765cdcebe5c8445969d5f76345df457}{render}} (void)
+\begin{DoxyCompactList}\small\item\em this is the renderer that the game loop should call \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{renderer_8h_a28c729fff73fdf7e9aff018517509fcf}{add\+\_\+to\+\_\+render\+\_\+queue}} (S\+D\+L\+\_\+\+Texture $\ast$texture, int x, int y)
+\begin{DoxyCompactList}\small\item\em this function will take in a texture and render it to the offscreen buffer. For now only 100 items can be added. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{renderer_8h_a746750d82ff06f8bca0faf22f52eb1c2}{render\+\_\+queue}} (void)
+\begin{DoxyCompactList}\small\item\em This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrender__objects}{render\+\_\+objects}} \mbox{\hyperlink{renderer_8h_a007be1247a68bc85e939f94411479a56}{r\+\_\+objects}} \mbox{[}10\mbox{]}
+\item 
+int \mbox{\hyperlink{renderer_8h_ac3445b19afe20b3c03c9a8ddc8f64c3d}{r\+\_\+objects\+\_\+count}}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}}
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{renderer_8h_acb08658d623221f17749b1c1b82eae64}{buffer}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{renderer_8h_a28c729fff73fdf7e9aff018517509fcf}\label{renderer_8h_a28c729fff73fdf7e9aff018517509fcf}} 
+\index{renderer.h@{renderer.h}!add\_to\_render\_queue@{add\_to\_render\_queue}}
+\index{add\_to\_render\_queue@{add\_to\_render\_queue}!renderer.h@{renderer.h}}
+\subsubsection{\texorpdfstring{add\_to\_render\_queue()}{add\_to\_render\_queue()}}
+{\footnotesize\ttfamily void add\+\_\+to\+\_\+render\+\_\+queue (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{texture,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+this function will take in a texture and render it to the offscreen buffer. For now only 100 items can be added. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to be rendered. \\
+\hline
+{\em x} & coordinate where it will be rendered. \\
+\hline
+{\em y} & coordinate where it will be rendered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}\label{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}} 
+\index{renderer.h@{renderer.h}!init\_renderer@{init\_renderer}}
+\index{init\_renderer@{init\_renderer}!renderer.h@{renderer.h}}
+\subsubsection{\texorpdfstring{init\_renderer()}{init\_renderer()}}
+{\footnotesize\ttfamily char init\+\_\+renderer (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Initialize the renerer for the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the S\+D\+L\+\_\+\+Window to render to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE on success or F\+A\+L\+SE on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{renderer_8h_a6765cdcebe5c8445969d5f76345df457}\label{renderer_8h_a6765cdcebe5c8445969d5f76345df457}} 
+\index{renderer.h@{renderer.h}!render@{render}}
+\index{render@{render}!renderer.h@{renderer.h}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void render (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+this is the renderer that the game loop should call 
+
+\mbox{\Hypertarget{renderer_8h_a746750d82ff06f8bca0faf22f52eb1c2}\label{renderer_8h_a746750d82ff06f8bca0faf22f52eb1c2}} 
+\index{renderer.h@{renderer.h}!render\_queue@{render\_queue}}
+\index{render\_queue@{render\_queue}!renderer.h@{renderer.h}}
+\subsubsection{\texorpdfstring{render\_queue()}{render\_queue()}}
+{\footnotesize\ttfamily void render\+\_\+queue (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{renderer_8h_acb08658d623221f17749b1c1b82eae64}\label{renderer_8h_acb08658d623221f17749b1c1b82eae64}} 
+\index{renderer.h@{renderer.h}!buffer@{buffer}}
+\index{buffer@{buffer}!renderer.h@{renderer.h}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ buffer}
+
+this will act as some sort of buffer. It will be written to and later rendered to the game\+\_\+texture \mbox{\Hypertarget{renderer_8h_a007be1247a68bc85e939f94411479a56}\label{renderer_8h_a007be1247a68bc85e939f94411479a56}} 
+\index{renderer.h@{renderer.h}!r\_objects@{r\_objects}}
+\index{r\_objects@{r\_objects}!renderer.h@{renderer.h}}
+\subsubsection{\texorpdfstring{r\_objects}{r\_objects}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structrender__objects}{render\+\_\+objects}} r\+\_\+objects\mbox{[}10\mbox{]}}
+
+\mbox{\Hypertarget{renderer_8h_ac3445b19afe20b3c03c9a8ddc8f64c3d}\label{renderer_8h_ac3445b19afe20b3c03c9a8ddc8f64c3d}} 
+\index{renderer.h@{renderer.h}!r\_objects\_count@{r\_objects\_count}}
+\index{r\_objects\_count@{r\_objects\_count}!renderer.h@{renderer.h}}
+\subsubsection{\texorpdfstring{r\_objects\_count}{r\_objects\_count}}
+{\footnotesize\ttfamily int r\+\_\+objects\+\_\+count}
+
+\mbox{\Hypertarget{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}\label{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}} 
+\index{renderer.h@{renderer.h}!renderer@{renderer}}
+\index{renderer@{renderer}!renderer.h@{renderer.h}}
+\subsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer$\ast$ renderer}
+
+The renerer for this game 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right',['RIGHT',['../structinputs.html#ab56909fbd462ae4fa285e24388efcf9a',1,'inputs']]]
+  ['quit',['quit',['../common_8h.html#a409d6906c2b3bc7112f51e004363ef4e',1,'common.h']]]
 ];

@@ -1,0 +1,74 @@
+\hypertarget{renderer_8c}{}\section{renderer.\+c File Reference}
+\label{renderer_8c}\index{renderer.c@{renderer.c}}
+{\ttfamily \#include \char`\"{}renderer.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}{init\+\_\+renderer}} (S\+D\+L\+\_\+\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em Initialize the renerer for the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{renderer_8c_a6765cdcebe5c8445969d5f76345df457}{render}} (void)
+\begin{DoxyCompactList}\small\item\em this is the renderer that the game loop should call \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{renderer_8c_a746750d82ff06f8bca0faf22f52eb1c2}{render\+\_\+queue}} (void)
+\begin{DoxyCompactList}\small\item\em This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{renderer_8c_a28c729fff73fdf7e9aff018517509fcf}{add\+\_\+to\+\_\+render\+\_\+queue}} (S\+D\+L\+\_\+\+Texture $\ast$texture, int x, int y)
+\begin{DoxyCompactList}\small\item\em this function will take in a texture and render it to the offscreen buffer. For now only 100 items can be added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{renderer_8c_a28c729fff73fdf7e9aff018517509fcf}\label{renderer_8c_a28c729fff73fdf7e9aff018517509fcf}} 
+\index{renderer.c@{renderer.c}!add\_to\_render\_queue@{add\_to\_render\_queue}}
+\index{add\_to\_render\_queue@{add\_to\_render\_queue}!renderer.c@{renderer.c}}
+\subsubsection{\texorpdfstring{add\_to\_render\_queue()}{add\_to\_render\_queue()}}
+{\footnotesize\ttfamily void add\+\_\+to\+\_\+render\+\_\+queue (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{texture,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+this function will take in a texture and render it to the offscreen buffer. For now only 100 items can be added. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to be rendered. \\
+\hline
+{\em x} & coordinate where it will be rendered. \\
+\hline
+{\em y} & coordinate where it will be rendered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}\label{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}} 
+\index{renderer.c@{renderer.c}!init\_renderer@{init\_renderer}}
+\index{init\_renderer@{init\_renderer}!renderer.c@{renderer.c}}
+\subsubsection{\texorpdfstring{init\_renderer()}{init\_renderer()}}
+{\footnotesize\ttfamily char init\+\_\+renderer (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Initialize the renerer for the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the S\+D\+L\+\_\+\+Window to render to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE on success or F\+A\+L\+SE on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{renderer_8c_a6765cdcebe5c8445969d5f76345df457}\label{renderer_8c_a6765cdcebe5c8445969d5f76345df457}} 
+\index{renderer.c@{renderer.c}!render@{render}}
+\index{render@{render}!renderer.c@{renderer.c}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void render (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+this is the renderer that the game loop should call 
+
+\mbox{\Hypertarget{renderer_8c_a746750d82ff06f8bca0faf22f52eb1c2}\label{renderer_8c_a746750d82ff06f8bca0faf22f52eb1c2}} 
+\index{renderer.c@{renderer.c}!render\_queue@{render\_queue}}
+\index{render\_queue@{render\_queue}!renderer.c@{renderer.c}}
+\subsubsection{\texorpdfstring{render\_queue()}{render\_queue()}}
+{\footnotesize\ttfamily void render\+\_\+queue (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer. 
+
