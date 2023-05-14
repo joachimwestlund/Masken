@@ -12,9 +12,11 @@
 #define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
 #include "debug.h"
+#include "game_objects.h"
 #include "common.h"
 #include "input.h"
 #include "game_logic.h"
+#include "renderer.h"
 
 /**
  * @brief This is the main entry of the program.
@@ -26,7 +28,9 @@ int main(void)
     SDL_Surface* screen_surface;
     SDL_Event event;
     struct inputs* input;
-    char quit = FALSE;
+    is_playing = FALSE;
+    game_over = FALSE;
+    quit = FALSE;
 
     printf("Masken. A worm clone made by Joachim Westlund.\n\n");
 
@@ -38,9 +42,12 @@ int main(void)
     if ((window = sdl_init()) == NULL)
         return -1;
 
+    if (init_renderer(window) == FALSE)
+        return -1;
+
     screen_surface = SDL_GetWindowSurface(window);
 
-    if (init_title_screen() == NULL)
+    if (init_title_screen(renderer) == NULL)
     {
         #ifdef DEBUG
             printf("Failed to initialize the title screen\n");
@@ -48,11 +55,17 @@ int main(void)
         return -1;
     }
 
-    //change_music(1);
+    if (init_game_screen(renderer) == NULL)
+    {
+        #ifdef DEBUG
+            printf("Failed to initialize the game screen\n");
+        #endif // DEBUG
+        return -1;
+    }
 
-    SDL_BlitSurface(title_screen, NULL, screen_surface, NULL);
-    SDL_UpdateWindowSurface(window);
+    init_player();
 
+    change_music(1);
 
     // Main event and game loop.
     // Input
@@ -64,14 +77,16 @@ int main(void)
         if (input->ESCAPE == TRUE)
             quit = TRUE;
 
-        //game_logic();
+        handle_input();
+        if (is_playing) // this is so that the we don't just add stuff to the render queue to make it overflow. we need to fix this better.
+            add_to_render_queue(player.head, player.x, player.y);
 
-        //Render();
+        render();
     }
 
     // free stuff and quit
+    SDL_DestroyRenderer(renderer);
     SDL_FreeSurface(screen_surface);
-    screen_surface = NULL;
     SDL_DestroyWindow(window);
     window = NULL;
     Mix_Quit();

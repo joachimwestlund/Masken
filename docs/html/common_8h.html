@@ -99,6 +99,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acb97cbd03475631aab91f8d002de3f5b"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#acb97cbd03475631aab91f8d002de3f5b">load_png</a> (char *path)</td></tr>
 <tr class="memdesc:acb97cbd03475631aab91f8d002de3f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an image of PNG format to an RGBA format SDL_surface.  <a href="#acb97cbd03475631aab91f8d002de3f5b">More...</a><br /></td></tr>
 <tr class="separator:acb97cbd03475631aab91f8d002de3f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ebe304df124b309e2528ac98b9b96b"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a36ebe304df124b309e2528ac98b9b96b">load_texture</a> (char *path, SDL_Renderer *r)</td></tr>
+<tr class="memdesc:a36ebe304df124b309e2528ac98b9b96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a texture from disk.  <a href="#a36ebe304df124b309e2528ac98b9b96b">More...</a><br /></td></tr>
+<tr class="separator:a36ebe304df124b309e2528ac98b9b96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd552a7f4932221f1527394cdbb450c9"><td class="memItemLeft" align="right" valign="top">TTF_Font *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#abd552a7f4932221f1527394cdbb450c9">load_font</a> (char *path, int size)</td></tr>
 <tr class="memdesc:abd552a7f4932221f1527394cdbb450c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a true type font.  <a href="#abd552a7f4932221f1527394cdbb450c9">More...</a><br /></td></tr>
 <tr class="separator:abd552a7f4932221f1527394cdbb450c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +120,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a8a0e41ebf383fb6e16be0a137661b364"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a8a0e41ebf383fb6e16be0a137661b364">is_playing</a></td></tr>
+<tr class="separator:a8a0e41ebf383fb6e16be0a137661b364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad839fd1118e650472705a7c286a0177c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ad839fd1118e650472705a7c286a0177c">game_over</a></td></tr>
+<tr class="separator:ad839fd1118e650472705a7c286a0177c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409d6906c2b3bc7112f51e004363ef4e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a409d6906c2b3bc7112f51e004363ef4e">quit</a></td></tr>
+<tr class="separator:a409d6906c2b3bc7112f51e004363ef4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13ffa57bed25d088296cb430fdba74b0"><td class="memItemLeft" align="right" valign="top">Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a13ffa57bed25d088296cb430fdba74b0">song1</a></td></tr>
 <tr class="separator:a13ffa57bed25d088296cb430fdba74b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b8ae788d180d15e1a6dda3fdbfe48bc"><td class="memItemLeft" align="right" valign="top">Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a7b8ae788d180d15e1a6dda3fdbfe48bc">song2</a></td></tr>
@@ -325,6 +334,44 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a36ebe304df124b309e2528ac98b9b96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ebe304df124b309e2528ac98b9b96b">&#9670;&nbsp;</a></span>load_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* load_texture </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a texture from disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>to the font. </td></tr>
+    <tr><td class="paramname">r</td><td>renderer for the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to a TTF_Font containing the font or NULL on failiure. </dd></dl>
+
+</div>
+</div>
 <a id="ad794f7778df193a3f1c3e0abfb3ca482"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad794f7778df193a3f1c3e0abfb3ca482">&#9670;&nbsp;</a></span>print_text()</h2>
 
@@ -413,6 +460,48 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ad839fd1118e650472705a7c286a0177c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad839fd1118e650472705a7c286a0177c">&#9670;&nbsp;</a></span>game_over</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char game_over</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a0e41ebf383fb6e16be0a137661b364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0e41ebf383fb6e16be0a137661b364">&#9670;&nbsp;</a></span>is_playing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char is_playing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a409d6906c2b3bc7112f51e004363ef4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409d6906c2b3bc7112f51e004363ef4e">&#9670;&nbsp;</a></span>quit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char quit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a13ffa57bed25d088296cb430fdba74b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13ffa57bed25d088296cb430fdba74b0">&#9670;&nbsp;</a></span>song1</h2>
 

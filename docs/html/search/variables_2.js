@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['input',['input',['../input_8c.html#ae1ed9db130fe9ca146ca57f836d42fa9',1,'input.c']]]
+  ['escape',['ESCAPE',['../structinputs.html#a15675417ba5a32ad2202c86452a52010',1,'inputs']]]
 ];

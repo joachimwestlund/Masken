@@ -1,8 +1,6 @@
 
 #include "input.h"
 
-struct inputs input;
-
 struct inputs* get_inputs(SDL_Event* event)
 {
     input.DOWN = FALSE;
@@ -85,6 +83,12 @@ struct inputs* get_inputs(SDL_Event* event)
                 change_music(0);
                 #ifdef DEBUG
                     printf("0\n");
+                #endif // DEBUG
+                break;
+            case SDLK_SPACE:
+                play();
+                #ifdef DEBUG
+                    printf("SPACE\n");
                 #endif // DEBUG
                 break;
             default:

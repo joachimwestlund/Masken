@@ -4,26 +4,70 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{game__logic_8c_aa78d04d339d69396b71822037a5b4376}{init\+\_\+title\+\_\+screen}} (void)
-\begin{DoxyCompactList}\small\item\em This will return the S\+D\+L\+\_\+\+Surface containing the title screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{game__logic_8c_ad1c960adbe60d68cd658b40ef4c82f78}{init\+\_\+title\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Initialize and create the title screen graphics. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{game__logic_8c_ae91aea3417ef6310746cd4e2aa4c7387}{init\+\_\+game\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Initialize and create the game screen graphics. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__logic_8c_abdfb298c4eb2fba465cab1235f1c3723}{play}} (void)
+\begin{DoxyCompactList}\small\item\em This function will start the game from the title screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__logic_8c_a98ae56f79ae954e0d3a2ff2bfd47edbd}{handle\+\_\+input}} (void)
+\begin{DoxyCompactList}\small\item\em This function will check the input struct every frame and uppdate direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{game__logic_8c_aa78d04d339d69396b71822037a5b4376}\label{game__logic_8c_aa78d04d339d69396b71822037a5b4376}} 
-\index{game\_logic.c@{game\_logic.c}!init\_title\_screen@{init\_title\_screen}}
-\index{init\_title\_screen@{init\_title\_screen}!game\_logic.c@{game\_logic.c}}
-\subsubsection{\texorpdfstring{init\_title\_screen()}{init\_title\_screen()}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ init\+\_\+title\+\_\+screen (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{game__logic_8c_a98ae56f79ae954e0d3a2ff2bfd47edbd}\label{game__logic_8c_a98ae56f79ae954e0d3a2ff2bfd47edbd}} 
+\index{game\_logic.c@{game\_logic.c}!handle\_input@{handle\_input}}
+\index{handle\_input@{handle\_input}!game\_logic.c@{game\_logic.c}}
+\subsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
+{\footnotesize\ttfamily void handle\+\_\+input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-This will return the S\+D\+L\+\_\+\+Surface containing the title screen. 
+This function will check the input struct every frame and uppdate direction. 
+
+\mbox{\Hypertarget{game__logic_8c_ae91aea3417ef6310746cd4e2aa4c7387}\label{game__logic_8c_ae91aea3417ef6310746cd4e2aa4c7387}} 
+\index{game\_logic.c@{game\_logic.c}!init\_game\_screen@{init\_game\_screen}}
+\index{init\_game\_screen@{init\_game\_screen}!game\_logic.c@{game\_logic.c}}
+\subsubsection{\texorpdfstring{init\_game\_screen()}{init\_game\_screen()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ init\+\_\+game\+\_\+screen (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Initialize and create the game screen graphics. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em game\+\_\+surface} & is used to format the new surface. \\
+{\em renderer} & that will render this title screen, \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-a S\+D\+L\+\_\+\+Surface containing the title screen. Or N\+U\+LL on failure. 
+a S\+D\+L\+\_\+\+Texture containing the game screen. Or N\+U\+LL on failure. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{game__logic_8c_ad1c960adbe60d68cd658b40ef4c82f78}\label{game__logic_8c_ad1c960adbe60d68cd658b40ef4c82f78}} 
+\index{game\_logic.c@{game\_logic.c}!init\_title\_screen@{init\_title\_screen}}
+\index{init\_title\_screen@{init\_title\_screen}!game\_logic.c@{game\_logic.c}}
+\subsubsection{\texorpdfstring{init\_title\_screen()}{init\_title\_screen()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ init\+\_\+title\+\_\+screen (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Initialize and create the title screen graphics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & that will render this title screen, \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a S\+D\+L\+\_\+\+Texture containing the title screen. Or N\+U\+LL on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game__logic_8c_abdfb298c4eb2fba465cab1235f1c3723}\label{game__logic_8c_abdfb298c4eb2fba465cab1235f1c3723}} 
+\index{game\_logic.c@{game\_logic.c}!play@{play}}
+\index{play@{play}!game\_logic.c@{game\_logic.c}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void play (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function will start the game from the title screen. 
+

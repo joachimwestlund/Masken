@@ -83,6 +83,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acb97cbd03475631aab91f8d002de3f5b"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8c.html#acb97cbd03475631aab91f8d002de3f5b">load_png</a> (char *path)</td></tr>
 <tr class="memdesc:acb97cbd03475631aab91f8d002de3f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an image of PNG format to an RGBA format SDL_surface.  <a href="#acb97cbd03475631aab91f8d002de3f5b">More...</a><br /></td></tr>
 <tr class="separator:acb97cbd03475631aab91f8d002de3f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ebe304df124b309e2528ac98b9b96b"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8c.html#a36ebe304df124b309e2528ac98b9b96b">load_texture</a> (char *path, SDL_Renderer *r)</td></tr>
+<tr class="memdesc:a36ebe304df124b309e2528ac98b9b96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a texture from disk.  <a href="#a36ebe304df124b309e2528ac98b9b96b">More...</a><br /></td></tr>
+<tr class="separator:a36ebe304df124b309e2528ac98b9b96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd552a7f4932221f1527394cdbb450c9"><td class="memItemLeft" align="right" valign="top">TTF_Font *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8c.html#abd552a7f4932221f1527394cdbb450c9">load_font</a> (char *path, int size)</td></tr>
 <tr class="memdesc:abd552a7f4932221f1527394cdbb450c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a true type font.  <a href="#abd552a7f4932221f1527394cdbb450c9">More...</a><br /></td></tr>
 <tr class="separator:abd552a7f4932221f1527394cdbb450c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +267,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a pointer to a SDL_Surface containing the image or NULL on failiure. </dd></dl>
+
+</div>
+</div>
+<a id="a36ebe304df124b309e2528ac98b9b96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ebe304df124b309e2528ac98b9b96b">&#9670;&nbsp;</a></span>load_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* load_texture </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a texture from disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>to the font. </td></tr>
+    <tr><td class="paramname">r</td><td>renderer for the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to a TTF_Font containing the font or NULL on failiure. </dd></dl>
 
 </div>
 </div>

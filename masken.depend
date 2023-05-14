@@ -1,14 +1,16 @@
 # depslib dependency file v1.0
-1683874211 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
+1683891791 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
 	"common.h"
 
-1683874641 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
+1683893541 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
 	<stdio.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
 	<SDL2/SDL_ttf.h>
 	<SDL2/SDL_mixer.h>
 	"debug.h"
+	"game_objects.h"
+	"renderer.h"
 
 1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl.h
 	"SDL_main.h"
@@ -399,25 +401,28 @@
 	"begin_code.h"
 	"close_code.h"
 
-1683874728 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
+1684046510 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
 	<stdio.h>
 	<SDL2/SDL.h>
 	"debug.h"
+	"game_objects.h"
 	"common.h"
 	"input.h"
 	"game_logic.h"
+	"renderer.h"
 
-1683871248 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
+1683896641 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
 
-1683813712 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
+1683883831 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
 	"input.h"
 
-1683793454 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h
+1683883919 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h
 	<SDL2/SDL.h>
 	"debug.h"
 	"common.h"
+	"game_logic.h"
 
-1683875661 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.c
+1683894847 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.c
 	"game_logic.h"
 
 1675734272 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_image.h
@@ -440,10 +445,20 @@
 	"begin_code.h"
 	"close_code.h"
 
-1683874649 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
+1683886709 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
 	<stdio.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_ttf.h>
 	"debug.h"
+	"common.h"
+	"input.h"
+	"game_objects.h"
+
+1683889542 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_objects.h
+
+1684046587 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.c
+	"renderer.h"
+
+1683894762 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.h
 	"common.h"
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['down',['DOWN',['../structinputs.html#aefd805006968caf870982fabe4a6494d',1,'inputs']]]
+  ['body',['body',['../structplayer__object.html#a78cbc3f4a306ce98ce51b731549a5cf0',1,'player_object']]]
 ];

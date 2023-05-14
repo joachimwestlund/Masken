@@ -98,6 +98,22 @@ SDL_Surface* load_png(char *path)
     return img;
 }
 
+SDL_Texture* load_texture(char* path, SDL_Renderer* r)
+{
+    SDL_Texture* t = NULL;
+
+    t = IMG_LoadTexture(r, path);
+    if (t == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to load PNG texture: %s. %s\n", path, IMG_GetError());
+        #endif // DEBUG
+        return NULL;
+    }
+
+    return t;
+}
+
 TTF_Font* load_font(char* path, int size)
 {
     TTF_Font* fnt = NULL;
@@ -257,6 +273,161 @@ char change_music(int nr)
     {
         Mix_PauseMusic();
     }
+
+    return TRUE;
+}
+
+SDL_Texture* init_title_screen(SDL_Renderer* renderer)
+{
+    SDL_Surface* screen;
+    SDL_Surface* image;
+    SDL_Texture* texture;
+    TTF_Font* fnt;
+    SDL_Color color;
+    char ret;
+
+    screen = NULL;
+    texture = NULL;
+
+    screen = load_bmp("hello.bmp");
+    if (screen == NULL)
+        return NULL;
+
+    image = load_png("worm.png");
+    SDL_Rect rect;
+    rect.x = (screen->w / 2) - (image->w / 2) - 80;
+    rect.y = (screen->h / 2) - (image->h / 2) - 50;
+    rect.h = image->h;
+    rect.w = image->w;
+    SDL_BlitSurface(image, NULL, screen, &rect);
+    SDL_FreeSurface(image);
+
+    image = load_png("joachim_westlund.png");
+    rect.x = 10;
+    rect.y = 10;
+    rect.h = image->h;
+    rect.w = image->w;
+    SDL_BlitSurface(image, NULL, screen, &rect);
+    SDL_FreeSurface(image);
+
+    fnt = load_font("Butterflies Free.ttf", 200);
+    if (fnt == NULL)
+        return NULL;
+
+    color.r = 0xdd;
+    color.g = 0x44;
+    color.b = 0x44;
+    color.a = 0x00;
+    ret = print_text(fnt, "Masken", &color, screen, 180, 410);
+    if (ret == FALSE)
+        return NULL;
+
+    TTF_CloseFont(fnt);
+
+    fnt = load_font("Life is goofy.ttf", 70);
+    if (fnt == NULL)
+        return NULL;
+
+    color.r = 0x11;
+    color.g = 0x11;
+    color.b = 0xee;
+    color.a = 0x00;
+    ret = print_text(fnt, "Music keys 1-5 and 0", &color, screen, 380, 10);
+    if (ret == FALSE)
+        return NULL;
+
+    TTF_CloseFont(fnt);
+
+    fnt = load_font("Life is goofy.ttf", 100);
+    if (fnt == NULL)
+        return NULL;
+
+    color.r = 0x88;
+    color.g = 0x11;
+    color.b = 0x99;
+    color.a = 0x00;
+    ret = print_text(fnt, "SPACE to play!", &color, screen, 380, 210);
+    if (ret == FALSE)
+        return NULL;
+
+    TTF_CloseFont(fnt);
+
+    texture = SDL_CreateTextureFromSurface(renderer, screen);
+    if(texture == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to initialize the title screen texture: %s\n", SDL_GetError());
+        #endif // DEBUG
+    }
+
+    title_screen = texture;
+
+    SDL_FreeSurface(screen);
+
+    return texture;
+}
+
+SDL_Texture* init_game_screen(SDL_Renderer* renderer)
+{
+    SDL_Surface* screen;
+    SDL_Texture* texture;
+    TTF_Font* fnt;
+    SDL_Color color;
+    char ret;
+
+    screen = NULL;
+    texture = NULL;
+
+    screen = load_png("play_field.png");
+    if (screen == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to load game field: %s\n", IMG_GetError());
+        #endif // DEBUG
+        return NULL;
+    }
+
+    fnt = load_font("Life is goofy.ttf", 80);
+    if (fnt == NULL)
+        return NULL;
+
+    color.r = 0x00;
+    color.g = 0x00;
+    color.b = 0x00;
+    color.a = 0x00;
+    ret = print_text(fnt, "SCORE: ", &color, screen, 200, 35);
+    if (ret == FALSE)
+        return NULL;
+    TTF_CloseFont(fnt);
+
+    texture = SDL_CreateTextureFromSurface(renderer, screen);
+    if(texture == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to initialize the title screen texture: %s\n", SDL_GetError());
+        #endif // DEBUG
+    }
+
+    game_screen = texture;
+
+    SDL_FreeSurface(screen);
+
+    return texture;
+}
+
+char init_player(void)
+{
+    SDL_Texture* t;
+
+    t = load_texture("head.png", renderer);
+    if (t == NULL)
+        return FALSE;
+
+    player.head = t;
+    player.body = NULL;
+    player.x = 400;
+    player.y = 300;
+    player.no_body_sections = 0;
 
     return TRUE;
 }

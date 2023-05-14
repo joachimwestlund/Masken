@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['right',['RIGHT',['../structinputs.html#ab56909fbd462ae4fa285e24388efcf9a',1,'inputs']]]
+  ['main',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]],
+  ['main_2ec',['main.c',['../main_8c.html',1,'']]]
 ];

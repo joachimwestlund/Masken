@@ -4,6 +4,7 @@
 #include <SDL2/SDL.h>
 #include "debug.h"
 #include "common.h"
+#include "game_logic.h"
 
 /**< Structure containing key presses */
 struct inputs
@@ -14,6 +15,9 @@ struct inputs
     char DOWN;
     char ESCAPE;
 };
+
+/**< instantiated structure containing key presses */
+struct inputs input;
 
 /**
  * @brief Gets the inputs from user.

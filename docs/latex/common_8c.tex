@@ -10,6 +10,8 @@ S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8c_ad870ef04e6cb0ebb550fd6
 \begin{DoxyCompactList}\small\item\em Loads an image of B\+MP format to an R\+GB format S\+D\+L\+\_\+surface. \end{DoxyCompactList}\item 
 S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8c_acb97cbd03475631aab91f8d002de3f5b}{load\+\_\+png}} (char $\ast$path)
 \begin{DoxyCompactList}\small\item\em Loads an image of P\+NG format to an R\+G\+BA format S\+D\+L\+\_\+surface. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_a36ebe304df124b309e2528ac98b9b96b}{load\+\_\+texture}} (char $\ast$path, S\+D\+L\+\_\+\+Renderer $\ast$r)
+\begin{DoxyCompactList}\small\item\em Loads a texture from disk. \end{DoxyCompactList}\item 
 T\+T\+F\+\_\+\+Font $\ast$ \mbox{\hyperlink{common_8c_abd552a7f4932221f1527394cdbb450c9}{load\+\_\+font}} (char $\ast$path, int size)
 \begin{DoxyCompactList}\small\item\em Loads a true type font. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{common_8c_ad794f7778df193a3f1c3e0abfb3ca482}{print\+\_\+text}} (T\+T\+F\+\_\+\+Font $\ast$fnt, char $\ast$text, S\+D\+L\+\_\+\+Color $\ast$color, S\+D\+L\+\_\+\+Surface $\ast$destination, int x, int y)
@@ -127,6 +129,26 @@ Loads an image of P\+NG format to an R\+G\+BA format S\+D\+L\+\_\+surface.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Returns a pointer to a S\+D\+L\+\_\+\+Surface containing the image or N\+U\+LL on failiure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{common_8c_a36ebe304df124b309e2528ac98b9b96b}\label{common_8c_a36ebe304df124b309e2528ac98b9b96b}} 
+\index{common.c@{common.c}!load\_texture@{load\_texture}}
+\index{load\_texture@{load\_texture}!common.c@{common.c}}
+\subsubsection{\texorpdfstring{load\_texture()}{load\_texture()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ load\+\_\+texture (\begin{DoxyParamCaption}\item[{char $\ast$}]{path,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{r }\end{DoxyParamCaption})}
+
+
+
+Loads a texture from disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & to the font. \\
+\hline
+{\em r} & renderer for the texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to a T\+T\+F\+\_\+\+Font containing the font or N\+U\+LL on failiure. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{common_8c_ad794f7778df193a3f1c3e0abfb3ca482}\label{common_8c_ad794f7778df193a3f1c3e0abfb3ca482}} 
 \index{common.c@{common.c}!print\_text@{print\_text}}

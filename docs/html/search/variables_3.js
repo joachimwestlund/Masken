@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['left',['LEFT',['../structinputs.html#abf3a99e39f90b8c0b0adb499e8be44cb',1,'inputs']]]
+  ['game_5fover',['game_over',['../common_8h.html#ad839fd1118e650472705a7c286a0177c',1,'common.h']]],
+  ['game_5fscreen',['game_screen',['../game__objects_8h.html#a4396cf124f193202515929dbffb3202c',1,'game_objects.h']]]
 ];

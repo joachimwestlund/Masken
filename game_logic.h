@@ -6,15 +6,29 @@
 #include <SDL2/SDL_ttf.h>
 #include "debug.h"
 #include "common.h"
+#include "input.h"
+#include "game_objects.h"
 
-/**< the surface containing the graphics of the title screen. */
-SDL_Surface* title_screen;
+/** structure to hande player movement and position */
+struct player_movement
+{
+    /** delta x position to update player x position before next frame */
+    int dx;
+    /** delta y position to update player x position before next frame */
+    int dy;
+};
+
+/** the instantiated player position and movement structure */
+struct player_movement player_pos;
 
 /**
- * @brief This will return the SDL_Surface containing the title screen.
- * @param game_surface is used to format the new surface.
- * @return a SDL_Surface containing the title screen. Or NULL on failure.
+ * @brief This function will start the game from the title screen.
  */
-SDL_Surface* init_title_screen(void);
+void play(void);
+
+/**
+ * @brief This function will check the input struct every frame and uppdate direction.
+ */
+void handle_input(void);
 
 #endif // __GAME_LOGIC_H__

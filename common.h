@@ -7,10 +7,15 @@
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_mixer.h>
 #include "debug.h"
+#include "game_objects.h"
+#include "renderer.h"
 
 #define TRUE 1
 #define FALSE 0
 
+char is_playing;
+char game_over;
+char quit;
 
 Mix_Music* song1;
 Mix_Music* song2;
@@ -40,6 +45,14 @@ SDL_Surface* load_bmp(char* path);
  * @return Returns a pointer to a SDL_Surface containing the image or NULL on failiure.
  */
 SDL_Surface* load_png(char *path);
+
+/**
+ * @brief Loads a texture from disk.
+ * @param path to the font.
+ * @param r renderer for the texture.
+ * @return Returns a pointer to a TTF_Font containing the font or NULL on failiure.
+ */
+SDL_Texture* load_texture(char* path, SDL_Renderer* r);
 
 /**
  * @brief Loads a true type font.
@@ -80,5 +93,21 @@ char init_music(void);
  * @return Returns TRUE on success or FAIL on failiure.
  */
 char change_music(int nr);
+
+/**
+ * @brief Initialize and create the title screen graphics.
+ * @param renderer that will render this title screen,
+ * @return a SDL_Texture containing the title screen. Or NULL on failure.
+ */
+SDL_Texture* init_title_screen(SDL_Renderer* renderer);
+
+/**
+ * @brief Initialize and create the game screen graphics.
+ * @param renderer that will render this title screen,
+ * @return a SDL_Texture containing the game screen. Or NULL on failure.
+ */
+SDL_Texture* init_game_screen(SDL_Renderer* renderer);
+
+char init_player(void);
 
 #endif // __COMMON_H__

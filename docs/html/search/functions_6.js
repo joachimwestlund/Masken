@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sdl_5finit',['sdl_init',['../common_8c.html#a3aad31e40815defd4a43af38f14bbcf6',1,'sdl_init(void):&#160;common.c'],['../common_8h.html#a3aad31e40815defd4a43af38f14bbcf6',1,'sdl_init(void):&#160;common.c']]]
+  ['play',['play',['../game__logic_8c.html#abdfb298c4eb2fba465cab1235f1c3723',1,'play(void):&#160;game_logic.c'],['../game__logic_8h.html#abdfb298c4eb2fba465cab1235f1c3723',1,'play(void):&#160;game_logic.c']]],
+  ['print_5ftext',['print_text',['../common_8c.html#ad794f7778df193a3f1c3e0abfb3ca482',1,'print_text(TTF_Font *fnt, char *text, SDL_Color *color, SDL_Surface *destination, int x, int y):&#160;common.c'],['../common_8h.html#ad794f7778df193a3f1c3e0abfb3ca482',1,'print_text(TTF_Font *fnt, char *text, SDL_Color *color, SDL_Surface *destination, int x, int y):&#160;common.c']]]
 ];
