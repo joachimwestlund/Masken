@@ -6,14 +6,21 @@ struct player_object
 {
     /** Graphics of the player head */
     SDL_Texture* head;
-    /** Graphics of the body sections */
-    SDL_Texture* body;
-    /** x position */
-    int x;
-    /** y position */
-    int y;
+    /** bounding box for collision detection and position*/
+    SDL_Rect rect;
     /** number of body sections currently */
     int no_body_sections;
+    /** head angle */
+    int angle;
+};
+
+/** structure to hold body data. */
+struct body_object
+{
+    /** Graphics of the player head */
+    SDL_Texture* body;
+    /** bounding box for collision detection and position*/
+    SDL_Rect rect;
     /** head angle */
     int angle;
 };
@@ -23,18 +30,19 @@ struct food_object
 {
     /** Graphics of the food */
     SDL_Texture* texture;
-    /** x position */
-    int x;
-    /** y position */
-    int y;
     /** angle of food */
     int angle;
     /** the score that this food will give when eaten */
     int score;
+    /** bounding box for collision detection and posistion*/
+    SDL_Rect rect;
+
 };
 
 /** instantiated player object for the game */
 struct player_object player;
+
+struct body_object body;
 
 /** instantiated food object for the game */
 struct food_object food;

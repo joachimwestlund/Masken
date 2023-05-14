@@ -418,17 +418,24 @@ SDL_Texture* init_game_screen(SDL_Renderer* renderer)
 char init_player(void)
 {
     SDL_Texture* t;
+    SDL_Rect rect;
+    int w;
+    int h;
 
     t = load_texture("head.png", renderer);
     if (t == NULL)
         return FALSE;
 
+    SDL_QueryTexture(t, NULL, NULL, &w, &h);
+
     player.head = t;
-    player.body = NULL;
-    player.x = 400;
-    player.y = 300;
     player.no_body_sections = 0;
     player.angle = 0;
+    rect.h = h;
+    rect.w = w;
+    rect.x = 400;
+    rect.y = 300;
+    player.rect = rect;
 
     return TRUE;
 }
@@ -436,6 +443,9 @@ char init_player(void)
 char init_food(void)
 {
     SDL_Texture* t;
+    SDL_Rect rect;
+    int w;
+    int h;
 
     t = load_texture("apple.png", renderer);
     if (t == NULL)
@@ -443,9 +453,40 @@ char init_food(void)
         return FALSE;
     }
 
+    SDL_QueryTexture(t, NULL, NULL, &w, &h);
+
     food.texture = t;
-    food.x = 100;
-    food.y = 500;
     food.score = 10;
     food.angle = 0;
+    rect.h = h;
+    rect.w = w;
+    rect.x = 100;
+    rect.y = 500;
+    food.rect = rect;
+
+    return TRUE;
+}
+
+char init_body(void)
+{
+    SDL_Texture* t;
+    SDL_Rect rect;
+    int w;
+    int h;
+
+    t = load_texture("body.png", renderer);
+    if (t == NULL)
+        return FALSE;
+
+    SDL_QueryTexture(t, NULL, NULL, &w, &h);
+
+    body.body = t;
+    body.angle = 0;
+    rect.h = h;
+    rect.w = w;
+    rect.x = 400;
+    rect.y = 300;
+    body.rect = rect;
+
+    return TRUE;
 }

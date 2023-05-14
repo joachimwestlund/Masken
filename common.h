@@ -120,4 +120,10 @@ char init_player(void);
  */
 char init_food(void);
 
+/**
+ * @brief Initialize and create the body graphics and position.
+ * @return TRUE on success or FALSE on failure.
+ */
+char init_body(void);
+
 #endif // __COMMON_H__

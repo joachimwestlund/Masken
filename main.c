@@ -31,6 +31,7 @@ int main(void)
     is_playing = FALSE;
     game_over = FALSE;
     quit = FALSE;
+    SDL_bool collision = SDL_FALSE;
 
     printf("Masken. A worm clone made by Joachim Westlund.\n\n");
 
@@ -64,6 +65,7 @@ int main(void)
     }
 
     init_player();
+    init_body();
     init_food();
 
     change_music(1);
@@ -82,11 +84,17 @@ int main(void)
         if (is_playing) // this is so that the we don't just add stuff to the render queue to make it overflow. we need to fix this better.
         {
             move_player();
-            add_to_render_queue(player.head, player.x, player.y, player.angle);
-            add_to_render_queue(food.texture, food.x, food.y, food.angle);
+            add_to_render_queue(player.head, player.rect, player.angle);
+            add_to_render_queue(food.texture, food.rect, food.angle);
         }
 
         render();
+
+        collision = SDL_HasIntersection(&player.rect, &food.rect);
+        if (collision == SDL_TRUE)
+        {
+            printf("collision\n");
+        }
 
         SDL_Delay(3);
     }

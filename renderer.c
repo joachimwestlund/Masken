@@ -42,19 +42,11 @@ void render_queue(void)
     r_objects_count = 0;
 }
 
-void add_to_render_queue(SDL_Texture* texture, int x, int y, int angle)
+void add_to_render_queue(SDL_Texture* texture, SDL_Rect rect, int angle)
 {
-    SDL_Rect dest;
-    int w;
-    int h;
-    SDL_QueryTexture(texture, NULL, NULL, &w, &h);
-    dest.x = x;
-    dest.y = y;
-    dest.h = h;
-    dest.w = w;
-
-    r_objects[r_objects_count].dest = dest;
+    r_objects[r_objects_count].dest = rect;
     r_objects[r_objects_count].texture = texture;
     r_objects[r_objects_count].angle = angle;
-    r_objects_count++;
+    if (r_objects_count < 100)
+        r_objects_count++;
 }
