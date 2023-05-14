@@ -3,7 +3,7 @@
 void play(void)
 {
     is_playing = TRUE;
-    change_music(5);
+    //change_music(5);
 }
 
 void handle_input(void)

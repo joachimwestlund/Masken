@@ -65,7 +65,7 @@ int main(void)
 
     init_player();
 
-    change_music(1);
+    //change_music(1);
 
     // Main event and game loop.
     // Input
