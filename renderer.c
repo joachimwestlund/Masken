@@ -31,7 +31,6 @@ void render(void)
 
     SDL_RenderPresent(renderer);
 
-    SDL_Delay(3);
 }
 
 void render_queue(void)

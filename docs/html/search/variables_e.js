@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../structplayer__object.html#a6150e0515f7202e2fb518f7206ed97dc',1,'player_object::x()'],['../structfood__object.html#a6150e0515f7202e2fb518f7206ed97dc',1,'food_object::x()']]]
+  ['up',['UP',['../structinputs.html#acf487aade419fe84132d0b08da4636b8',1,'inputs']]]
 ];

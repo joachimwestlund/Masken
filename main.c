@@ -87,6 +87,8 @@ int main(void)
         }
 
         render();
+
+        SDL_Delay(3);
     }
 
     // free stuff and quit

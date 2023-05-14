@@ -27,7 +27,9 @@ S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_ad1c960adbe60d68cd658b4
 S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_ae91aea3417ef6310746cd4e2aa4c7387}{init\+\_\+game\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
 \begin{DoxyCompactList}\small\item\em Initialize and create the game screen graphics. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{common_8c_a119bd4ef50181b6e984da9d9d265ccc9}{init\+\_\+player}} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initialize and create the player graphics and position. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{common_8c_a233f7ef2b2fa3ea7d2b40def4954da59}{init\+\_\+food}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize and create the food graphics and position and score. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
@@ -48,6 +50,19 @@ Change between the 5 songs loaded or pause music.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Returns T\+R\+UE on success or F\+A\+IL on failiure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{common_8c_a233f7ef2b2fa3ea7d2b40def4954da59}\label{common_8c_a233f7ef2b2fa3ea7d2b40def4954da59}} 
+\index{common.c@{common.c}!init\_food@{init\_food}}
+\index{init\_food@{init\_food}!common.c@{common.c}}
+\subsubsection{\texorpdfstring{init\_food()}{init\_food()}}
+{\footnotesize\ttfamily char init\+\_\+food (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize and create the food graphics and position and score. 
+
+\begin{DoxyReturn}{Returns}
+T\+R\+UE on success or F\+A\+L\+SE on failure. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{common_8c_ae91aea3417ef6310746cd4e2aa4c7387}\label{common_8c_ae91aea3417ef6310746cd4e2aa4c7387}} 
 \index{common.c@{common.c}!init\_game\_screen@{init\_game\_screen}}
@@ -86,6 +101,13 @@ Returns T\+R\+UE on success or F\+A\+IL on failiure.
 \subsubsection{\texorpdfstring{init\_player()}{init\_player()}}
 {\footnotesize\ttfamily char init\+\_\+player (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
+
+
+Initialize and create the player graphics and position. 
+
+\begin{DoxyReturn}{Returns}
+T\+R\+UE on success or F\+A\+L\+SE on failure. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{common_8c_ad1c960adbe60d68cd658b40ef4c82f78}\label{common_8c_ad1c960adbe60d68cd658b40ef4c82f78}} 
 \index{common.c@{common.c}!init\_title\_screen@{init\_title\_screen}}
 \index{init\_title\_screen@{init\_title\_screen}!common.c@{common.c}}

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r_5fobjects',['r_objects',['../renderer_8h.html#a007be1247a68bc85e939f94411479a56',1,'renderer.h']]],
+  ['r_5fobjects',['r_objects',['../renderer_8h.html#af1c216fec438dd872084113317e6d9d7',1,'renderer.h']]],
   ['r_5fobjects_5fcount',['r_objects_count',['../renderer_8h.html#ac3445b19afe20b3c03c9a8ddc8f64c3d',1,'renderer.h']]],
   ['render',['render',['../renderer_8c.html#a6765cdcebe5c8445969d5f76345df457',1,'render(void):&#160;renderer.c'],['../renderer_8h.html#a6765cdcebe5c8445969d5f76345df457',1,'render(void):&#160;renderer.c']]],
   ['render_5fobjects',['render_objects',['../structrender__objects.html',1,'']]],

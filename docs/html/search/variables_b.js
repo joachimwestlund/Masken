@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['score',['score',['../structfood__object.html#aef160b7437d94056f1dc59646cd5b87d',1,'food_object']]],
-  ['song1',['song1',['../common_8h.html#a13ffa57bed25d088296cb430fdba74b0',1,'common.h']]],
-  ['song2',['song2',['../common_8h.html#a7b8ae788d180d15e1a6dda3fdbfe48bc',1,'common.h']]],
-  ['song3',['song3',['../common_8h.html#aa6fab156e5729b0c89849d048e38d12a',1,'common.h']]],
-  ['song4',['song4',['../common_8h.html#a2bfdddae97f22c1735cd5bc2bc968051',1,'common.h']]],
-  ['song5',['song5',['../common_8h.html#a542452ebe9964d32db202722cfcb095c',1,'common.h']]]
+  ['r_5fobjects',['r_objects',['../renderer_8h.html#af1c216fec438dd872084113317e6d9d7',1,'renderer.h']]],
+  ['r_5fobjects_5fcount',['r_objects_count',['../renderer_8h.html#ac3445b19afe20b3c03c9a8ddc8f64c3d',1,'renderer.h']]],
+  ['renderer',['renderer',['../renderer_8h.html#a966da7a60c4ea3ba301e26ccc5efe452',1,'renderer.h']]],
+  ['right',['RIGHT',['../structinputs.html#ab56909fbd462ae4fa285e24388efcf9a',1,'inputs']]]
 ];

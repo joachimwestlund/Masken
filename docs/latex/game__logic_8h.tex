@@ -18,7 +18,9 @@ struct \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}}
 void \mbox{\hyperlink{game__logic_8h_abdfb298c4eb2fba465cab1235f1c3723}{play}} (void)
 \begin{DoxyCompactList}\small\item\em This function will start the game from the title screen. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8h_a98ae56f79ae954e0d3a2ff2bfd47edbd}{handle\+\_\+input}} (void)
-\begin{DoxyCompactList}\small\item\em This function will check the input struct every frame and uppdate direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function will check the input struct every frame and uppdate direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__logic_8h_a7b661375fbf2de3e6f92726b502d5a08}{move\+\_\+player}} (void)
+\begin{DoxyCompactList}\small\item\em This function will move the player based on \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -36,6 +38,16 @@ struct \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} \mbox{\hy
 
 
 This function will check the input struct every frame and uppdate direction. 
+
+\mbox{\Hypertarget{game__logic_8h_a7b661375fbf2de3e6f92726b502d5a08}\label{game__logic_8h_a7b661375fbf2de3e6f92726b502d5a08}} 
+\index{game\_logic.h@{game\_logic.h}!move\_player@{move\_player}}
+\index{move\_player@{move\_player}!game\_logic.h@{game\_logic.h}}
+\subsubsection{\texorpdfstring{move\_player()}{move\_player()}}
+{\footnotesize\ttfamily void move\+\_\+player (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function will move the player based on \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} struct. 
 
 \mbox{\Hypertarget{game__logic_8h_abdfb298c4eb2fba465cab1235f1c3723}\label{game__logic_8h_abdfb298c4eb2fba465cab1235f1c3723}} 
 \index{game\_logic.h@{game\_logic.h}!play@{play}}
