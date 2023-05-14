@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['quit',['quit',['../common_8h.html#a409d6906c2b3bc7112f51e004363ef4e',1,'common.h']]]
+  ['player',['player',['../game__objects_8h.html#a4bda856d25401a0536d06bad8f9dd9ca',1,'game_objects.h']]],
+  ['player_5fpos',['player_pos',['../game__logic_8h.html#a8f28a6e47af069b27e0599dfda57a5a4',1,'game_logic.h']]]
 ];

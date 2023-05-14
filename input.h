@@ -6,7 +6,7 @@
 #include "common.h"
 #include "game_logic.h"
 
-/**< Structure containing key presses */
+/** Structure containing key presses */
 struct inputs
 {
     char LEFT;
@@ -16,7 +16,7 @@ struct inputs
     char ESCAPE;
 };
 
-/**< instantiated structure containing key presses */
+/** instantiated structure containing key presses */
 struct inputs input;
 
 /**

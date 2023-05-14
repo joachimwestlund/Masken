@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['player',['player',['../game__objects_8h.html#a4bda856d25401a0536d06bad8f9dd9ca',1,'game_objects.h']]],
-  ['player_5fpos',['player_pos',['../game__logic_8h.html#a8f28a6e47af069b27e0599dfda57a5a4',1,'game_logic.h']]]
+  ['no_5fbody_5fsections',['no_body_sections',['../structplayer__object.html#a06948963e49fd8de64945937788fc3f8',1,'player_object']]]
 ];

@@ -9,13 +9,11 @@
 \item 
 S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{structplayer__object_a156af47b8be9c09879c063ad443877a5}{head}}
 \item 
-S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{structplayer__object_a78cbc3f4a306ce98ce51b731549a5cf0}{body}}
-\item 
-int \mbox{\hyperlink{structplayer__object_a6150e0515f7202e2fb518f7206ed97dc}{x}}
-\item 
-int \mbox{\hyperlink{structplayer__object_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{structplayer__object_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}
 \item 
 int \mbox{\hyperlink{structplayer__object_a06948963e49fd8de64945937788fc3f8}{no\+\_\+body\+\_\+sections}}
+\item 
+int \mbox{\hyperlink{structplayer__object_a63177970cacb40efba67ce501ea89210}{angle}}
 \end{DoxyCompactItemize}
 
 
@@ -23,13 +21,13 @@ int \mbox{\hyperlink{structplayer__object_a06948963e49fd8de64945937788fc3f8}{no\
 structure to hold player data. 
 
 \subsection{Field Documentation}
-\mbox{\Hypertarget{structplayer__object_a78cbc3f4a306ce98ce51b731549a5cf0}\label{structplayer__object_a78cbc3f4a306ce98ce51b731549a5cf0}} 
-\index{player\_object@{player\_object}!body@{body}}
-\index{body@{body}!player\_object@{player\_object}}
-\subsubsection{\texorpdfstring{body}{body}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ body}
+\mbox{\Hypertarget{structplayer__object_a63177970cacb40efba67ce501ea89210}\label{structplayer__object_a63177970cacb40efba67ce501ea89210}} 
+\index{player\_object@{player\_object}!angle@{angle}}
+\index{angle@{angle}!player\_object@{player\_object}}
+\subsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily int angle}
 
-Graphics of the body sections \mbox{\Hypertarget{structplayer__object_a156af47b8be9c09879c063ad443877a5}\label{structplayer__object_a156af47b8be9c09879c063ad443877a5}} 
+head angle \mbox{\Hypertarget{structplayer__object_a156af47b8be9c09879c063ad443877a5}\label{structplayer__object_a156af47b8be9c09879c063ad443877a5}} 
 \index{player\_object@{player\_object}!head@{head}}
 \index{head@{head}!player\_object@{player\_object}}
 \subsubsection{\texorpdfstring{head}{head}}
@@ -41,19 +39,13 @@ Graphics of the player head \mbox{\Hypertarget{structplayer__object_a06948963e49
 \subsubsection{\texorpdfstring{no\_body\_sections}{no\_body\_sections}}
 {\footnotesize\ttfamily int no\+\_\+body\+\_\+sections}
 
-number of body sections currently \mbox{\Hypertarget{structplayer__object_a6150e0515f7202e2fb518f7206ed97dc}\label{structplayer__object_a6150e0515f7202e2fb518f7206ed97dc}} 
-\index{player\_object@{player\_object}!x@{x}}
-\index{x@{x}!player\_object@{player\_object}}
-\subsubsection{\texorpdfstring{x}{x}}
-{\footnotesize\ttfamily int x}
+number of body sections currently \mbox{\Hypertarget{structplayer__object_a55aefd071649ac9dd8133e2d8a52d11f}\label{structplayer__object_a55aefd071649ac9dd8133e2d8a52d11f}} 
+\index{player\_object@{player\_object}!rect@{rect}}
+\index{rect@{rect}!player\_object@{player\_object}}
+\subsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect rect}
 
-x position \mbox{\Hypertarget{structplayer__object_a0a2f84ed7838f07779ae24c5a9086d33}\label{structplayer__object_a0a2f84ed7838f07779ae24c5a9086d33}} 
-\index{player\_object@{player\_object}!y@{y}}
-\index{y@{y}!player\_object@{player\_object}}
-\subsubsection{\texorpdfstring{y}{y}}
-{\footnotesize\ttfamily int y}
-
-y position 
+bounding box for collision detection and position 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

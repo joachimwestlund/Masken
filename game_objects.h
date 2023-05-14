@@ -42,6 +42,7 @@ struct food_object
 /** instantiated player object for the game */
 struct player_object player;
 
+/** instantiated body object for the game */
 struct body_object body;
 
 /** instantiated food object for the game */

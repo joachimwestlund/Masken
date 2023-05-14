@@ -13,7 +13,7 @@ char \mbox{\hyperlink{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}{init\+\_\+r
 \begin{DoxyCompactList}\small\item\em Initialize the renerer for the game. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{renderer_8h_a6765cdcebe5c8445969d5f76345df457}{render}} (void)
 \begin{DoxyCompactList}\small\item\em this is the renderer that the game loop should call \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{renderer_8h_a28c729fff73fdf7e9aff018517509fcf}{add\+\_\+to\+\_\+render\+\_\+queue}} (S\+D\+L\+\_\+\+Texture $\ast$texture, int x, int y)
+void \mbox{\hyperlink{renderer_8h_a7171d26350ede501f757875cd5e3dae2}{add\+\_\+to\+\_\+render\+\_\+queue}} (S\+D\+L\+\_\+\+Texture $\ast$texture, S\+D\+L\+\_\+\+Rect rect, int angle)
 \begin{DoxyCompactList}\small\item\em this function will take in a texture and render it to the offscreen buffer. For now only 100 items can be added. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{renderer_8h_a746750d82ff06f8bca0faf22f52eb1c2}{render\+\_\+queue}} (void)
 \begin{DoxyCompactList}\small\item\em This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -31,11 +31,11 @@ S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{renderer_8h_acb08658d623221f17749
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{renderer_8h_a28c729fff73fdf7e9aff018517509fcf}\label{renderer_8h_a28c729fff73fdf7e9aff018517509fcf}} 
+\mbox{\Hypertarget{renderer_8h_a7171d26350ede501f757875cd5e3dae2}\label{renderer_8h_a7171d26350ede501f757875cd5e3dae2}} 
 \index{renderer.h@{renderer.h}!add\_to\_render\_queue@{add\_to\_render\_queue}}
 \index{add\_to\_render\_queue@{add\_to\_render\_queue}!renderer.h@{renderer.h}}
 \subsubsection{\texorpdfstring{add\_to\_render\_queue()}{add\_to\_render\_queue()}}
-{\footnotesize\ttfamily void add\+\_\+to\+\_\+render\+\_\+queue (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{texture,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void add\+\_\+to\+\_\+render\+\_\+queue (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{texture,  }\item[{S\+D\+L\+\_\+\+Rect}]{rect,  }\item[{int}]{angle }\end{DoxyParamCaption})}
 
 
 
@@ -45,9 +45,9 @@ this function will take in a texture and render it to the offscreen buffer. For 
 \begin{DoxyParams}{Parameters}
 {\em texture} & the texture to be rendered. \\
 \hline
-{\em x} & coordinate where it will be rendered. \\
+{\em rect} & the rectangle for position with and heigt of the texture and for collision detection. \\
 \hline
-{\em y} & coordinate where it will be rendered. \\
+{\em angle} & of rotation of the texture. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}\label{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}} 

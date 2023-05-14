@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['dest',['dest',['../structrender__objects.html#a1d4c1bb15892e31b9af1f4fcf5d31fab',1,'render_objects']]],
-  ['down',['DOWN',['../structinputs.html#aefd805006968caf870982fabe4a6494d',1,'inputs']]],
-  ['dx',['dx',['../structplayer__movement.html#a6a0d40b2ed6d9e674f93396212f0028f',1,'player_movement']]],
-  ['dy',['dy',['../structplayer__movement.html#a4817151aee120cc100c400d3076f4b93',1,'player_movement']]]
+  ['body',['body',['../structbody__object.html#a78cbc3f4a306ce98ce51b731549a5cf0',1,'body_object::body()'],['../game__objects_8h.html#a8e8f846b6ecb9105517230f093a03f19',1,'body():&#160;game_objects.h']]],
+  ['buffer',['buffer',['../renderer_8h.html#acb08658d623221f17749b1c1b82eae64',1,'renderer.h']]]
 ];

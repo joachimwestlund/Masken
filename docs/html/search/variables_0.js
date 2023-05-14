@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['body',['body',['../structplayer__object.html#a78cbc3f4a306ce98ce51b731549a5cf0',1,'player_object']]],
-  ['buffer',['buffer',['../renderer_8h.html#acb08658d623221f17749b1c1b82eae64',1,'renderer.h']]]
+  ['angle',['angle',['../structplayer__object.html#a63177970cacb40efba67ce501ea89210',1,'player_object::angle()'],['../structbody__object.html#a63177970cacb40efba67ce501ea89210',1,'body_object::angle()'],['../structfood__object.html#a63177970cacb40efba67ce501ea89210',1,'food_object::angle()'],['../structrender__objects.html#a63177970cacb40efba67ce501ea89210',1,'render_objects::angle()']]]
 ];
