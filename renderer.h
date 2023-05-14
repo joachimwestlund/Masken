@@ -6,10 +6,10 @@
 struct render_objects
 {
     SDL_Texture* texture;
-    SDL_Rect* dest;
+    SDL_Rect dest;
 };
 
-struct render_objects r_objects[10];
+struct render_objects r_objects[100];
 int r_objects_count;
 
 /** The renerer for this game */
@@ -41,7 +41,6 @@ void add_to_render_queue(SDL_Texture* texture, int x, int y);
  * @brief This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer.
  */
 void render_queue(void);
-
 
 
 #endif // __RENDERER_H__

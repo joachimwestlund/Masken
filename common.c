@@ -431,3 +431,19 @@ char init_player(void)
 
     return TRUE;
 }
+
+char init_food(void)
+{
+    SDL_Texture* t;
+
+    t = load_texture("apple.png", renderer);
+    if (t == NULL)
+    {
+        return FALSE;
+    }
+
+    food.texture = t;
+    food.x = 100;
+    food.y = 500;
+    food.score = 10;
+}

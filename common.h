@@ -108,6 +108,16 @@ SDL_Texture* init_title_screen(SDL_Renderer* renderer);
  */
 SDL_Texture* init_game_screen(SDL_Renderer* renderer);
 
+/**
+ * @brief Initialize and create the player graphics and position.
+ * @return TRUE on success or FALSE on failure.
+ */
 char init_player(void);
+
+/**
+ * @brief Initialize and create the food graphics and position and score.
+ * @return TRUE on success or FALSE on failure.
+ */
+char init_food(void);
 
 #endif // __COMMON_H__

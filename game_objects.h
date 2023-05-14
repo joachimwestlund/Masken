@@ -32,6 +32,9 @@ struct food_object
 /** instantiated player object for the game */
 struct player_object player;
 
+/** instantiated food object for the game */
+struct food_object food;
+
 /** Title screen texture */
 SDL_Texture* title_screen;
 
