@@ -81,6 +81,7 @@ int main(void)
         handle_input();
         if (is_playing) // this is so that the we don't just add stuff to the render queue to make it overflow. we need to fix this better.
         {
+            move_player();
             add_to_render_queue(player.head, player.x, player.y);
             add_to_render_queue(food.texture, food.x, food.y);
         }

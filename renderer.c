@@ -2,7 +2,7 @@
 
 char init_renderer(SDL_Window* window)
 {
-    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED/* | SDL_RENDERER_PRESENTVSYNC*/);
     if (renderer == NULL)
     {
         #ifdef DEBUG
@@ -30,6 +30,8 @@ void render(void)
     }
 
     SDL_RenderPresent(renderer);
+
+    SDL_Delay(3);
 }
 
 void render_queue(void)

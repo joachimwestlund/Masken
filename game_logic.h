@@ -31,4 +31,9 @@ void play(void);
  */
 void handle_input(void);
 
+/**
+ * @brief This function will move the player based on player_movement struct.
+ */
+void move_player(void);
+
 #endif // __GAME_LOGIC_H__
