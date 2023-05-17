@@ -9,6 +9,9 @@
 #include "input.h"
 #include "game_objects.h"
 
+char head_direction_changed;
+char head_direction_changed_completed;
+
 /** structure to hande player movement and position */
 struct player_movement
 {
@@ -16,6 +19,10 @@ struct player_movement
     int dx;
     /** delta y position to update player x position before next frame */
     int dy;
+    /** previous delta x posision */
+    int prev_dx;
+    /** previous delta y posision */
+    int prev_dy;
 };
 
 /** the instantiated player position and movement structure */
@@ -35,5 +42,12 @@ void handle_input(void);
  * @brief This function will move the player based on player_movement struct.
  */
 void move_player(void);
+
+/**
+ * @brief This function handles the collisions in the game.
+ */
+void check_and_handle_collisions(void);
+
+void add_body_parts(void);
 
 #endif // __GAME_LOGIC_H__

@@ -12,6 +12,8 @@ struct player_object
     int no_body_sections;
     /** head angle */
     int angle;
+    /** pixels to move before direction change */
+    int delta_pixels;
 };
 
 /** structure to hold body data. */
@@ -23,6 +25,18 @@ struct body_object
     SDL_Rect rect;
     /** head angle */
     int angle;
+    /** delta position in x direction */
+    int dx;
+    /** delta position in y direction */
+    int dy;
+    /** previous delta x posision */
+    int prev_dx;
+    /** previous delta y posision */
+    int prev_dy;
+    /** position to start changeing direction */
+    SDL_Rect change_pos;
+    char segment_has_reached_last_pos;
+    char should_change_dir;
 };
 
 /** structure to hold food data for the worm. */
@@ -39,11 +53,20 @@ struct food_object
 
 };
 
+/** maximum number of objects that are renderable */
+int max_number_of_objects;
+
+/** maximum number of body objects that are allowed. Should be max_number_of_objects - other_render_objects */
+int max_number_of_body_objects;
+
 /** instantiated player object for the game */
 struct player_object player;
 
-/** instantiated body object for the game */
+/** A instantiated body object that is used to copy into the body_sections array */
 struct body_object body;
+
+/** array of body objects for the game. The number of objects are stored in the player struct. */
+struct body_object body_sections[98];
 
 /** instantiated food object for the game */
 struct food_object food;

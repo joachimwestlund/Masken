@@ -436,6 +436,7 @@ char init_player(void)
     rect.x = 400;
     rect.y = 300;
     player.rect = rect;
+    player.delta_pixels = 16;
 
     return TRUE;
 }

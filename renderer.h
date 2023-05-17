@@ -3,6 +3,7 @@
 
 #include "common.h"
 
+/** structure to hold objects to be rendered */
 struct render_objects
 {
     SDL_Texture* texture;
@@ -10,7 +11,9 @@ struct render_objects
     int angle;
 };
 
+/** instantiated render objects array, render queue. This is the amount of object that can be rendered per frame */
 struct render_objects r_objects[100];
+/** number of object in renderer queue */
 int r_objects_count;
 
 /** The renerer for this game */

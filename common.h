@@ -13,16 +13,25 @@
 #define TRUE 1
 #define FALSE 0
 
+/** flag to check if game is playing */
 char is_playing;
+/** game over flag */
 char game_over;
+/** user has pressed escape and wants to quit */
 char quit;
+/** is adding body parts */
+char is_adding_body_parts;
 
+/** song no.1 */
 Mix_Music* song1;
+/** song no.2 */
 Mix_Music* song2;
+/** song no.3 */
 Mix_Music* song3;
+/** song no.4 */
 Mix_Music* song4;
+/** song no.4 */
 Mix_Music* song5;
-
 
 /**
  * @brief Initializes the SDL2 graphics library for this game.

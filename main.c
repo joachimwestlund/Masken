@@ -1,12 +1,11 @@
 /**
- *      @mainpage
- *      @brief Masken is a worm clone written in C for educational purposes.
+ * @mainpage
+ * @brief Masken is a worm clone written in C for educational purposes.
+ * @details It uses the SDL2 library version 2.26.5 for the graphics
+ *          https://www.libsdl.org.
  *
- *      @details It uses the SDL2 library version 2.26.5 for the graphics
- *               https://www.libsdl.org.
- *
- *      @date 2023-05-10
- *      @author Joachim Westlund
+ * @date 2023-05-10
+ * @author Joachim Westlund
  */
 #include <stdio.h>
 #define SDL_MAIN_HANDLED
@@ -31,7 +30,7 @@ int main(void)
     is_playing = FALSE;
     game_over = FALSE;
     quit = FALSE;
-    SDL_bool collision = SDL_FALSE;
+    is_adding_body_parts = FALSE;
 
     printf("Masken. A worm clone made by Joachim Westlund.\n\n");
 
@@ -64,16 +63,18 @@ int main(void)
         return -1;
     }
 
+    max_number_of_objects = 100;
+    max_number_of_body_objects = max_number_of_objects - 2; // minus 1 head and 1 food.
+
+    //body_sections = malloc(max_number_of_body_objects * sizeof(struct body_object));
+
     init_player();
     init_body();
     init_food();
 
-    change_music(1);
+    //change_music(1);
 
     // Main event and game loop.
-    // Input
-    // GameLogic
-    // Render
     while(!quit)
     {
         input = get_inputs(&event);
@@ -81,25 +82,32 @@ int main(void)
             quit = TRUE;
 
         handle_input();
-        if (is_playing) // this is so that the we don't just add stuff to the render queue to make it overflow. we need to fix this better.
+
+        if (is_playing)
         {
             move_player();
             add_to_render_queue(player.head, player.rect, player.angle);
             add_to_render_queue(food.texture, food.rect, food.angle);
+            for (int i = 0; i < player.no_body_sections; i++)
+            {
+                add_to_render_queue(body_sections[i].body, body_sections[i].rect, body_sections[i].angle);
+            }
         }
 
         render();
 
-        collision = SDL_HasIntersection(&player.rect, &food.rect);
-        if (collision == SDL_TRUE)
-        {
-            printf("collision\n");
-        }
+        check_and_handle_collisions();
 
         SDL_Delay(3);
+
+        is_adding_body_parts = FALSE;
+
+        if (game_over)
+            is_playing = FALSE;
     }
 
     // free stuff and quit
+   //free(body_sections);
     SDL_DestroyRenderer(renderer);
     SDL_FreeSurface(screen_surface);
     SDL_DestroyWindow(window);

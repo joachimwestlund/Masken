@@ -47,6 +47,6 @@ void add_to_render_queue(SDL_Texture* texture, SDL_Rect rect, int angle)
     r_objects[r_objects_count].dest = rect;
     r_objects[r_objects_count].texture = texture;
     r_objects[r_objects_count].angle = angle;
-    if (r_objects_count < 100)
+    if (r_objects_count < max_number_of_objects)
         r_objects_count++;
 }
