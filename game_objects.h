@@ -37,6 +37,8 @@ struct body_object
     SDL_Rect change_pos;
     char segment_has_reached_last_pos;
     char should_change_dir;
+    int next_dx;
+    int next_dy;
 };
 
 /** structure to hold food data for the worm. */

@@ -11,6 +11,18 @@
 
 char head_direction_changed;
 char head_direction_changed_completed;
+int move_point_index;
+
+struct move_point
+{
+    int dx;
+    int dy;
+    int x;
+    int y;
+    SDL_Rect rect;
+};
+
+struct move_point move_points[1000];
 
 /** structure to hande player movement and position */
 struct player_movement
