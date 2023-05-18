@@ -61,7 +61,7 @@ struct player_object player;
 struct body_object body;
 
 /** array of body objects for the game. The number of objects are stored in the player struct. */
-struct body_object body_sections[98];
+struct body_object body_sections[500];
 
 /** instantiated food object for the game */
 struct food_object food;

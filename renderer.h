@@ -12,7 +12,7 @@ struct render_objects
 };
 
 /** instantiated render objects array, render queue. This is the amount of object that can be rendered per frame */
-struct render_objects r_objects[100];
+struct render_objects r_objects[300];
 /** number of object in renderer queue */
 int r_objects_count;
 

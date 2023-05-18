@@ -171,20 +171,21 @@ void check_and_handle_collisions(void)
         if (collision == SDL_TRUE)
         {
             printf("collision body part: %d. move point index: %d\n", i, move_point_index);
-            //game_over = TRUE;
+            game_over = TRUE;
         }
     }
 }
 
 void add_body_parts(void)
 {
-    int sections_before = player.no_body_sections;
     int body_size = 16;
     int count = 0;
 
-    player.no_body_sections += food.score;
     if (player.no_body_sections >= max_number_of_body_objects)
+    {
         player.no_body_sections = max_number_of_body_objects;
+        return;
+    }
 
     if ((player.no_body_sections + food.score) <= max_number_of_body_objects)
     {
@@ -196,6 +197,8 @@ void add_body_parts(void)
     }
     if (count < 0)
         count = 0;
+
+    player.no_body_sections += count;
 
     SDL_Rect pos;
     pos.h = body.rect.h;
