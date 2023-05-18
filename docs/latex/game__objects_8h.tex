@@ -12,9 +12,15 @@ struct \mbox{\hyperlink{structfood__object}{food\+\_\+object}}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
+int \mbox{\hyperlink{game__objects_8h_a140a53ed171ef02a1ecf57e6e11a5394}{max\+\_\+number\+\_\+of\+\_\+objects}}
+\item 
+int \mbox{\hyperlink{game__objects_8h_a2f390a846c2137f525c61ce0e9e1fe7a}{max\+\_\+number\+\_\+of\+\_\+body\+\_\+objects}}
+\item 
 struct \mbox{\hyperlink{structplayer__object}{player\+\_\+object}} \mbox{\hyperlink{game__objects_8h_a4bda856d25401a0536d06bad8f9dd9ca}{player}}
 \item 
 struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} \mbox{\hyperlink{game__objects_8h_a8e8f846b6ecb9105517230f093a03f19}{body}}
+\item 
+struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} \mbox{\hyperlink{game__objects_8h_a4f35ffdf2a9717037b1f34ef0ee7c6fc}{body\+\_\+sections}} \mbox{[}98\mbox{]}
 \item 
 struct \mbox{\hyperlink{structfood__object}{food\+\_\+object}} \mbox{\hyperlink{game__objects_8h_add091b0d3acada1da2bca27523bf7b6b}{food}}
 \item 
@@ -31,7 +37,13 @@ S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{game__objects_8h_a4396cf124f19320
 \subsubsection{\texorpdfstring{body}{body}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} body}
 
-instantiated body object for the game \mbox{\Hypertarget{game__objects_8h_add091b0d3acada1da2bca27523bf7b6b}\label{game__objects_8h_add091b0d3acada1da2bca27523bf7b6b}} 
+A instantiated body object that is used to copy into the body\+\_\+sections array \mbox{\Hypertarget{game__objects_8h_a4f35ffdf2a9717037b1f34ef0ee7c6fc}\label{game__objects_8h_a4f35ffdf2a9717037b1f34ef0ee7c6fc}} 
+\index{game\_objects.h@{game\_objects.h}!body\_sections@{body\_sections}}
+\index{body\_sections@{body\_sections}!game\_objects.h@{game\_objects.h}}
+\subsubsection{\texorpdfstring{body\_sections}{body\_sections}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} body\+\_\+sections\mbox{[}98\mbox{]}}
+
+array of body objects for the game. The number of objects are stored in the player struct. \mbox{\Hypertarget{game__objects_8h_add091b0d3acada1da2bca27523bf7b6b}\label{game__objects_8h_add091b0d3acada1da2bca27523bf7b6b}} 
 \index{game\_objects.h@{game\_objects.h}!food@{food}}
 \index{food@{food}!game\_objects.h@{game\_objects.h}}
 \subsubsection{\texorpdfstring{food}{food}}
@@ -43,7 +55,19 @@ instantiated food object for the game \mbox{\Hypertarget{game__objects_8h_a4396c
 \subsubsection{\texorpdfstring{game\_screen}{game\_screen}}
 {\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ game\+\_\+screen}
 
-Game screen texture \mbox{\Hypertarget{game__objects_8h_a4bda856d25401a0536d06bad8f9dd9ca}\label{game__objects_8h_a4bda856d25401a0536d06bad8f9dd9ca}} 
+Game screen texture \mbox{\Hypertarget{game__objects_8h_a2f390a846c2137f525c61ce0e9e1fe7a}\label{game__objects_8h_a2f390a846c2137f525c61ce0e9e1fe7a}} 
+\index{game\_objects.h@{game\_objects.h}!max\_number\_of\_body\_objects@{max\_number\_of\_body\_objects}}
+\index{max\_number\_of\_body\_objects@{max\_number\_of\_body\_objects}!game\_objects.h@{game\_objects.h}}
+\subsubsection{\texorpdfstring{max\_number\_of\_body\_objects}{max\_number\_of\_body\_objects}}
+{\footnotesize\ttfamily int max\+\_\+number\+\_\+of\+\_\+body\+\_\+objects}
+
+maximum number of body objects that are allowed. Should be max\+\_\+number\+\_\+of\+\_\+objects -\/ other\+\_\+render\+\_\+objects \mbox{\Hypertarget{game__objects_8h_a140a53ed171ef02a1ecf57e6e11a5394}\label{game__objects_8h_a140a53ed171ef02a1ecf57e6e11a5394}} 
+\index{game\_objects.h@{game\_objects.h}!max\_number\_of\_objects@{max\_number\_of\_objects}}
+\index{max\_number\_of\_objects@{max\_number\_of\_objects}!game\_objects.h@{game\_objects.h}}
+\subsubsection{\texorpdfstring{max\_number\_of\_objects}{max\_number\_of\_objects}}
+{\footnotesize\ttfamily int max\+\_\+number\+\_\+of\+\_\+objects}
+
+maximum number of objects that are renderable \mbox{\Hypertarget{game__objects_8h_a4bda856d25401a0536d06bad8f9dd9ca}\label{game__objects_8h_a4bda856d25401a0536d06bad8f9dd9ca}} 
 \index{game\_objects.h@{game\_objects.h}!player@{player}}
 \index{player@{player}!game\_objects.h@{game\_objects.h}}
 \subsubsection{\texorpdfstring{player}{player}}

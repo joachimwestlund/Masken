@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quit',['quit',['../common_8h.html#a409d6906c2b3bc7112f51e004363ef4e',1,'common.h']]]
+  ['no_5fbody_5fsections',['no_body_sections',['../structplayer__object.html#a06948963e49fd8de64945937788fc3f8',1,'player_object']]]
 ];

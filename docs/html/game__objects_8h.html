@@ -85,10 +85,16 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a140a53ed171ef02a1ecf57e6e11a5394"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__objects_8h.html#a140a53ed171ef02a1ecf57e6e11a5394">max_number_of_objects</a></td></tr>
+<tr class="separator:a140a53ed171ef02a1ecf57e6e11a5394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f390a846c2137f525c61ce0e9e1fe7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__objects_8h.html#a2f390a846c2137f525c61ce0e9e1fe7a">max_number_of_body_objects</a></td></tr>
+<tr class="separator:a2f390a846c2137f525c61ce0e9e1fe7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bda856d25401a0536d06bad8f9dd9ca"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structplayer__object.html">player_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__objects_8h.html#a4bda856d25401a0536d06bad8f9dd9ca">player</a></td></tr>
 <tr class="separator:a4bda856d25401a0536d06bad8f9dd9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e8f846b6ecb9105517230f093a03f19"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbody__object.html">body_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__objects_8h.html#a8e8f846b6ecb9105517230f093a03f19">body</a></td></tr>
 <tr class="separator:a8e8f846b6ecb9105517230f093a03f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f35ffdf2a9717037b1f34ef0ee7c6fc"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbody__object.html">body_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__objects_8h.html#a4f35ffdf2a9717037b1f34ef0ee7c6fc">body_sections</a> [98]</td></tr>
+<tr class="separator:a4f35ffdf2a9717037b1f34ef0ee7c6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add091b0d3acada1da2bca27523bf7b6b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structfood__object.html">food_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__objects_8h.html#add091b0d3acada1da2bca27523bf7b6b">food</a></td></tr>
 <tr class="separator:add091b0d3acada1da2bca27523bf7b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4abd965f9ba7c99a8527d175c6243a3a"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__objects_8h.html#a4abd965f9ba7c99a8527d175c6243a3a">title_screen</a></td></tr>
@@ -108,7 +114,22 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>instantiated body object for the game </p>
+<p>A instantiated body object that is used to copy into the body_sections array </p>
+
+</div>
+</div>
+<a id="a4f35ffdf2a9717037b1f34ef0ee7c6fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f35ffdf2a9717037b1f34ef0ee7c6fc">&#9670;&nbsp;</a></span>body_sections</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structbody__object.html">body_object</a> body_sections[98]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>array of body objects for the game. The number of objects are stored in the player struct. </p>
 
 </div>
 </div>
@@ -139,6 +160,36 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Game screen texture </p>
+
+</div>
+</div>
+<a id="a2f390a846c2137f525c61ce0e9e1fe7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f390a846c2137f525c61ce0e9e1fe7a">&#9670;&nbsp;</a></span>max_number_of_body_objects</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int max_number_of_body_objects</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>maximum number of body objects that are allowed. Should be max_number_of_objects - other_render_objects </p>
+
+</div>
+</div>
+<a id="a140a53ed171ef02a1ecf57e6e11a5394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a140a53ed171ef02a1ecf57e6e11a5394">&#9670;&nbsp;</a></span>max_number_of_objects</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int max_number_of_objects</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>maximum number of objects that are renderable </p>
 
 </div>
 </div>

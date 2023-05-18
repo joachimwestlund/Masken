@@ -6,13 +6,41 @@
 \item 
 void \mbox{\hyperlink{game__logic_8c_abdfb298c4eb2fba465cab1235f1c3723}{play}} (void)
 \begin{DoxyCompactList}\small\item\em This function will start the game from the title screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__logic_8c_afc0188d2c8d842b0b471f2a78e2f1018}{add\+\_\+move\+\_\+point}} (S\+D\+L\+\_\+\+Rect rect, int dx, int dy)
+\item 
 void \mbox{\hyperlink{game__logic_8c_a98ae56f79ae954e0d3a2ff2bfd47edbd}{handle\+\_\+input}} (void)
 \begin{DoxyCompactList}\small\item\em This function will check the input struct every frame and uppdate direction. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8c_a7b661375fbf2de3e6f92726b502d5a08}{move\+\_\+player}} (void)
-\begin{DoxyCompactList}\small\item\em This function will move the player based on \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function will move the player based on \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__logic_8c_ac1ebf23fb52af2cfcf25f72f13f7bc91}{check\+\_\+and\+\_\+handle\+\_\+collisions}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles the collisions in the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__logic_8c_af4d7f410fc298cda5c7fad5c56ebe502}{add\+\_\+body\+\_\+parts}} (void)
+\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
+\mbox{\Hypertarget{game__logic_8c_af4d7f410fc298cda5c7fad5c56ebe502}\label{game__logic_8c_af4d7f410fc298cda5c7fad5c56ebe502}} 
+\index{game\_logic.c@{game\_logic.c}!add\_body\_parts@{add\_body\_parts}}
+\index{add\_body\_parts@{add\_body\_parts}!game\_logic.c@{game\_logic.c}}
+\subsubsection{\texorpdfstring{add\_body\_parts()}{add\_body\_parts()}}
+{\footnotesize\ttfamily void add\+\_\+body\+\_\+parts (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+A function to add body parts to the worm and based on the food score \mbox{\Hypertarget{game__logic_8c_afc0188d2c8d842b0b471f2a78e2f1018}\label{game__logic_8c_afc0188d2c8d842b0b471f2a78e2f1018}} 
+\index{game\_logic.c@{game\_logic.c}!add\_move\_point@{add\_move\_point}}
+\index{add\_move\_point@{add\_move\_point}!game\_logic.c@{game\_logic.c}}
+\subsubsection{\texorpdfstring{add\_move\_point()}{add\_move\_point()}}
+{\footnotesize\ttfamily void add\+\_\+move\+\_\+point (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{rect,  }\item[{int}]{dx,  }\item[{int}]{dy }\end{DoxyParamCaption})}
+
+This function adds a move point to the array in a semi stack sense \mbox{\Hypertarget{game__logic_8c_ac1ebf23fb52af2cfcf25f72f13f7bc91}\label{game__logic_8c_ac1ebf23fb52af2cfcf25f72f13f7bc91}} 
+\index{game\_logic.c@{game\_logic.c}!check\_and\_handle\_collisions@{check\_and\_handle\_collisions}}
+\index{check\_and\_handle\_collisions@{check\_and\_handle\_collisions}!game\_logic.c@{game\_logic.c}}
+\subsubsection{\texorpdfstring{check\_and\_handle\_collisions()}{check\_and\_handle\_collisions()}}
+{\footnotesize\ttfamily void check\+\_\+and\+\_\+handle\+\_\+collisions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles the collisions in the game. 
+
 \mbox{\Hypertarget{game__logic_8c_a98ae56f79ae954e0d3a2ff2bfd47edbd}\label{game__logic_8c_a98ae56f79ae954e0d3a2ff2bfd47edbd}} 
 \index{game\_logic.c@{game\_logic.c}!handle\_input@{handle\_input}}
 \index{handle\_input@{handle\_input}!game\_logic.c@{game\_logic.c}}
