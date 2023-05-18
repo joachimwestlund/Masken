@@ -7,9 +7,19 @@ void play(void)
     is_playing = TRUE;
     player_pos.dy = -1;
     player_pos.dx = 0;
-    head_direction_changed = FALSE;
-    head_direction_changed_completed = TRUE;
     move_point_index = 0;
+}
+
+void add_move_point(SDL_Rect rect, int dx, int dy)
+{
+    for(int i = move_point_index; i > 0; i--)
+    {
+        move_points[i] = move_points[i - 1];
+    }
+    move_points[0].rect = rect;
+    move_points[0].dx = dx;
+    move_points[0].dy = dy;
+    move_point_index++;
 }
 
 void handle_input(void)
@@ -22,13 +32,9 @@ void handle_input(void)
             player_pos.prev_dy = player_pos.dy;
             player_pos.dy = 1;
             player_pos.dx = 0;
-            head_direction_changed = TRUE;
             if (player.no_body_sections > 0)
             {
-                move_points[move_point_index].rect = player.rect;
-                move_points[move_point_index].dx = player_pos.dx;
-                move_points[move_point_index].dy = player_pos.dy;
-                move_point_index++;
+                add_move_point(player.rect, player_pos.dx, player_pos.dy);
             }
         }
         if (input.UP == TRUE)
@@ -37,13 +43,9 @@ void handle_input(void)
             player_pos.prev_dy = player_pos.dy;
             player_pos.dy = -1;
             player_pos.dx = 0;
-            head_direction_changed = TRUE;
             if (player.no_body_sections > 0)
             {
-                move_points[move_point_index].rect = player.rect;
-                move_points[move_point_index].dx = player_pos.dx;
-                move_points[move_point_index].dy = player_pos.dy;
-                move_point_index++;
+                add_move_point(player.rect, player_pos.dx, player_pos.dy);
             }
         }
         if (input.LEFT == TRUE)
@@ -52,13 +54,9 @@ void handle_input(void)
             player_pos.prev_dy = player_pos.dy;
             player_pos.dx = -1;
             player_pos.dy = 0;
-            head_direction_changed_completed = FALSE;
             if (player.no_body_sections > 0)
             {
-                move_points[move_point_index].rect = player.rect;
-                move_points[move_point_index].dx = player_pos.dx;
-                move_points[move_point_index].dy = player_pos.dy;
-                move_point_index++;
+                add_move_point(player.rect, player_pos.dx, player_pos.dy);
             }
         }
         if (input.RIGHT == TRUE)
@@ -67,13 +65,9 @@ void handle_input(void)
             player_pos.prev_dy = player_pos.dy;
             player_pos.dx = 1;
             player_pos.dy = 0;
-            head_direction_changed = TRUE;
             if (player.no_body_sections > 0)
             {
-                move_points[move_point_index].rect = player.rect;
-                move_points[move_point_index].dx = player_pos.dx;
-                move_points[move_point_index].dy = player_pos.dy;
-                move_point_index++;
+                add_move_point(player.rect, player_pos.dx, player_pos.dy);
             }
         }
         #ifdef DEBUG
@@ -233,10 +227,6 @@ void add_body_parts(void)
             body_sections[sections_before + i].angle = body.angle;
             body_sections[sections_before + i].dx = player_pos.dx;
             body_sections[sections_before + i].dy = player_pos.dy;
-            body_sections[sections_before + i].prev_dx = player_pos.dx;
-            body_sections[sections_before + i].prev_dy = player_pos.dy;
-            body_sections[sections_before + i].segment_has_reached_last_pos = TRUE;
-            body_sections[sections_before + i].should_change_dir = FALSE;
         }
     }
 }

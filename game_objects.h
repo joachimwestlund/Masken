@@ -29,16 +29,9 @@ struct body_object
     int dx;
     /** delta position in y direction */
     int dy;
-    /** previous delta x posision */
-    int prev_dx;
-    /** previous delta y posision */
-    int prev_dy;
     /** position to start changeing direction */
     SDL_Rect change_pos;
-    char segment_has_reached_last_pos;
-    char should_change_dir;
-    int next_dx;
-    int next_dy;
+
 };
 
 /** structure to hold food data for the worm. */
