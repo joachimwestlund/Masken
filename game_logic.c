@@ -28,8 +28,8 @@ void handle_input(void)
     {
         if (input.DOWN == TRUE)
         {
-            player_pos.prev_dx = player_pos.dx;
-            player_pos.prev_dy = player_pos.dy;
+            if (player_pos.dy == -1 && player.no_body_sections > 0)
+                game_over = TRUE;
             player_pos.dy = 1;
             player_pos.dx = 0;
             if (player.no_body_sections > 0)
@@ -39,8 +39,8 @@ void handle_input(void)
         }
         if (input.UP == TRUE)
         {
-            player_pos.prev_dx = player_pos.dx;
-            player_pos.prev_dy = player_pos.dy;
+            if (player_pos.dy == 1 && player.no_body_sections > 0)
+                game_over = TRUE;
             player_pos.dy = -1;
             player_pos.dx = 0;
             if (player.no_body_sections > 0)
@@ -50,8 +50,8 @@ void handle_input(void)
         }
         if (input.LEFT == TRUE)
         {
-            player_pos.prev_dx = player_pos.dx;
-            player_pos.prev_dy = player_pos.dy;
+            if (player_pos.dx == 1 && player.no_body_sections > 0)
+                game_over = TRUE;
             player_pos.dx = -1;
             player_pos.dy = 0;
             if (player.no_body_sections > 0)
@@ -61,8 +61,8 @@ void handle_input(void)
         }
         if (input.RIGHT == TRUE)
         {
-            player_pos.prev_dx = player_pos.dx;
-            player_pos.prev_dy = player_pos.dy;
+            if (player_pos.dx == -1 && player.no_body_sections > 0)
+                game_over = TRUE;
             player_pos.dx = 1;
             player_pos.dy = 0;
             if (player.no_body_sections > 0)
@@ -110,8 +110,6 @@ void move_player(void)
             player.rect.y = 568;
         player.angle = 180;
     }
-
-
 
     // handle body
     if (player.no_body_sections > 0)

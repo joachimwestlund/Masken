@@ -30,10 +30,6 @@ struct player_movement
     int dx;
     /** delta y position to update player x position before next frame */
     int dy;
-    /** previous delta x posision */
-    int prev_dx;
-    /** previous delta y posision */
-    int prev_dy;
 };
 
 /** the instantiated player position and movement structure */

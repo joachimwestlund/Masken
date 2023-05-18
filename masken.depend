@@ -401,7 +401,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1684310597 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
+1684404127 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
 	<stdio.h>
 	<SDL2/SDL.h>
 	"debug.h"
@@ -422,7 +422,7 @@
 	"common.h"
 	"game_logic.h"
 
-1684402843 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.c
+1684404244 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.c
 	"game_logic.h"
 
 1675734272 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_image.h
@@ -445,7 +445,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1684402988 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
+1684403622 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
 	<stdio.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_ttf.h>

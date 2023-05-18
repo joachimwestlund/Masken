@@ -79,7 +79,15 @@ int main(void)
     {
         input = get_inputs(&event);
         if (input->ESCAPE == TRUE)
-            quit = TRUE;
+        {
+            if (is_playing == TRUE)
+            {
+                is_playing = FALSE;
+                // TODO: clean up so that the game resets
+            }
+            else
+                quit = TRUE;
+        }
 
         handle_input();
 
@@ -93,6 +101,10 @@ int main(void)
                 add_to_render_queue(body_sections[i].body, body_sections[i].rect, body_sections[i].angle);
             }
         }
+        else
+        {
+            // TODO: clean up so that the game resets
+        }
 
         render();
 
@@ -102,8 +114,9 @@ int main(void)
 
         is_adding_body_parts = FALSE;
 
-        if (game_over)
+        if (game_over) {
             is_playing = FALSE;
+        }
     }
 
     // free stuff and quit
