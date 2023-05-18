@@ -148,7 +148,7 @@ void move_player(void)
             }
         }
     }
-    printf("%d\n", move_point_index);
+    printf("move point index: %d  body segments: %d\n", move_point_index, player.no_body_sections);
 }
 
 void check_and_handle_collisions(void)
@@ -164,12 +164,14 @@ void check_and_handle_collisions(void)
         is_adding_body_parts = TRUE;
     }
 
-    for (int i = 0; i < player.no_body_sections; i++)
+    // check for collision but not for the first body segment behind the head.
+    for (int i = 1; i < player.no_body_sections; i++)
     {
         collision = SDL_HasIntersection(&player.rect, &body_sections[i].rect);
         if (collision == SDL_TRUE)
         {
-            printf("collision with body.\n");
+            printf("collision body part: %d. move point index: %d\n", i, move_point_index);
+            //game_over = TRUE;
         }
     }
 }
@@ -178,53 +180,68 @@ void add_body_parts(void)
 {
     int sections_before = player.no_body_sections;
     int body_size = 16;
+    int count = 0;
 
     player.no_body_sections += food.score;
     if (player.no_body_sections >= max_number_of_body_objects)
         player.no_body_sections = max_number_of_body_objects;
+
+    if ((player.no_body_sections + food.score) <= max_number_of_body_objects)
+    {
+        count = food.score;
+    }
+    else
+    {
+        count = max_number_of_body_objects - (player.no_body_sections + food.score);
+    }
+    if (count < 0)
+        count = 0;
 
     SDL_Rect pos;
     pos.h = body.rect.h;
     pos.w = body.rect.w;
 
     if (player_pos.dx == -1)
-        player.rect.x = player.rect.x - (body_size * food.score);
+        player.rect.x = player.rect.x - (body_size * count);
     if (player_pos.dx == 1)
-        player.rect.x = player.rect.x + (body_size * food.score);
+        player.rect.x = player.rect.x + (body_size * count);
     if (player_pos.dy == -1)
-        player.rect.y = player.rect.y - (body_size * food.score);
+        player.rect.y = player.rect.y - (body_size * count);
     if (player_pos.dy == 1)
-        player.rect.y = player.rect.y + (body_size * food.score);
+        player.rect.y = player.rect.y + (body_size * count);
 
-    for(int i = 0; i < food.score; i++)
+
+    for(int i = player.no_body_sections; i >= 0; i--)
     {
-        if ((sections_before + i) <= max_number_of_body_objects)
+        body_sections[i + count] = body_sections[i];
+    }
+
+    for(int i = 0; i < count; i++)
+    {
+        if (player_pos.dx == -1)
         {
-            if (player_pos.dx == -1)
-            {
-                pos.x = player.rect.x + (body_size * (i+1));
-                pos.y = player.rect.y;
-            }
-            if (player_pos.dx == 1)
-            {
-                pos.x = player.rect.x - (body_size * (i+1));
-                pos.y = player.rect.y;
-            }
-            if (player_pos.dy == -1)
-            {
-                pos.y = player.rect.y + (body_size * (i+1));
-                pos.x = player.rect.x;
-            }
-            if (player_pos.dy == 1)
-            {
-                pos.y = player.rect.y - (body_size * (i+1));
-                pos.x = player.rect.x;
-            }
-            body_sections[sections_before + i].rect = pos;
-            body_sections[sections_before + i].body = body.body;
-            body_sections[sections_before + i].angle = body.angle;
-            body_sections[sections_before + i].dx = player_pos.dx;
-            body_sections[sections_before + i].dy = player_pos.dy;
+            pos.x = player.rect.x + (body_size * (i+1));
+            pos.y = player.rect.y;
         }
+        if (player_pos.dx == 1)
+        {
+            pos.x = player.rect.x - (body_size * (i+1));
+            pos.y = player.rect.y;
+        }
+        if (player_pos.dy == -1)
+        {
+            pos.y = player.rect.y + (body_size * (i+1));
+            pos.x = player.rect.x;
+        }
+        if (player_pos.dy == 1)
+        {
+            pos.y = player.rect.y - (body_size * (i+1));
+            pos.x = player.rect.x;
+        }
+        body_sections[i].rect = pos;
+        body_sections[i].body = body.body;
+        body_sections[i].angle = body.angle;
+        body_sections[i].dx = player_pos.dx;
+        body_sections[i].dy = player_pos.dy;
     }
 }
