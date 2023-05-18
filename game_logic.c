@@ -3,11 +3,38 @@
 void play(void)
 {
     if (is_playing != TRUE)
-        //change_music(5);
+        change_music(4);
     is_playing = TRUE;
     player_pos.dy = -1;
     player_pos.dx = 0;
     move_point_index = 0;
+    score = 0;
+}
+
+void add_to_score(int s)
+{
+    score += s;
+    #ifdef DEBUG
+        printf("Score: %d\n", score);
+    #endif // DEBUG
+}
+
+void reset_game(void)
+{
+    player.rect.x = 400;
+    player.rect.y = 300;
+    player.angle = 0;
+    player.no_body_sections = 0;
+    move_point_index = 0;
+    score = 0;
+}
+
+void game_over_func(void)
+{
+    game_over = TRUE;
+    is_playing = FALSE;
+    reset_game();
+    change_music(5);
 }
 
 void add_move_point(SDL_Rect rect, int dx, int dy)
@@ -29,7 +56,7 @@ void handle_input(void)
         if (input.DOWN == TRUE)
         {
             if (player_pos.dy == -1 && player.no_body_sections > 0)
-                game_over = TRUE;
+                game_over_func();
             player_pos.dy = 1;
             player_pos.dx = 0;
             if (player.no_body_sections > 0)
@@ -40,7 +67,7 @@ void handle_input(void)
         if (input.UP == TRUE)
         {
             if (player_pos.dy == 1 && player.no_body_sections > 0)
-                game_over = TRUE;
+                game_over_func();
             player_pos.dy = -1;
             player_pos.dx = 0;
             if (player.no_body_sections > 0)
@@ -51,7 +78,7 @@ void handle_input(void)
         if (input.LEFT == TRUE)
         {
             if (player_pos.dx == 1 && player.no_body_sections > 0)
-                game_over = TRUE;
+                game_over_func();
             player_pos.dx = -1;
             player_pos.dy = 0;
             if (player.no_body_sections > 0)
@@ -62,7 +89,7 @@ void handle_input(void)
         if (input.RIGHT == TRUE)
         {
             if (player_pos.dx == -1 && player.no_body_sections > 0)
-                game_over = TRUE;
+                game_over_func();
             player_pos.dx = 1;
             player_pos.dy = 0;
             if (player.no_body_sections > 0)
@@ -70,8 +97,8 @@ void handle_input(void)
                 add_move_point(player.rect, player_pos.dx, player_pos.dy);
             }
         }
-        #ifdef DEBUG
-            //printf("dx: %d, dy:%d\n", player_pos.dx, player_pos.dy);
+        #ifdef VERBOSE_DEBUG
+            printf("dx: %d, dy:%d\n", player_pos.dx, player_pos.dy);
         #endif // DEBUG
     }
 }
@@ -85,29 +112,29 @@ void move_player(void)
     if (player_pos.dx == -1)
     {
         player.rect.x--;
-        if (player.rect.x <= 16)
-            player.rect.x = 16;
+        if (player.rect.x < 16)
+            game_over_func();
         player.angle = 270;
     }
     else if (player_pos.dx == 1)
     {
         player.rect.x++;
-        if (player.rect.x >= 768)
-            player.rect.x = 768;
+        if (player.rect.x > 768)
+            game_over_func();
         player.angle = 90;
     }
     else if (player_pos.dy == -1)
     {
         player.rect.y--;
-        if (player.rect.y <= 101)
-            player.rect.y = 101;
+        if (player.rect.y < 101)
+            game_over_func();
         player.angle = 0;
     }
     else if (player_pos.dy == 1)
     {
         player.rect.y++;
-        if (player.rect.y >= 568)
-            player.rect.y = 568;
+        if (player.rect.y > 568)
+            game_over_func();
         player.angle = 180;
     }
 
@@ -148,7 +175,10 @@ void move_player(void)
             }
         }
     }
-    printf("move point index: %d  body segments: %d\n", move_point_index, player.no_body_sections);
+
+    #ifdef VERBOSE_DEBUG
+        printf("move point index: %d  body segments: %d\n", move_point_index, player.no_body_sections);
+    #endif // DEBUG
 }
 
 void check_and_handle_collisions(void)
@@ -158,9 +188,15 @@ void check_and_handle_collisions(void)
     collision = SDL_HasIntersection(&player.rect, &food.rect);
     if (collision == SDL_TRUE)
     {
-        printf("collision with food.\n");
+        #ifdef DEBUG
+            printf("collision with food.\n");
+        #endif // DEBUG
+
         if (is_adding_body_parts == FALSE)
-            add_body_parts();
+        {
+            add_body_parts(food.score);
+            add_to_score(food.score);
+        }
         is_adding_body_parts = TRUE;
     }
 
@@ -170,13 +206,15 @@ void check_and_handle_collisions(void)
         collision = SDL_HasIntersection(&player.rect, &body_sections[i].rect);
         if (collision == SDL_TRUE)
         {
-            printf("collision body part: %d. move point index: %d\n", i, move_point_index);
-            game_over = TRUE;
+            #ifdef DEBUG
+                printf("collision body part: %d. move point index: %d\n", i, move_point_index);
+            #endif // DEBUG
+            game_over_func();
         }
     }
 }
 
-void add_body_parts(void)
+void add_body_parts(int no)
 {
     int body_size = 16;
     int count = 0;
@@ -187,13 +225,13 @@ void add_body_parts(void)
         return;
     }
 
-    if ((player.no_body_sections + food.score) <= max_number_of_body_objects)
+    if ((player.no_body_sections + no) <= max_number_of_body_objects)
     {
-        count = food.score;
+        count = no;
     }
     else
     {
-        count = max_number_of_body_objects - (player.no_body_sections + food.score);
+        count = max_number_of_body_objects - (player.no_body_sections + no);
     }
     if (count < 0)
         count = 0;
@@ -247,4 +285,53 @@ void add_body_parts(void)
         body_sections[i].dx = player_pos.dx;
         body_sections[i].dy = player_pos.dy;
     }
+}
+
+void enter_high_score(SDL_Renderer* renderer)
+{
+    SDL_bool done = SDL_FALSE;
+    char str[255] = {0};
+    char *composition;
+    int cursor;
+    int selection_len;
+    SDL_Texture *text;
+    SDL_Surface* text_surf;
+    TTF_Font* font;
+    SDL_Color foreground = {0xff, 0xff, 0xff, 0xff};
+    SDL_Rect text_rect;
+
+
+    font = load_font("Butterflies Free.ttf", 20);
+
+    SDL_StartTextInput();
+    while (!done) {
+        SDL_Event event;
+        if (SDL_PollEvent(&event)) {
+            switch (event.type) {
+                case SDL_KEYDOWN:
+                    if (event.key.keysym.sym == SDLK_ESCAPE || event.key.keysym.sym == SDLK_RETURN)
+                        done = SDL_TRUE;
+                    break;
+                case SDL_TEXTINPUT:
+                    /* Add new text onto the end of our text */
+                    strcat(str, event.text.text);
+                    break;
+            }
+        }
+        if (strlen(str))
+        {
+            text_surf = TTF_RenderText_Solid(font, str, foreground);
+            text = SDL_CreateTextureFromSurface(renderer, text_surf);
+            text_rect.x = 100;
+            text_rect.y = 100;
+            text_rect.w = text_surf->w;
+            text_rect.h = text_surf->h;
+            SDL_RenderCopy(renderer, text, NULL, &text_rect);
+            SDL_DestroyTexture(text);
+            SDL_FreeSurface(text_surf);
+            printf("%s\n", str);
+        }
+        SDL_RenderPresent(renderer);
+    }
+    SDL_StopTextInput();
 }

@@ -112,10 +112,17 @@ SDL_Texture* init_title_screen(SDL_Renderer* renderer);
 
 /**
  * @brief Initialize and create the game screen graphics.
- * @param renderer that will render this title screen,
+ * @param renderer that will render this game screen,
  * @return a SDL_Texture containing the game screen. Or NULL on failure.
  */
 SDL_Texture* init_game_screen(SDL_Renderer* renderer);
+
+/**
+ * @brief Initialize and create the game over screen graphics.
+ * @param renderer that will render this game over screen,
+ * @return a SDL_Texture containing the game over screen. Or NULL on failure.
+ */
+SDL_Texture* init_game_over_screen(SDL_Renderer* renderer);
 
 /**
  * @brief Initialize and create the player graphics and position.
@@ -134,5 +141,8 @@ char init_food(void);
  * @return TRUE on success or FALSE on failure.
  */
 char init_body(void);
+
+/** score */
+int score;
 
 #endif // __COMMON_H__

@@ -277,6 +277,50 @@ char change_music(int nr)
     return TRUE;
 }
 
+SDL_Texture* init_game_over_screen(SDL_Renderer* renderer)
+{
+    SDL_Surface* screen;
+    SDL_Texture* texture;
+    TTF_Font* fnt;
+    SDL_Color color;
+    char ret;
+
+    screen = NULL;
+    texture = NULL;
+
+    screen = load_png("black.png");
+    if (screen == NULL)
+        return NULL;
+
+    fnt = load_font("Butterflies Free.ttf", 200);
+    if (fnt == NULL)
+        return NULL;
+
+    color.r = 0xdd;
+    color.g = 0x44;
+    color.b = 0x44;
+    color.a = 0x00;
+    ret = print_text(fnt, "Game Over", &color, screen, 100, 10);
+    if (ret == FALSE)
+        return NULL;
+
+    TTF_CloseFont(fnt);
+
+    texture = SDL_CreateTextureFromSurface(renderer, screen);
+    if(texture == NULL)
+    {
+        #ifdef DEBUG
+            printf("Unable to initialize the title screen texture: %s\n", SDL_GetError());
+        #endif // DEBUG
+    }
+
+    game_over_screen = texture;
+
+    SDL_FreeSurface(screen);
+
+    return texture;
+}
+
 SDL_Texture* init_title_screen(SDL_Renderer* renderer)
 {
     SDL_Surface* screen;
@@ -436,8 +480,6 @@ char init_player(void)
     rect.x = 400;
     rect.y = 300;
     player.rect = rect;
-    player.delta_pixels = 16;
-
     return TRUE;
 }
 

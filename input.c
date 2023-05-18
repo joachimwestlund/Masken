@@ -86,7 +86,8 @@ struct inputs* get_inputs(SDL_Event* event)
                 #endif // DEBUG
                 break;
             case SDLK_SPACE:
-                play();
+                if (!is_playing && !game_over)
+                    play();
                 #ifdef DEBUG
                     printf("SPACE\n");
                 #endif // DEBUG

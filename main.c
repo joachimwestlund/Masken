@@ -63,6 +63,14 @@ int main(void)
         return -1;
     }
 
+    if (init_game_over_screen(renderer) == NULL)
+    {
+        #ifdef DEBUG
+            printf("Failed to initialize the game over screen\n");
+        #endif // DEBUG
+        return -1;
+    }
+
     max_number_of_objects = 300;
     max_number_of_body_objects = max_number_of_objects - 2; // minus 1 head and 1 food.
 
@@ -72,7 +80,7 @@ int main(void)
     init_body();
     init_food();
 
-    //change_music(1);
+    change_music(1);
 
     // Main event and game loop.
     while(!quit)
@@ -80,7 +88,13 @@ int main(void)
         input = get_inputs(&event);
         if (input->ESCAPE == TRUE)
         {
-            if (is_playing == TRUE)
+            if (game_over == TRUE)
+            {
+                game_over = FALSE;
+                is_playing = FALSE;
+                change_music(1);
+            }
+            else if (is_playing == TRUE)
             {
                 is_playing = FALSE;
                 // TODO: clean up so that the game resets
@@ -104,6 +118,11 @@ int main(void)
         else
         {
             // TODO: clean up so that the game resets
+        }
+
+        if (game_over == TRUE)
+        {
+            //enter_high_score(renderer);
         }
 
         render();

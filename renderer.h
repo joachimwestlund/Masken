@@ -2,6 +2,7 @@
 #define __RENDERER_H__
 
 #include "common.h"
+#include <stdlib.h>
 
 /** structure to hold objects to be rendered */
 struct render_objects
@@ -46,5 +47,18 @@ void add_to_render_queue(SDL_Texture* texture, SDL_Rect rect, int angle);
  */
 void render_queue(void);
 
+TTF_Font* score_fnt;
+
+char score_str[32];
+
+SDL_Surface* score_surface;
+
+SDL_Color score_color;
+
+SDL_Texture* score_texture;
+
+SDL_Rect score_rect;
+
+char* convert_score_to_str();
 
 #endif // __RENDERER_H__

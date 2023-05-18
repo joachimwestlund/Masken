@@ -12,8 +12,6 @@ struct player_object
     int no_body_sections;
     /** head angle */
     int angle;
-    /** pixels to move before direction change */
-    int delta_pixels;
 };
 
 /** structure to hold body data. */
@@ -71,5 +69,8 @@ SDL_Texture* title_screen;
 
 /** Game screen texture */
 SDL_Texture* game_screen;
+
+/** Game over screen */
+SDL_Texture* game_over_screen;
 
 #endif // __GAME_OBJECTS_H__

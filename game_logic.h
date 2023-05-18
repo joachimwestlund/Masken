@@ -41,6 +41,16 @@ struct player_movement player_pos;
 void play(void);
 
 /**
+ * @brief This function will reset the game variables to be able to start from a new game.
+ */
+void reset_game(void);
+
+/**
+ * @brief This function will end the game when it's game over.
+ */
+void game_over_func(void);
+
+/**
  * @brief This function will check the input struct every frame and uppdate direction.
  */
 void handle_input(void);
@@ -55,10 +65,23 @@ void move_player(void);
  */
 void check_and_handle_collisions(void);
 
-/** A function to add body parts to the worm and based on the food score */
-void add_body_parts(void);
+/**
+ * @brief A function to add body parts to the worm and based on the food score
+ * @param no Number of body parts to be added.
+ */
+void add_body_parts(int no);
 
-/** This function adds a move point to the array in a semi stack sense */
+/**
+ * @brief This function adds a move point to the array in a semi stack sense
+ */
 void add_move_point(SDL_Rect rect, int dx, int dy);
+
+/**
+ * @brief This functions adds an amount to the total score.
+ * @param s the amount to be added to the score
+ */
+void add_to_score(int s);
+
+void enter_high_score(SDL_Renderer* renderer);
 
 #endif // __GAME_LOGIC_H__
