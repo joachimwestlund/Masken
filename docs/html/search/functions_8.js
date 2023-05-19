@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['render',['render',['../renderer_8c.html#a6765cdcebe5c8445969d5f76345df457',1,'render(void):&#160;renderer.c'],['../renderer_8h.html#a6765cdcebe5c8445969d5f76345df457',1,'render(void):&#160;renderer.c']]],
-  ['render_5fqueue',['render_queue',['../renderer_8c.html#a746750d82ff06f8bca0faf22f52eb1c2',1,'render_queue(void):&#160;renderer.c'],['../renderer_8h.html#a746750d82ff06f8bca0faf22f52eb1c2',1,'render_queue(void):&#160;renderer.c']]]
+  ['play',['play',['../game__logic_8c.html#abdfb298c4eb2fba465cab1235f1c3723',1,'play(void):&#160;game_logic.c'],['../game__logic_8h.html#abdfb298c4eb2fba465cab1235f1c3723',1,'play(void):&#160;game_logic.c']]],
+  ['print_5ftext',['print_text',['../common_8c.html#ad794f7778df193a3f1c3e0abfb3ca482',1,'print_text(TTF_Font *fnt, char *text, SDL_Color *color, SDL_Surface *destination, int x, int y):&#160;common.c'],['../common_8h.html#ad794f7778df193a3f1c3e0abfb3ca482',1,'print_text(TTF_Font *fnt, char *text, SDL_Color *color, SDL_Surface *destination, int x, int y):&#160;common.c']]]
 ];

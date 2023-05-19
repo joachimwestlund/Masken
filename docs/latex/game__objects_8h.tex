@@ -20,13 +20,15 @@ struct \mbox{\hyperlink{structplayer__object}{player\+\_\+object}} \mbox{\hyperl
 \item 
 struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} \mbox{\hyperlink{game__objects_8h_a8e8f846b6ecb9105517230f093a03f19}{body}}
 \item 
-struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} \mbox{\hyperlink{game__objects_8h_a4f35ffdf2a9717037b1f34ef0ee7c6fc}{body\+\_\+sections}} \mbox{[}98\mbox{]}
+struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} \mbox{\hyperlink{game__objects_8h_af9f4ddf3f8fb50871c3599190e907a8e}{body\+\_\+sections}} \mbox{[}500\mbox{]}
 \item 
 struct \mbox{\hyperlink{structfood__object}{food\+\_\+object}} \mbox{\hyperlink{game__objects_8h_add091b0d3acada1da2bca27523bf7b6b}{food}}
 \item 
 S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{game__objects_8h_a4abd965f9ba7c99a8527d175c6243a3a}{title\+\_\+screen}}
 \item 
 S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{game__objects_8h_a4396cf124f193202515929dbffb3202c}{game\+\_\+screen}}
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{game__objects_8h_a889602a2448e07061aa151ea2f807dd7}{game\+\_\+over\+\_\+screen}}
 \end{DoxyCompactItemize}
 
 
@@ -37,11 +39,11 @@ S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{game__objects_8h_a4396cf124f19320
 \subsubsection{\texorpdfstring{body}{body}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} body}
 
-A instantiated body object that is used to copy into the body\+\_\+sections array \mbox{\Hypertarget{game__objects_8h_a4f35ffdf2a9717037b1f34ef0ee7c6fc}\label{game__objects_8h_a4f35ffdf2a9717037b1f34ef0ee7c6fc}} 
+A instantiated body object that is used to copy into the body\+\_\+sections array \mbox{\Hypertarget{game__objects_8h_af9f4ddf3f8fb50871c3599190e907a8e}\label{game__objects_8h_af9f4ddf3f8fb50871c3599190e907a8e}} 
 \index{game\_objects.h@{game\_objects.h}!body\_sections@{body\_sections}}
 \index{body\_sections@{body\_sections}!game\_objects.h@{game\_objects.h}}
 \subsubsection{\texorpdfstring{body\_sections}{body\_sections}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} body\+\_\+sections\mbox{[}98\mbox{]}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structbody__object}{body\+\_\+object}} body\+\_\+sections\mbox{[}500\mbox{]}}
 
 array of body objects for the game. The number of objects are stored in the player struct. \mbox{\Hypertarget{game__objects_8h_add091b0d3acada1da2bca27523bf7b6b}\label{game__objects_8h_add091b0d3acada1da2bca27523bf7b6b}} 
 \index{game\_objects.h@{game\_objects.h}!food@{food}}
@@ -49,7 +51,13 @@ array of body objects for the game. The number of objects are stored in the play
 \subsubsection{\texorpdfstring{food}{food}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{structfood__object}{food\+\_\+object}} food}
 
-instantiated food object for the game \mbox{\Hypertarget{game__objects_8h_a4396cf124f193202515929dbffb3202c}\label{game__objects_8h_a4396cf124f193202515929dbffb3202c}} 
+instantiated food object for the game \mbox{\Hypertarget{game__objects_8h_a889602a2448e07061aa151ea2f807dd7}\label{game__objects_8h_a889602a2448e07061aa151ea2f807dd7}} 
+\index{game\_objects.h@{game\_objects.h}!game\_over\_screen@{game\_over\_screen}}
+\index{game\_over\_screen@{game\_over\_screen}!game\_objects.h@{game\_objects.h}}
+\subsubsection{\texorpdfstring{game\_over\_screen}{game\_over\_screen}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ game\+\_\+over\+\_\+screen}
+
+Game over screen \mbox{\Hypertarget{game__objects_8h_a4396cf124f193202515929dbffb3202c}\label{game__objects_8h_a4396cf124f193202515929dbffb3202c}} 
 \index{game\_objects.h@{game\_objects.h}!game\_screen@{game\_screen}}
 \index{game\_screen@{game\_screen}!game\_objects.h@{game\_objects.h}}
 \subsubsection{\texorpdfstring{game\_screen}{game\_screen}}

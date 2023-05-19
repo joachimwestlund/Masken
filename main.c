@@ -16,6 +16,7 @@
 #include "input.h"
 #include "game_logic.h"
 #include "renderer.h"
+#include "hiscore.h"
 
 /**
  * @brief This is the main entry of the program.
@@ -46,6 +47,14 @@ int main(void)
         return -1;
 
     screen_surface = SDL_GetWindowSurface(window);
+
+    if (init_hiscore() == FALSE)
+    {
+        #ifdef DEBUG
+            printf("Failed to initialize the hiscore.\n");
+        #endif // DEBUG
+        return -1;
+    }
 
     if (init_title_screen(renderer) == NULL)
     {
@@ -80,7 +89,9 @@ int main(void)
     init_body();
     init_food();
 
-    change_music(1);
+    #ifdef PLAY_MUSIC
+        change_music(1);
+    #endif // PLAY_MUSIC
 
     // Main event and game loop.
     while(!quit)
@@ -92,7 +103,9 @@ int main(void)
             {
                 game_over = FALSE;
                 is_playing = FALSE;
-                change_music(1);
+                #ifdef PLAY_MUSIC
+                    change_music(1);
+                #endif // PLAY_MUSIC
             }
             else if (is_playing == TRUE)
             {

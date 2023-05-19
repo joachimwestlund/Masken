@@ -40,6 +40,8 @@ S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8h_ad1c960adbe60d68cd658b4
 \begin{DoxyCompactList}\small\item\em Initialize and create the title screen graphics. \end{DoxyCompactList}\item 
 S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8h_ae91aea3417ef6310746cd4e2aa4c7387}{init\+\_\+game\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
 \begin{DoxyCompactList}\small\item\em Initialize and create the game screen graphics. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8h_a8d0b8a0ab30bd9bf8b237d52d07f3b3b}{init\+\_\+game\+\_\+over\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
+\begin{DoxyCompactList}\small\item\em Initialize and create the game over screen graphics. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{common_8h_a119bd4ef50181b6e984da9d9d265ccc9}{init\+\_\+player}} (void)
 \begin{DoxyCompactList}\small\item\em Initialize and create the player graphics and position. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{common_8h_a233f7ef2b2fa3ea7d2b40def4954da59}{init\+\_\+food}} (void)
@@ -66,6 +68,8 @@ Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{common_8h_aa6fab156e5729b0c89849d048e38
 Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{common_8h_a2bfdddae97f22c1735cd5bc2bc968051}{song4}}
 \item 
 Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{common_8h_a542452ebe9964d32db202722cfcb095c}{song5}}
+\item 
+int \mbox{\hyperlink{common_8h_aef160b7437d94056f1dc59646cd5b87d}{score}}
 \end{DoxyCompactItemize}
 
 
@@ -129,6 +133,24 @@ Initialize and create the food graphics and position and score.
 \begin{DoxyReturn}{Returns}
 T\+R\+UE on success or F\+A\+L\+SE on failure. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{common_8h_a8d0b8a0ab30bd9bf8b237d52d07f3b3b}\label{common_8h_a8d0b8a0ab30bd9bf8b237d52d07f3b3b}} 
+\index{common.h@{common.h}!init\_game\_over\_screen@{init\_game\_over\_screen}}
+\index{init\_game\_over\_screen@{init\_game\_over\_screen}!common.h@{common.h}}
+\subsubsection{\texorpdfstring{init\_game\_over\_screen()}{init\_game\_over\_screen()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ init\+\_\+game\+\_\+over\+\_\+screen (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Initialize and create the game over screen graphics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & that will render this game over screen, \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a S\+D\+L\+\_\+\+Texture containing the game over screen. Or N\+U\+LL on failure. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{common_8h_ae91aea3417ef6310746cd4e2aa4c7387}\label{common_8h_ae91aea3417ef6310746cd4e2aa4c7387}} 
 \index{common.h@{common.h}!init\_game\_screen@{init\_game\_screen}}
 \index{init\_game\_screen@{init\_game\_screen}!common.h@{common.h}}
@@ -141,7 +163,7 @@ Initialize and create the game screen graphics.
 
 
 \begin{DoxyParams}{Parameters}
-{\em renderer} & that will render this title screen, \\
+{\em renderer} & that will render this game screen, \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -353,7 +375,13 @@ flag to check if game is playing \mbox{\Hypertarget{common_8h_a409d6906c2b3bc711
 \subsubsection{\texorpdfstring{quit}{quit}}
 {\footnotesize\ttfamily char quit}
 
-user has pressed escape and wants to quit \mbox{\Hypertarget{common_8h_a13ffa57bed25d088296cb430fdba74b0}\label{common_8h_a13ffa57bed25d088296cb430fdba74b0}} 
+user has pressed escape and wants to quit \mbox{\Hypertarget{common_8h_aef160b7437d94056f1dc59646cd5b87d}\label{common_8h_aef160b7437d94056f1dc59646cd5b87d}} 
+\index{common.h@{common.h}!score@{score}}
+\index{score@{score}!common.h@{common.h}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int score}
+
+score \mbox{\Hypertarget{common_8h_a13ffa57bed25d088296cb430fdba74b0}\label{common_8h_a13ffa57bed25d088296cb430fdba74b0}} 
 \index{common.h@{common.h}!song1@{song1}}
 \index{song1@{song1}!common.h@{common.h}}
 \subsubsection{\texorpdfstring{song1}{song1}}

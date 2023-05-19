@@ -1,0 +1,79 @@
+\hypertarget{hiscore_8h}{}\section{hiscore.\+h File Reference}
+\label{hiscore_8h}\index{hiscore.h@{hiscore.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{hiscore_8h_a6c4083aa3b9e266b748440a4282ee269}{init\+\_\+hiscore}} (void)
+\begin{DoxyCompactList}\small\item\em This function initializes the hiscore. Creates the file if no one exists. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{hiscore_8h_a2054205072634757b259434f569fef69}{scramble}} (char $\ast$str)
+\begin{DoxyCompactList}\small\item\em scrambles the string. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{hiscore_8h_aa064dc34fcadc1d52cbabcf5ea258314}{unscramble}} (unsigned char $\ast$str)
+\begin{DoxyCompactList}\small\item\em unscrambles the string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{hiscore_8h_a702945180aa732857b380a007a7e2a21}{file}}
+\item 
+char \mbox{\hyperlink{hiscore_8h_a17c47a2dff18cdb11cd402b4b4e89b45}{ret}} \mbox{[}16\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{hiscore_8h_a6c4083aa3b9e266b748440a4282ee269}\label{hiscore_8h_a6c4083aa3b9e266b748440a4282ee269}} 
+\index{hiscore.h@{hiscore.h}!init\_hiscore@{init\_hiscore}}
+\index{init\_hiscore@{init\_hiscore}!hiscore.h@{hiscore.h}}
+\subsubsection{\texorpdfstring{init\_hiscore()}{init\_hiscore()}}
+{\footnotesize\ttfamily char init\+\_\+hiscore (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function initializes the hiscore. Creates the file if no one exists. 
+
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if success and F\+A\+L\+SE if failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hiscore_8h_a2054205072634757b259434f569fef69}\label{hiscore_8h_a2054205072634757b259434f569fef69}} 
+\index{hiscore.h@{hiscore.h}!scramble@{scramble}}
+\index{scramble@{scramble}!hiscore.h@{hiscore.h}}
+\subsubsection{\texorpdfstring{scramble()}{scramble()}}
+{\footnotesize\ttfamily char$\ast$ scramble (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+scrambles the string. 
+
+\begin{DoxyReturn}{Returns}
+the scrambled text. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hiscore_8h_aa064dc34fcadc1d52cbabcf5ea258314}\label{hiscore_8h_aa064dc34fcadc1d52cbabcf5ea258314}} 
+\index{hiscore.h@{hiscore.h}!unscramble@{unscramble}}
+\index{unscramble@{unscramble}!hiscore.h@{hiscore.h}}
+\subsubsection{\texorpdfstring{unscramble()}{unscramble()}}
+{\footnotesize\ttfamily char$\ast$ unscramble (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+unscrambles the string. 
+
+\begin{DoxyReturn}{Returns}
+the unscrambled string. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{hiscore_8h_a702945180aa732857b380a007a7e2a21}\label{hiscore_8h_a702945180aa732857b380a007a7e2a21}} 
+\index{hiscore.h@{hiscore.h}!file@{file}}
+\index{file@{file}!hiscore.h@{hiscore.h}}
+\subsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ file}
+
+\mbox{\Hypertarget{hiscore_8h_a17c47a2dff18cdb11cd402b4b4e89b45}\label{hiscore_8h_a17c47a2dff18cdb11cd402b4b4e89b45}} 
+\index{hiscore.h@{hiscore.h}!ret@{ret}}
+\index{ret@{ret}!hiscore.h@{hiscore.h}}
+\subsubsection{\texorpdfstring{ret}{ret}}
+{\footnotesize\ttfamily char ret\mbox{[}16\mbox{]}}
+
+Return value for the cypher functions 

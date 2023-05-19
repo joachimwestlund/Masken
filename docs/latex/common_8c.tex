@@ -22,6 +22,8 @@ char \mbox{\hyperlink{common_8c_a96e70232c7c96eb4b821fb26037f36b5}{init\+\_\+mus
 \begin{DoxyCompactList}\small\item\em Loads all 5 songs to be used in this game. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{common_8c_a3f7d079ae164240677e5fc1c6f435c9a}{change\+\_\+music}} (int nr)
 \begin{DoxyCompactList}\small\item\em Change between the 5 songs loaded or pause music. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_a8d0b8a0ab30bd9bf8b237d52d07f3b3b}{init\+\_\+game\+\_\+over\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
+\begin{DoxyCompactList}\small\item\em Initialize and create the game over screen graphics. \end{DoxyCompactList}\item 
 S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_ad1c960adbe60d68cd658b40ef4c82f78}{init\+\_\+title\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
 \begin{DoxyCompactList}\small\item\em Initialize and create the title screen graphics. \end{DoxyCompactList}\item 
 S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_ae91aea3417ef6310746cd4e2aa4c7387}{init\+\_\+game\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
@@ -79,6 +81,24 @@ Initialize and create the food graphics and position and score.
 \begin{DoxyReturn}{Returns}
 T\+R\+UE on success or F\+A\+L\+SE on failure. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{common_8c_a8d0b8a0ab30bd9bf8b237d52d07f3b3b}\label{common_8c_a8d0b8a0ab30bd9bf8b237d52d07f3b3b}} 
+\index{common.c@{common.c}!init\_game\_over\_screen@{init\_game\_over\_screen}}
+\index{init\_game\_over\_screen@{init\_game\_over\_screen}!common.c@{common.c}}
+\subsubsection{\texorpdfstring{init\_game\_over\_screen()}{init\_game\_over\_screen()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ init\+\_\+game\+\_\+over\+\_\+screen (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Initialize and create the game over screen graphics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & that will render this game over screen, \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a S\+D\+L\+\_\+\+Texture containing the game over screen. Or N\+U\+LL on failure. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{common_8c_ae91aea3417ef6310746cd4e2aa4c7387}\label{common_8c_ae91aea3417ef6310746cd4e2aa4c7387}} 
 \index{common.c@{common.c}!init\_game\_screen@{init\_game\_screen}}
 \index{init\_game\_screen@{init\_game\_screen}!common.c@{common.c}}
@@ -91,7 +111,7 @@ Initialize and create the game screen graphics.
 
 
 \begin{DoxyParams}{Parameters}
-{\em renderer} & that will render this title screen, \\
+{\em renderer} & that will render this game screen, \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

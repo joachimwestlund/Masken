@@ -11,7 +11,9 @@ void \mbox{\hyperlink{renderer_8c_a6765cdcebe5c8445969d5f76345df457}{render}} (v
 void \mbox{\hyperlink{renderer_8c_a746750d82ff06f8bca0faf22f52eb1c2}{render\+\_\+queue}} (void)
 \begin{DoxyCompactList}\small\item\em This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{renderer_8c_a7171d26350ede501f757875cd5e3dae2}{add\+\_\+to\+\_\+render\+\_\+queue}} (S\+D\+L\+\_\+\+Texture $\ast$texture, S\+D\+L\+\_\+\+Rect rect, int angle)
-\begin{DoxyCompactList}\small\item\em this function will take in a texture and render it to the offscreen buffer. For now only 100 items can be added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em this function will take in a texture and render it to the offscreen buffer. For now only 100 items can be added. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{renderer_8c_a61f8eab3dd5ea48db40c570b17b7de63}{convert\+\_\+score\+\_\+to\+\_\+str}} ()
+\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
@@ -34,6 +36,12 @@ this function will take in a texture and render it to the offscreen buffer. For 
 {\em angle} & of rotation of the texture. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{renderer_8c_a61f8eab3dd5ea48db40c570b17b7de63}\label{renderer_8c_a61f8eab3dd5ea48db40c570b17b7de63}} 
+\index{renderer.c@{renderer.c}!convert\_score\_to\_str@{convert\_score\_to\_str}}
+\index{convert\_score\_to\_str@{convert\_score\_to\_str}!renderer.c@{renderer.c}}
+\subsubsection{\texorpdfstring{convert\_score\_to\_str()}{convert\_score\_to\_str()}}
+{\footnotesize\ttfamily char$\ast$ convert\+\_\+score\+\_\+to\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}\label{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}} 
 \index{renderer.c@{renderer.c}!init\_renderer@{init\_renderer}}
 \index{init\_renderer@{init\_renderer}!renderer.c@{renderer.c}}

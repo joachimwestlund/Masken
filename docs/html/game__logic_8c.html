@@ -77,7 +77,17 @@ Functions</h2></td></tr>
 <tr class="memitem:abdfb298c4eb2fba465cab1235f1c3723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#abdfb298c4eb2fba465cab1235f1c3723">play</a> (void)</td></tr>
 <tr class="memdesc:abdfb298c4eb2fba465cab1235f1c3723"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will start the game from the title screen.  <a href="#abdfb298c4eb2fba465cab1235f1c3723">More...</a><br /></td></tr>
 <tr class="separator:abdfb298c4eb2fba465cab1235f1c3723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb248477ebebd7907f0d69fdbd56f21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#abfb248477ebebd7907f0d69fdbd56f21">add_to_score</a> (int s)</td></tr>
+<tr class="memdesc:abfb248477ebebd7907f0d69fdbd56f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions adds an amount to the total score.  <a href="#abfb248477ebebd7907f0d69fdbd56f21">More...</a><br /></td></tr>
+<tr class="separator:abfb248477ebebd7907f0d69fdbd56f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e0cce8af203ff63735b09ba427b3e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#a54e0cce8af203ff63735b09ba427b3e2">reset_game</a> (void)</td></tr>
+<tr class="memdesc:a54e0cce8af203ff63735b09ba427b3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will reset the game variables to be able to start from a new game.  <a href="#a54e0cce8af203ff63735b09ba427b3e2">More...</a><br /></td></tr>
+<tr class="separator:a54e0cce8af203ff63735b09ba427b3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d7b3f9d578fb9e1b47e777ba27f887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#af3d7b3f9d578fb9e1b47e777ba27f887">game_over_func</a> (void)</td></tr>
+<tr class="memdesc:af3d7b3f9d578fb9e1b47e777ba27f887"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will end the game when it's game over.  <a href="#af3d7b3f9d578fb9e1b47e777ba27f887">More...</a><br /></td></tr>
+<tr class="separator:af3d7b3f9d578fb9e1b47e777ba27f887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc0188d2c8d842b0b471f2a78e2f1018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#afc0188d2c8d842b0b471f2a78e2f1018">add_move_point</a> (SDL_Rect rect, int dx, int dy)</td></tr>
+<tr class="memdesc:afc0188d2c8d842b0b471f2a78e2f1018"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function adds a move point to the array in a semi stack sense.  <a href="#afc0188d2c8d842b0b471f2a78e2f1018">More...</a><br /></td></tr>
 <tr class="separator:afc0188d2c8d842b0b471f2a78e2f1018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ae56f79ae954e0d3a2ff2bfd47edbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#a98ae56f79ae954e0d3a2ff2bfd47edbd">handle_input</a> (void)</td></tr>
 <tr class="memdesc:a98ae56f79ae954e0d3a2ff2bfd47edbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will check the input struct every frame and uppdate direction.  <a href="#a98ae56f79ae954e0d3a2ff2bfd47edbd">More...</a><br /></td></tr>
@@ -88,12 +98,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ac1ebf23fb52af2cfcf25f72f13f7bc91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#ac1ebf23fb52af2cfcf25f72f13f7bc91">check_and_handle_collisions</a> (void)</td></tr>
 <tr class="memdesc:ac1ebf23fb52af2cfcf25f72f13f7bc91"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles the collisions in the game.  <a href="#ac1ebf23fb52af2cfcf25f72f13f7bc91">More...</a><br /></td></tr>
 <tr class="separator:ac1ebf23fb52af2cfcf25f72f13f7bc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d7f410fc298cda5c7fad5c56ebe502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#af4d7f410fc298cda5c7fad5c56ebe502">add_body_parts</a> (void)</td></tr>
-<tr class="separator:af4d7f410fc298cda5c7fad5c56ebe502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3313eb8e023e3f4d21ffc9ec9b1f394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#aa3313eb8e023e3f4d21ffc9ec9b1f394">add_body_parts</a> (int no)</td></tr>
+<tr class="memdesc:aa3313eb8e023e3f4d21ffc9ec9b1f394"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to add body parts to the worm and based on the food score.  <a href="#aa3313eb8e023e3f4d21ffc9ec9b1f394">More...</a><br /></td></tr>
+<tr class="separator:aa3313eb8e023e3f4d21ffc9ec9b1f394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2466da2e4d5819a73da14423b66f6af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#a2466da2e4d5819a73da14423b66f6af2">enter_high_score</a> (SDL_Renderer *<a class="el" href="renderer_8h.html#a966da7a60c4ea3ba301e26ccc5efe452">renderer</a>)</td></tr>
+<tr class="separator:a2466da2e4d5819a73da14423b66f6af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af4d7f410fc298cda5c7fad5c56ebe502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4d7f410fc298cda5c7fad5c56ebe502">&#9670;&nbsp;</a></span>add_body_parts()</h2>
+<a id="aa3313eb8e023e3f4d21ffc9ec9b1f394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3313eb8e023e3f4d21ffc9ec9b1f394">&#9670;&nbsp;</a></span>add_body_parts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -101,13 +114,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void add_body_parts </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>no</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A function to add body parts to the worm and based on the food score </p>
+
+<p>A function to add body parts to the worm and based on the food score. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">no</td><td>Number of body parts to be added. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -142,7 +162,34 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function adds a move point to the array in a semi stack sense </p>
+
+<p>This function adds a move point to the array in a semi stack sense. </p>
+
+</div>
+</div>
+<a id="abfb248477ebebd7907f0d69fdbd56f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb248477ebebd7907f0d69fdbd56f21">&#9670;&nbsp;</a></span>add_to_score()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_to_score </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This functions adds an amount to the total score. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>the amount to be added to the score </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -163,6 +210,44 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function handles the collisions in the game. </p>
+
+</div>
+</div>
+<a id="a2466da2e4d5819a73da14423b66f6af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2466da2e4d5819a73da14423b66f6af2">&#9670;&nbsp;</a></span>enter_high_score()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void enter_high_score </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3d7b3f9d578fb9e1b47e777ba27f887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d7b3f9d578fb9e1b47e777ba27f887">&#9670;&nbsp;</a></span>game_over_func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void game_over_func </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function will end the game when it's game over. </p>
 
 </div>
 </div>
@@ -223,6 +308,26 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function will start the game from the title screen. </p>
+
+</div>
+</div>
+<a id="a54e0cce8af203ff63735b09ba427b3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e0cce8af203ff63735b09ba427b3e2">&#9670;&nbsp;</a></span>reset_game()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset_game </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function will reset the game variables to be able to start from a new game. </p>
 
 </div>
 </div>

@@ -3,7 +3,11 @@
 void play(void)
 {
     if (is_playing != TRUE)
-        change_music(4);
+    {
+        #ifdef PLAY_MUSIC
+            change_music(4);
+        #endif // PLAY_MUSIC
+    }
     is_playing = TRUE;
     player_pos.dy = -1;
     player_pos.dx = 0;
@@ -34,7 +38,9 @@ void game_over_func(void)
     game_over = TRUE;
     is_playing = FALSE;
     reset_game();
-    change_music(5);
+    #ifdef PLAY_MUSIC
+        change_music(5);
+    #endif // PLAY_MUSIC
 }
 
 void add_move_point(SDL_Rect rect, int dx, int dy)
