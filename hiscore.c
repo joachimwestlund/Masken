@@ -74,7 +74,7 @@ char* scramble(char* str)
     return ret;
 }
 
-char* unscramble(unsigned char* str)
+char* unscramble(char* str)
 {
     char c;
     char key[] = "This is a secret key that will be used to chypher the text";

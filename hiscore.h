@@ -26,6 +26,6 @@ char* scramble(char *str);
  * @brief unscrambles the string.
  * @return the unscrambled string.
  */
-char* unscramble(unsigned char* str);
+char* unscramble(char* str);
 
 #endif // __HISCORE_H__
