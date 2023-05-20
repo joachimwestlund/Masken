@@ -35,6 +35,8 @@ int main(void)
 
     printf("Masken. A worm clone made by Joachim Westlund.\n\n");
 
+    srand(time(NULL));  // use current time as seed for random numbers
+
     #ifdef DEBUG
         printf("DEBUGING INFORMATION ON\n\n");
     #endif // DEBUG

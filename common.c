@@ -520,8 +520,6 @@ char new_food(void)
 
     SDL_Rect new_pos;
 
-    srand(time(NULL));  // use current time as seed for random number
-
     // (rand() % upper - lower + 1) + lower, to calculate the range of random number
     new_pos.x = (rand() % (768 - 16 + 1)) + 16;
     new_pos.y = (rand() % (568 - 101 + 1)) + 101;
