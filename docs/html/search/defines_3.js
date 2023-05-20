@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['true',['TRUE',['../common_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'common.h']]]
+  ['sdl_5fmain_5fhandled',['SDL_MAIN_HANDLED',['../main_8c.html#a51f528deaaeb973f417b46a2ec36f850',1,'main.c']]]
 ];

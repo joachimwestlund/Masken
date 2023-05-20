@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sdl_5fmain_5fhandled',['SDL_MAIN_HANDLED',['../main_8c.html#a51f528deaaeb973f417b46a2ec36f850',1,'main.c']]]
+  ['play_5fmusic',['PLAY_MUSIC',['../debug_8h.html#a0b415cbcbae6b10c3895ea5d205481ea',1,'debug.h']]]
 ];

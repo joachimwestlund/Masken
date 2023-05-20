@@ -1,6 +1,7 @@
 var searchData=
 [
   ['play',['play',['../game__logic_8c.html#abdfb298c4eb2fba465cab1235f1c3723',1,'play(void):&#160;game_logic.c'],['../game__logic_8h.html#abdfb298c4eb2fba465cab1235f1c3723',1,'play(void):&#160;game_logic.c']]],
+  ['play_5fmusic',['PLAY_MUSIC',['../debug_8h.html#a0b415cbcbae6b10c3895ea5d205481ea',1,'debug.h']]],
   ['player',['player',['../game__objects_8h.html#a4bda856d25401a0536d06bad8f9dd9ca',1,'game_objects.h']]],
   ['player_5fmovement',['player_movement',['../structplayer__movement.html',1,'']]],
   ['player_5fobject',['player_object',['../structplayer__object.html',1,'']]],
