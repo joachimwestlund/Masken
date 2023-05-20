@@ -401,7 +401,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1684484552 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
+1684568497 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
 	<stdio.h>
 	<SDL2/SDL.h>
 	"debug.h"
@@ -412,7 +412,7 @@
 	"renderer.h"
 	"hiscore.h"
 
-1684482058 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
+1684568723 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
 
 1684422129 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
 	"input.h"
@@ -423,7 +423,7 @@
 	"common.h"
 	"game_logic.h"
 
-1684482015 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.c
+1684568507 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.c
 	"game_logic.h"
 
 1675734272 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_image.h
@@ -446,7 +446,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1684423791 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
+1684568675 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
 	<stdio.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_ttf.h>
@@ -454,20 +454,21 @@
 	"common.h"
 	"input.h"
 	"game_objects.h"
+	"hiscore.h"
 
 1684414544 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_objects.h
 
-1684421783 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.c
+1684567919 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.c
 	"renderer.h"
 
 1684418017 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.h
 	"common.h"
 	<stdlib.h>
 
-1684499241 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.c
+1684568691 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.c
 	"hiscore.h"
 
-1684499768 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.h
+1684568580 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.h
 	<stdio.h>
 	<stdlib.h>
 	"common.h"

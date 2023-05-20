@@ -37,6 +37,8 @@ void game_over_func(void)
 {
     game_over = TRUE;
     is_playing = FALSE;
+    if (score > get_hiscore())
+        save_hiscore(score);
     reset_game();
     #ifdef PLAY_MUSIC
         change_music(5);
@@ -291,53 +293,4 @@ void add_body_parts(int no)
         body_sections[i].dx = player_pos.dx;
         body_sections[i].dy = player_pos.dy;
     }
-}
-
-void enter_high_score(SDL_Renderer* renderer)
-{
-    SDL_bool done = SDL_FALSE;
-    char str[255] = {0};
-    char *composition;
-    int cursor;
-    int selection_len;
-    SDL_Texture *text;
-    SDL_Surface* text_surf;
-    TTF_Font* font;
-    SDL_Color foreground = {0xff, 0xff, 0xff, 0xff};
-    SDL_Rect text_rect;
-
-
-    font = load_font("Butterflies Free.ttf", 20);
-
-    SDL_StartTextInput();
-    while (!done) {
-        SDL_Event event;
-        if (SDL_PollEvent(&event)) {
-            switch (event.type) {
-                case SDL_KEYDOWN:
-                    if (event.key.keysym.sym == SDLK_ESCAPE || event.key.keysym.sym == SDLK_RETURN)
-                        done = SDL_TRUE;
-                    break;
-                case SDL_TEXTINPUT:
-                    /* Add new text onto the end of our text */
-                    strcat(str, event.text.text);
-                    break;
-            }
-        }
-        if (strlen(str))
-        {
-            text_surf = TTF_RenderText_Solid(font, str, foreground);
-            text = SDL_CreateTextureFromSurface(renderer, text_surf);
-            text_rect.x = 100;
-            text_rect.y = 100;
-            text_rect.w = text_surf->w;
-            text_rect.h = text_surf->h;
-            SDL_RenderCopy(renderer, text, NULL, &text_rect);
-            SDL_DestroyTexture(text);
-            SDL_FreeSurface(text_surf);
-            printf("%s\n", str);
-        }
-        SDL_RenderPresent(renderer);
-    }
-    SDL_StopTextInput();
 }

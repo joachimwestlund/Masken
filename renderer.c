@@ -81,6 +81,8 @@ void add_to_render_queue(SDL_Texture* texture, SDL_Rect rect, int angle)
 char* convert_score_to_str()
 {
     itoa(score, score_str, 10);
-    printf("%s\n",score_str);
+    #ifdef VERBOSE_DEBUG
+        printf("%s\n",score_str);
+    #endif
     return score_str;
 }

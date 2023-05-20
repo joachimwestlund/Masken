@@ -8,6 +8,7 @@
 #include "common.h"
 #include "input.h"
 #include "game_objects.h"
+#include "hiscore.h"
 
 /** Index of how many moves the head has done */
 int move_point_index;
@@ -81,7 +82,5 @@ void add_move_point(SDL_Rect rect, int dx, int dy);
  * @param s the amount to be added to the score
  */
 void add_to_score(int s);
-
-void enter_high_score(SDL_Renderer* renderer);
 
 #endif // __GAME_LOGIC_H__

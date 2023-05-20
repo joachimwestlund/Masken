@@ -50,6 +50,10 @@
 		</Unit>
 		<Unit filename="game_logic.h" />
 		<Unit filename="game_objects.h" />
+		<Unit filename="hiscore.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="hiscore.h" />
 		<Unit filename="input.c">
 			<Option compilerVar="CC" />
 		</Unit>

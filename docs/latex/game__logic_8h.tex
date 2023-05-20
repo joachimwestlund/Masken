@@ -7,6 +7,7 @@
 {\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}game\+\_\+objects.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hiscore.\+h\char`\"{}}\newline
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
@@ -34,9 +35,7 @@ void \mbox{\hyperlink{game__logic_8h_aa3313eb8e023e3f4d21ffc9ec9b1f394}{add\+\_\
 void \mbox{\hyperlink{game__logic_8h_afc0188d2c8d842b0b471f2a78e2f1018}{add\+\_\+move\+\_\+point}} (S\+D\+L\+\_\+\+Rect rect, int dx, int dy)
 \begin{DoxyCompactList}\small\item\em This function adds a move point to the array in a semi stack sense. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8h_abfb248477ebebd7907f0d69fdbd56f21}{add\+\_\+to\+\_\+score}} (int s)
-\begin{DoxyCompactList}\small\item\em This functions adds an amount to the total score. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{game__logic_8h_a2466da2e4d5819a73da14423b66f6af2}{enter\+\_\+high\+\_\+score}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This functions adds an amount to the total score. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -98,12 +97,6 @@ This functions adds an amount to the total score.
 
 
 This function handles the collisions in the game. 
-
-\mbox{\Hypertarget{game__logic_8h_a2466da2e4d5819a73da14423b66f6af2}\label{game__logic_8h_a2466da2e4d5819a73da14423b66f6af2}} 
-\index{game\_logic.h@{game\_logic.h}!enter\_high\_score@{enter\_high\_score}}
-\index{enter\_high\_score@{enter\_high\_score}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{enter\_high\_score()}{enter\_high\_score()}}
-{\footnotesize\ttfamily void enter\+\_\+high\+\_\+score (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{game__logic_8h_af3d7b3f9d578fb9e1b47e777ba27f887}\label{game__logic_8h_af3d7b3f9d578fb9e1b47e777ba27f887}} 
 \index{game\_logic.h@{game\_logic.h}!game\_over\_func@{game\_over\_func}}

@@ -83,8 +83,6 @@ int main(void)
     max_number_of_objects = 300;
     max_number_of_body_objects = max_number_of_objects - 2; // minus 1 head and 1 food.
 
-    //body_sections = malloc(max_number_of_body_objects * sizeof(struct body_object));
-
     init_player();
     init_body();
     init_food();

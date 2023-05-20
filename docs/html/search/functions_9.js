@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['render',['render',['../renderer_8c.html#a6765cdcebe5c8445969d5f76345df457',1,'render(void):&#160;renderer.c'],['../renderer_8h.html#a6765cdcebe5c8445969d5f76345df457',1,'render(void):&#160;renderer.c']]],
-  ['render_5fqueue',['render_queue',['../renderer_8c.html#a746750d82ff06f8bca0faf22f52eb1c2',1,'render_queue(void):&#160;renderer.c'],['../renderer_8h.html#a746750d82ff06f8bca0faf22f52eb1c2',1,'render_queue(void):&#160;renderer.c']]],
-  ['reset_5fgame',['reset_game',['../game__logic_8c.html#a54e0cce8af203ff63735b09ba427b3e2',1,'reset_game(void):&#160;game_logic.c'],['../game__logic_8h.html#a54e0cce8af203ff63735b09ba427b3e2',1,'reset_game(void):&#160;game_logic.c']]]
+  ['save_5fhiscore',['save_hiscore',['../hiscore_8c.html#a7f08f535471054e5b4b1a7b4ca61e9cb',1,'save_hiscore(int score):&#160;hiscore.c'],['../hiscore_8h.html#a7f08f535471054e5b4b1a7b4ca61e9cb',1,'save_hiscore(int score):&#160;hiscore.c']]],
+  ['scramble',['scramble',['../hiscore_8c.html#a2054205072634757b259434f569fef69',1,'scramble(char *str):&#160;hiscore.c'],['../hiscore_8h.html#a2054205072634757b259434f569fef69',1,'scramble(char *str):&#160;hiscore.c']]],
+  ['sdl_5finit',['sdl_init',['../common_8c.html#a3aad31e40815defd4a43af38f14bbcf6',1,'sdl_init(void):&#160;common.c'],['../common_8h.html#a3aad31e40815defd4a43af38f14bbcf6',1,'sdl_init(void):&#160;common.c']]]
 ];

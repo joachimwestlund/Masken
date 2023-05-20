@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['save_5fhiscore',['save_hiscore',['../hiscore_8c.html#a7f08f535471054e5b4b1a7b4ca61e9cb',1,'save_hiscore(int score):&#160;hiscore.c'],['../hiscore_8h.html#a7f08f535471054e5b4b1a7b4ca61e9cb',1,'save_hiscore(int score):&#160;hiscore.c']]],
   ['score',['score',['../structfood__object.html#aef160b7437d94056f1dc59646cd5b87d',1,'food_object::score()'],['../common_8h.html#aef160b7437d94056f1dc59646cd5b87d',1,'score():&#160;common.h']]],
   ['score_5fcolor',['score_color',['../renderer_8h.html#a71aff7549234721470ce826f5b5ab6e3',1,'renderer.h']]],
   ['score_5ffnt',['score_fnt',['../renderer_8h.html#a766ffa05ac794a0a5b9439434285bb8f',1,'renderer.h']]],
