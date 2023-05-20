@@ -204,6 +204,7 @@ void check_and_handle_collisions(void)
         {
             add_body_parts(food.score);
             add_to_score(food.score);
+            new_food();
         }
         is_adding_body_parts = TRUE;
     }

@@ -1,13 +1,15 @@
 # depslib dependency file v1.0
-1684422453 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
+1684571966 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
 	"common.h"
 
-1684416506 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
+1684570840 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
 	<stdio.h>
+	<stdlib.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
 	<SDL2/SDL_ttf.h>
 	<SDL2/SDL_mixer.h>
+	<time.h>
 	"debug.h"
 	"game_objects.h"
 	"renderer.h"

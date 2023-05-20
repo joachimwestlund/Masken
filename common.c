@@ -503,9 +503,35 @@ char init_food(void)
     food.angle = 0;
     rect.h = h;
     rect.w = w;
-    rect.x = 100;
-    rect.y = 500;
+    rect.x = 0;
+    rect.y = 0;
     food.rect = rect;
+
+    new_food();
+
+    return TRUE;
+}
+
+char new_food(void)
+{
+    // screen posisions
+    // x = 16px to 768px
+    // y = 101px to 568px
+
+    SDL_Rect new_pos;
+
+    srand(time(NULL));  // use current time as seed for random number
+
+    // (rand() % upper - lower + 1) + lower, to calculate the range of random number
+    new_pos.x = (rand() % (768 - 16 + 1)) + 16;
+    new_pos.y = (rand() % (568 - 101 + 1)) + 101;
+    new_pos.h = food.rect.h;
+    new_pos.w = food.rect.w;
+    food.score = (rand() % (10 - 1 + 1)) + 1;
+    food.angle = 0;
+    food.rect = new_pos;
+
+    printf("food: %d %d %d\n", new_pos.x, new_pos.y, food.score);
 
     return TRUE;
 }

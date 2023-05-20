@@ -2,10 +2,12 @@
 #define __COMMON_H__
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_mixer.h>
+#include <time.h>
 #include "debug.h"
 #include "game_objects.h"
 #include "renderer.h"
@@ -141,6 +143,12 @@ char init_food(void);
  * @return TRUE on success or FALSE on failure.
  */
 char init_body(void);
+
+/**
+ * @brief Creates new food.
+ * @return TRUE on success or FALSE on failure.
+ */
+char new_food(void);
 
 /** score */
 int score;
