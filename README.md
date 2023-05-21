@@ -1,6 +1,6 @@
 # Masken 
 
-A snake clone written in C for educational purposes.
+A snake clone written in C for educational purposes by Joachim Westlund.
 
 It is coded with [Code::Blocks IDE](https://www.codeblocks.org)
 
