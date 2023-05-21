@@ -14,7 +14,9 @@ A snake clone written in C for educational purposes.
 **From the start screen**
 
 Press space to play.
+
 At any time you can hit ESC-key to go back.
+
 At any time you can change music with keys 1-5, or silence with the 0-key.
 
 **In game:**
