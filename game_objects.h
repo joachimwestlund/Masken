@@ -32,7 +32,7 @@ struct body_object
 
 };
 
-/** structure to hold food data for the worm. */
+/** structure to hold food data for the snake. */
 struct food_object
 {
     /** Graphics of the food */

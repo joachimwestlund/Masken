@@ -21,7 +21,7 @@ struct inputs input;
 
 /**
  * @brief Gets the inputs from user.
- * @details Arrow keys for controlling the worm and escape key to quit.
+ * @details Arrow keys for controlling the snake and escape key to quit.
  * @return Structure containing the pressed buttons.
  */
 struct inputs* get_inputs(SDL_Event*);

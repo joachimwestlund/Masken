@@ -1,6 +1,6 @@
 /**
  * @mainpage
- * @brief Masken is a worm clone written in C for educational purposes.
+ * @brief Masken is a snake clone written in C for educational purposes.
  * @details It uses the SDL2 library version 2.26.5 for the graphics
  *          https://www.libsdl.org.
  *
@@ -35,7 +35,7 @@ int main(void)
     double time_counter = 0;
     unsigned int delay = 5;
 
-    printf("Masken. A worm clone made by Joachim Westlund.\n\n");
+    printf("Masken. A snake clone made by Joachim Westlund.\n\n");
 
     srand(time(NULL));  // use current time as seed for random numbers
 

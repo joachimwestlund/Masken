@@ -68,7 +68,7 @@ void move_player(void);
 void check_and_handle_collisions(void);
 
 /**
- * @brief A function to add body parts to the worm and based on the food score
+ * @brief A function to add body parts to the snake and based on the food score
  * @param no Number of body parts to be added.
  */
 void add_body_parts(int no);
