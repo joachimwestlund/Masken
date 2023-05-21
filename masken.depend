@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1684681361 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
+1684690158 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
 	"common.h"
 
 1684678615 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
@@ -462,14 +462,14 @@
 
 1684682841 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_objects.h
 
-1684567919 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.c
+1684690202 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.c
 	"renderer.h"
 
 1684418017 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.h
 	"common.h"
 	<stdlib.h>
 
-1684568691 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.c
+1684690235 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.c
 	"hiscore.h"
 
 1684568580 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.h
