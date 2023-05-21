@@ -404,7 +404,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1684682818 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
+1684695684 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
 	<stdio.h>
 	<SDL2/SDL.h>
 	"debug.h"

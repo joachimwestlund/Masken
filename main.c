@@ -135,15 +135,6 @@ int main(void)
                 add_to_render_queue(body_sections[i].body, body_sections[i].rect, body_sections[i].angle);
             }
         }
-        else
-        {
-            // TODO: clean up so that the game resets
-        }
-
-        if (game_over == TRUE)
-        {
-            //enter_high_score(renderer);
-        }
 
         render();
 
