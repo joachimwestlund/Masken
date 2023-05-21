@@ -105,6 +105,7 @@ int main(void)
             {
                 game_over = FALSE;
                 is_playing = FALSE;
+                delay = 5;
                 #ifdef PLAY_MUSIC
                     change_music(1);
                 #endif // PLAY_MUSIC
@@ -113,6 +114,7 @@ int main(void)
             {
                 is_playing = FALSE;
                 reset_game();
+                delay = 5;
                 #ifdef PLAY_MUSIC
                     change_music(1);
                 #endif // PLAY_MUSIC
