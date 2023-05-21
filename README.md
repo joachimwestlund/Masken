@@ -15,6 +15,10 @@ I'm sure there are other things too.
 * Music processing
 * True type fonts processing
 
+Music from [The Mod Archive](https://modarchive.org) converted to ogg without any other modifications. [License](https://modarchive.org/index.php?terms-upload)
+
+[Worm picture](https://www.kindpng.com/imgv/iRTbwRm_worms-png-file-worm-clip-art-transparent-png/). License: free for personal use.
+
 ## How to play:
 
 **From the start screen**
