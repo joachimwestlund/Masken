@@ -101,6 +101,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aa3313eb8e023e3f4d21ffc9ec9b1f394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#aa3313eb8e023e3f4d21ffc9ec9b1f394">add_body_parts</a> (int no)</td></tr>
 <tr class="memdesc:aa3313eb8e023e3f4d21ffc9ec9b1f394"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to add body parts to the worm and based on the food score.  <a href="#aa3313eb8e023e3f4d21ffc9ec9b1f394">More...</a><br /></td></tr>
 <tr class="separator:aa3313eb8e023e3f4d21ffc9ec9b1f394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95ad2967d7c7e8bbcc1bddcc50359c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#ad95ad2967d7c7e8bbcc1bddcc50359c5">start_clock</a> (void)</td></tr>
+<tr class="memdesc:ad95ad2967d7c7e8bbcc1bddcc50359c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts and resets the timer that is used for speed boost.  <a href="#ad95ad2967d7c7e8bbcc1bddcc50359c5">More...</a><br /></td></tr>
+<tr class="separator:ad95ad2967d7c7e8bbcc1bddcc50359c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9d524e1f6bea01d3b8d1c8873d7f51"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__logic_8c.html#aec9d524e1f6bea01d3b8d1c8873d7f51">get_number_of_seconds</a> (void)</td></tr>
+<tr class="memdesc:aec9d524e1f6bea01d3b8d1c8873d7f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates how many seconds has past since <a class="el" href="game__logic_8h.html#ad95ad2967d7c7e8bbcc1bddcc50359c5" title="This function starts and resets the timer that is used for speed boost.">start_clock()</a> function was last called.  <a href="#aec9d524e1f6bea01d3b8d1c8873d7f51">More...</a><br /></td></tr>
+<tr class="separator:aec9d524e1f6bea01d3b8d1c8873d7f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aa3313eb8e023e3f4d21ffc9ec9b1f394"></a>
@@ -231,6 +237,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aec9d524e1f6bea01d3b8d1c8873d7f51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9d524e1f6bea01d3b8d1c8873d7f51">&#9670;&nbsp;</a></span>get_number_of_seconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double get_number_of_seconds </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function calculates how many seconds has past since <a class="el" href="game__logic_8h.html#ad95ad2967d7c7e8bbcc1bddcc50359c5" title="This function starts and resets the timer that is used for speed boost.">start_clock()</a> function was last called. </p>
+<dl class="section return"><dt>Returns</dt><dd>It returns seconds in double format </dd></dl>
+
+</div>
+</div>
 <a id="a98ae56f79ae954e0d3a2ff2bfd47edbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a98ae56f79ae954e0d3a2ff2bfd47edbd">&#9670;&nbsp;</a></span>handle_input()</h2>
 
@@ -308,6 +335,26 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function will reset the game variables to be able to start from a new game. </p>
+
+</div>
+</div>
+<a id="ad95ad2967d7c7e8bbcc1bddcc50359c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad95ad2967d7c7e8bbcc1bddcc50359c5">&#9670;&nbsp;</a></span>start_clock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void start_clock </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function starts and resets the timer that is used for speed boost. </p>
 
 </div>
 </div>

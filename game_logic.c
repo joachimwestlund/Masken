@@ -13,6 +13,7 @@ void play(void)
     player_pos.dx = 0;
     move_point_index = 0;
     score = 0;
+    start_clock();
 }
 
 void add_to_score(int s)
@@ -39,6 +40,7 @@ void game_over_func(void)
     is_playing = FALSE;
     if (score > get_hiscore())
         save_hiscore(score);
+    init_game_over_screen(renderer);
     reset_game();
     #ifdef PLAY_MUSIC
         change_music(5);
@@ -294,4 +296,20 @@ void add_body_parts(int no)
         body_sections[i].dx = player_pos.dx;
         body_sections[i].dy = player_pos.dy;
     }
+}
+
+void start_clock(void)
+{
+    start_t = clock();
+}
+
+double get_number_of_seconds(void)
+{
+    double total_t;
+
+    end_t = clock();
+
+    total_t = (double)(end_t - start_t) / CLOCKS_PER_SEC;
+
+    return total_t;
 }

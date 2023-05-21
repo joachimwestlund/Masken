@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
+#include <time.h>
 #include "debug.h"
 #include "common.h"
 #include "input.h"
@@ -82,5 +83,21 @@ void add_move_point(SDL_Rect rect, int dx, int dy);
  * @param s the amount to be added to the score
  */
 void add_to_score(int s);
+
+/** this timer will count to 30 seconds before adding a speed increase for the game. */
+clock_t start_t;
+/** this is used to calculate time together with start_t. */
+clock_t end_t;
+
+/**
+ * @brief This function starts and resets the timer that is used for speed boost.
+ */
+void start_clock(void);
+
+/**
+ * @brief This function calculates how many seconds has past since start_clock() function was last called.
+ * @return It returns seconds in double format
+ */
+double get_number_of_seconds(void);
 
 #endif // __GAME_LOGIC_H__

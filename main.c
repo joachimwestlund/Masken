@@ -32,6 +32,8 @@ int main(void)
     game_over = FALSE;
     quit = FALSE;
     is_adding_body_parts = FALSE;
+    double time_counter = 0;
+    unsigned int delay = 5;
 
     printf("Masken. A worm clone made by Joachim Westlund.\n\n");
 
@@ -110,7 +112,10 @@ int main(void)
             else if (is_playing == TRUE)
             {
                 is_playing = FALSE;
-                // TODO: clean up so that the game resets
+                reset_game();
+                #ifdef PLAY_MUSIC
+                    change_music(1);
+                #endif // PLAY_MUSIC
             }
             else
                 quit = TRUE;
@@ -142,13 +147,26 @@ int main(void)
 
         check_and_handle_collisions();
 
-        SDL_Delay(3);
+        SDL_Delay(delay);
 
         is_adding_body_parts = FALSE;
 
         if (game_over) {
             is_playing = FALSE;
         }
+
+        time_counter = get_number_of_seconds();
+        if (time_counter > 30)                  // speed boost every 30 seconds
+        {
+            start_clock();
+            delay -= 1;
+            if (delay <= 1)
+                delay = 1;
+            #ifdef DEBUG
+                printf("Speed boost (less delay per frame): %d\n", delay);
+            #endif // DEBUG
+        }
+
     }
 
     // free stuff and quit

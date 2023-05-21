@@ -21,7 +21,11 @@ void \mbox{\hyperlink{game__logic_8c_a7b661375fbf2de3e6f92726b502d5a08}{move\+\_
 void \mbox{\hyperlink{game__logic_8c_ac1ebf23fb52af2cfcf25f72f13f7bc91}{check\+\_\+and\+\_\+handle\+\_\+collisions}} (void)
 \begin{DoxyCompactList}\small\item\em This function handles the collisions in the game. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8c_aa3313eb8e023e3f4d21ffc9ec9b1f394}{add\+\_\+body\+\_\+parts}} (int no)
-\begin{DoxyCompactList}\small\item\em A function to add body parts to the worm and based on the food score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A function to add body parts to the worm and based on the food score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__logic_8c_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock}} (void)
+\begin{DoxyCompactList}\small\item\em This function starts and resets the timer that is used for speed boost. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{game__logic_8c_aec9d524e1f6bea01d3b8d1c8873d7f51}{get\+\_\+number\+\_\+of\+\_\+seconds}} (void)
+\begin{DoxyCompactList}\small\item\em This function calculates how many seconds has past since \mbox{\hyperlink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock()}} function was last called. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
@@ -85,6 +89,19 @@ This function handles the collisions in the game.
 
 This function will end the game when it\textquotesingle{}s game over. 
 
+\mbox{\Hypertarget{game__logic_8c_aec9d524e1f6bea01d3b8d1c8873d7f51}\label{game__logic_8c_aec9d524e1f6bea01d3b8d1c8873d7f51}} 
+\index{game\_logic.c@{game\_logic.c}!get\_number\_of\_seconds@{get\_number\_of\_seconds}}
+\index{get\_number\_of\_seconds@{get\_number\_of\_seconds}!game\_logic.c@{game\_logic.c}}
+\subsubsection{\texorpdfstring{get\_number\_of\_seconds()}{get\_number\_of\_seconds()}}
+{\footnotesize\ttfamily double get\+\_\+number\+\_\+of\+\_\+seconds (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function calculates how many seconds has past since \mbox{\hyperlink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock()}} function was last called. 
+
+\begin{DoxyReturn}{Returns}
+It returns seconds in double format 
+\end{DoxyReturn}
 \mbox{\Hypertarget{game__logic_8c_a98ae56f79ae954e0d3a2ff2bfd47edbd}\label{game__logic_8c_a98ae56f79ae954e0d3a2ff2bfd47edbd}} 
 \index{game\_logic.c@{game\_logic.c}!handle\_input@{handle\_input}}
 \index{handle\_input@{handle\_input}!game\_logic.c@{game\_logic.c}}
@@ -124,4 +141,14 @@ This function will start the game from the title screen.
 
 
 This function will reset the game variables to be able to start from a new game. 
+
+\mbox{\Hypertarget{game__logic_8c_ad95ad2967d7c7e8bbcc1bddcc50359c5}\label{game__logic_8c_ad95ad2967d7c7e8bbcc1bddcc50359c5}} 
+\index{game\_logic.c@{game\_logic.c}!start\_clock@{start\_clock}}
+\index{start\_clock@{start\_clock}!game\_logic.c@{game\_logic.c}}
+\subsubsection{\texorpdfstring{start\_clock()}{start\_clock()}}
+{\footnotesize\ttfamily void start\+\_\+clock (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function starts and resets the timer that is used for speed boost. 
 

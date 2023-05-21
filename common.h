@@ -11,6 +11,7 @@
 #include "debug.h"
 #include "game_objects.h"
 #include "renderer.h"
+#include "hiscore.h"
 
 #define TRUE 1
 #define FALSE 0

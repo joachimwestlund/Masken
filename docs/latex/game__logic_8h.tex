@@ -3,6 +3,7 @@
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
 {\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
@@ -35,7 +36,11 @@ void \mbox{\hyperlink{game__logic_8h_aa3313eb8e023e3f4d21ffc9ec9b1f394}{add\+\_\
 void \mbox{\hyperlink{game__logic_8h_afc0188d2c8d842b0b471f2a78e2f1018}{add\+\_\+move\+\_\+point}} (S\+D\+L\+\_\+\+Rect rect, int dx, int dy)
 \begin{DoxyCompactList}\small\item\em This function adds a move point to the array in a semi stack sense. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8h_abfb248477ebebd7907f0d69fdbd56f21}{add\+\_\+to\+\_\+score}} (int s)
-\begin{DoxyCompactList}\small\item\em This functions adds an amount to the total score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This functions adds an amount to the total score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock}} (void)
+\begin{DoxyCompactList}\small\item\em This function starts and resets the timer that is used for speed boost. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{game__logic_8h_aec9d524e1f6bea01d3b8d1c8873d7f51}{get\+\_\+number\+\_\+of\+\_\+seconds}} (void)
+\begin{DoxyCompactList}\small\item\em This function calculates how many seconds has past since \mbox{\hyperlink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock()}} function was last called. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,6 +49,10 @@ int \mbox{\hyperlink{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}{move\+\_\
 struct \mbox{\hyperlink{structmove__point}{move\+\_\+point}} \mbox{\hyperlink{game__logic_8h_a63dcab37e35c86eb1478c9bfc31c34de}{move\+\_\+points}} \mbox{[}500\mbox{]}
 \item 
 struct \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} \mbox{\hyperlink{game__logic_8h_a8f28a6e47af069b27e0599dfda57a5a4}{player\+\_\+pos}}
+\item 
+clock\+\_\+t \mbox{\hyperlink{game__logic_8h_ab162dafab314b773b5956bcc76564d7f}{start\+\_\+t}}
+\item 
+clock\+\_\+t \mbox{\hyperlink{game__logic_8h_a373445dd75a85e7c6854500f6dc89175}{end\+\_\+t}}
 \end{DoxyCompactItemize}
 
 
@@ -108,6 +117,19 @@ This function handles the collisions in the game.
 
 This function will end the game when it\textquotesingle{}s game over. 
 
+\mbox{\Hypertarget{game__logic_8h_aec9d524e1f6bea01d3b8d1c8873d7f51}\label{game__logic_8h_aec9d524e1f6bea01d3b8d1c8873d7f51}} 
+\index{game\_logic.h@{game\_logic.h}!get\_number\_of\_seconds@{get\_number\_of\_seconds}}
+\index{get\_number\_of\_seconds@{get\_number\_of\_seconds}!game\_logic.h@{game\_logic.h}}
+\subsubsection{\texorpdfstring{get\_number\_of\_seconds()}{get\_number\_of\_seconds()}}
+{\footnotesize\ttfamily double get\+\_\+number\+\_\+of\+\_\+seconds (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function calculates how many seconds has past since \mbox{\hyperlink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock()}} function was last called. 
+
+\begin{DoxyReturn}{Returns}
+It returns seconds in double format 
+\end{DoxyReturn}
 \mbox{\Hypertarget{game__logic_8h_a98ae56f79ae954e0d3a2ff2bfd47edbd}\label{game__logic_8h_a98ae56f79ae954e0d3a2ff2bfd47edbd}} 
 \index{game\_logic.h@{game\_logic.h}!handle\_input@{handle\_input}}
 \index{handle\_input@{handle\_input}!game\_logic.h@{game\_logic.h}}
@@ -148,10 +170,26 @@ This function will start the game from the title screen.
 
 This function will reset the game variables to be able to start from a new game. 
 
+\mbox{\Hypertarget{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}\label{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}} 
+\index{game\_logic.h@{game\_logic.h}!start\_clock@{start\_clock}}
+\index{start\_clock@{start\_clock}!game\_logic.h@{game\_logic.h}}
+\subsubsection{\texorpdfstring{start\_clock()}{start\_clock()}}
+{\footnotesize\ttfamily void start\+\_\+clock (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function starts and resets the timer that is used for speed boost. 
+
 
 
 \subsection{Variable Documentation}
-\mbox{\Hypertarget{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}\label{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}} 
+\mbox{\Hypertarget{game__logic_8h_a373445dd75a85e7c6854500f6dc89175}\label{game__logic_8h_a373445dd75a85e7c6854500f6dc89175}} 
+\index{game\_logic.h@{game\_logic.h}!end\_t@{end\_t}}
+\index{end\_t@{end\_t}!game\_logic.h@{game\_logic.h}}
+\subsubsection{\texorpdfstring{end\_t}{end\_t}}
+{\footnotesize\ttfamily clock\+\_\+t end\+\_\+t}
+
+this is used to calculate time together with start\+\_\+t. \mbox{\Hypertarget{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}\label{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}} 
 \index{game\_logic.h@{game\_logic.h}!move\_point\_index@{move\_point\_index}}
 \index{move\_point\_index@{move\_point\_index}!game\_logic.h@{game\_logic.h}}
 \subsubsection{\texorpdfstring{move\_point\_index}{move\_point\_index}}
@@ -169,4 +207,10 @@ Instantiated array of move points for the body to follow \mbox{\Hypertarget{game
 \subsubsection{\texorpdfstring{player\_pos}{player\_pos}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} player\+\_\+pos}
 
-the instantiated player position and movement structure 
+the instantiated player position and movement structure \mbox{\Hypertarget{game__logic_8h_ab162dafab314b773b5956bcc76564d7f}\label{game__logic_8h_ab162dafab314b773b5956bcc76564d7f}} 
+\index{game\_logic.h@{game\_logic.h}!start\_t@{start\_t}}
+\index{start\_t@{start\_t}!game\_logic.h@{game\_logic.h}}
+\subsubsection{\texorpdfstring{start\_t}{start\_t}}
+{\footnotesize\ttfamily clock\+\_\+t start\+\_\+t}
+
+this timer will count to 30 seconds before adding a speed increase for the game. 

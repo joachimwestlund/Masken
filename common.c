@@ -284,6 +284,8 @@ SDL_Texture* init_game_over_screen(SDL_Renderer* renderer)
     TTF_Font* fnt;
     SDL_Color color;
     char ret;
+    int s = 0;
+    char buffer[16] = {0};
 
     screen = NULL;
     texture = NULL;
@@ -301,6 +303,47 @@ SDL_Texture* init_game_over_screen(SDL_Renderer* renderer)
     color.b = 0x44;
     color.a = 0x00;
     ret = print_text(fnt, "Game Over", &color, screen, 100, 10);
+    if (ret == FALSE)
+        return NULL;
+
+    TTF_CloseFont(fnt);
+
+    fnt = load_font("Life is goofy.ttf", 100);
+    if (fnt == NULL)
+        return NULL;
+
+    color.r = 0x20;
+    color.g = 0x20;
+    color.b = 0xaa;
+    color.a = 0x00;
+    ret = print_text(fnt, "Your score:", &color, screen, 150, 300);
+    if (ret == FALSE)
+        return NULL;
+
+    color.r = 0xdd;
+    color.g = 0xdd;
+    color.b = 0x20;
+    color.a = 0x00;
+    itoa(score, buffer, 10);
+    ret = print_text(fnt, buffer, &color, screen, 470, 300);
+    if (ret == FALSE)
+        return NULL;
+
+    color.r = 0x20;
+    color.g = 0xaa;
+    color.b = 0x20;
+    color.a = 0x00;
+    ret = print_text(fnt, "Hiscore:", &color, screen, 150, 400);
+    if (ret == FALSE)
+        return NULL;
+
+    color.r = 0xdd;
+    color.g = 0xdd;
+    color.b = 0x20;
+    color.a = 0x00;
+    s = get_hiscore();
+    itoa(s, buffer, 10);
+    ret = print_text(fnt, buffer, &color, screen, 400, 400);
     if (ret == FALSE)
         return NULL;
 
