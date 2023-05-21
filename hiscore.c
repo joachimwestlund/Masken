@@ -17,7 +17,9 @@ char init_hiscore(void)
 
         buffer[i - 1] = '\0';
 
-        printf("Hiscore: %s\n", unscramble(buffer));
+        #ifdef DEBUG
+            printf("Hiscore: %s\n", unscramble(buffer));
+        #endif // DEBUG
 
         return TRUE;
     }

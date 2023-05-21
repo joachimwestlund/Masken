@@ -11,7 +11,7 @@ char init_renderer(SDL_Window* window)
         return FALSE;
     }
 
-    score_fnt = load_font("Life is goofy.ttf", 80);
+    score_fnt = load_font("fonts/Life is goofy.ttf", 80);
     if (score_fnt == NULL)
     {
         #ifdef DEBUG

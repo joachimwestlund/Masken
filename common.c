@@ -170,7 +170,7 @@ Mix_Music* load_music(char *filename)
 
 char init_music(void)
 {
-    song1 = Mix_LoadMUS("1990chip.ogg");
+    song1 = Mix_LoadMUS("music/1990chip.ogg");
     if(song1 == NULL)
     {
         #ifdef DEBUG
@@ -179,7 +179,7 @@ char init_music(void)
         return FALSE;
     }
 
-    song2 = Mix_LoadMUS("c64theme.ogg");
+    song2 = Mix_LoadMUS("music/c64theme.ogg");
     if(song2 == NULL)
     {
         #ifdef DEBUG
@@ -188,7 +188,7 @@ char init_music(void)
         return FALSE;
     }
 
-    song3 = Mix_LoadMUS("childrenhard.ogg");
+    song3 = Mix_LoadMUS("music/childrenhard.ogg");
     if(song3 == NULL)
     {
         #ifdef DEBUG
@@ -197,7 +197,7 @@ char init_music(void)
         return FALSE;
     }
 
-    song4 = Mix_LoadMUS("medc64-mania.ogg");
+    song4 = Mix_LoadMUS("music/medc64-mania.ogg");
     if(song4 == NULL)
     {
         #ifdef DEBUG
@@ -206,7 +206,7 @@ char init_music(void)
         return FALSE;
     }
 
-    song5 = Mix_LoadMUS("c64_tune_odkin.ogg");
+    song5 = Mix_LoadMUS("music/c64_tune_odkin.ogg");
     if(song5 == NULL)
     {
         #ifdef DEBUG
@@ -290,11 +290,11 @@ SDL_Texture* init_game_over_screen(SDL_Renderer* renderer)
     screen = NULL;
     texture = NULL;
 
-    screen = load_png("black.png");
+    screen = load_png("pictures/black.png");
     if (screen == NULL)
         return NULL;
 
-    fnt = load_font("Butterflies Free.ttf", 200);
+    fnt = load_font("fonts/Butterflies Free.ttf", 200);
     if (fnt == NULL)
         return NULL;
 
@@ -308,7 +308,7 @@ SDL_Texture* init_game_over_screen(SDL_Renderer* renderer)
 
     TTF_CloseFont(fnt);
 
-    fnt = load_font("Life is goofy.ttf", 100);
+    fnt = load_font("fonts/Life is goofy.ttf", 100);
     if (fnt == NULL)
         return NULL;
 
@@ -376,11 +376,11 @@ SDL_Texture* init_title_screen(SDL_Renderer* renderer)
     screen = NULL;
     texture = NULL;
 
-    screen = load_bmp("hello.bmp");
+    screen = load_bmp("pictures/hello.bmp");
     if (screen == NULL)
         return NULL;
 
-    image = load_png("worm.png");
+    image = load_png("pictures/worm.png");
     SDL_Rect rect;
     rect.x = (screen->w / 2) - (image->w / 2) - 80;
     rect.y = (screen->h / 2) - (image->h / 2) - 50;
@@ -389,7 +389,7 @@ SDL_Texture* init_title_screen(SDL_Renderer* renderer)
     SDL_BlitSurface(image, NULL, screen, &rect);
     SDL_FreeSurface(image);
 
-    image = load_png("joachim_westlund.png");
+    image = load_png("pictures/joachim_westlund.png");
     rect.x = 10;
     rect.y = 10;
     rect.h = image->h;
@@ -397,7 +397,7 @@ SDL_Texture* init_title_screen(SDL_Renderer* renderer)
     SDL_BlitSurface(image, NULL, screen, &rect);
     SDL_FreeSurface(image);
 
-    fnt = load_font("Butterflies Free.ttf", 200);
+    fnt = load_font("fonts/Butterflies Free.ttf", 200);
     if (fnt == NULL)
         return NULL;
 
@@ -411,7 +411,7 @@ SDL_Texture* init_title_screen(SDL_Renderer* renderer)
 
     TTF_CloseFont(fnt);
 
-    fnt = load_font("Life is goofy.ttf", 70);
+    fnt = load_font("fonts/Life is goofy.ttf", 70);
     if (fnt == NULL)
         return NULL;
 
@@ -425,7 +425,7 @@ SDL_Texture* init_title_screen(SDL_Renderer* renderer)
 
     TTF_CloseFont(fnt);
 
-    fnt = load_font("Life is goofy.ttf", 100);
+    fnt = load_font("fonts/Life is goofy.ttf", 100);
     if (fnt == NULL)
         return NULL;
 
@@ -465,7 +465,7 @@ SDL_Texture* init_game_screen(SDL_Renderer* renderer)
     screen = NULL;
     texture = NULL;
 
-    screen = load_png("play_field.png");
+    screen = load_png("pictures/play_field.png");
     if (screen == NULL)
     {
         #ifdef DEBUG
@@ -474,7 +474,7 @@ SDL_Texture* init_game_screen(SDL_Renderer* renderer)
         return NULL;
     }
 
-    fnt = load_font("Life is goofy.ttf", 80);
+    fnt = load_font("fonts/Life is goofy.ttf", 80);
     if (fnt == NULL)
         return NULL;
 
@@ -509,7 +509,7 @@ char init_player(void)
     int w;
     int h;
 
-    t = load_texture("head.png", renderer);
+    t = load_texture("pictures/head.png", renderer);
     if (t == NULL)
         return FALSE;
 
@@ -533,7 +533,7 @@ char init_food(void)
     int w;
     int h;
 
-    t = load_texture("apple.png", renderer);
+    t = load_texture("pictures/apple.png", renderer);
     if (t == NULL)
     {
         return FALSE;
@@ -584,7 +584,7 @@ char init_body(void)
     int w;
     int h;
 
-    t = load_texture("body.png", renderer);
+    t = load_texture("pictures/body.png", renderer);
     if (t == NULL)
         return FALSE;
 
