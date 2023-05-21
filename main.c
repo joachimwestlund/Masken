@@ -170,7 +170,6 @@ int main(void)
     }
 
     // free stuff and quit
-   //free(body_sections);
     SDL_DestroyRenderer(renderer);
     SDL_FreeSurface(screen_surface);
     SDL_DestroyWindow(window);
