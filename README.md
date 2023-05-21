@@ -9,7 +9,7 @@ A snake clone written in C for educational purposes.
 * Music processing
 * True type fonts processing
 
-##How to play:
+## How to play:
 
 **From the start screen**
 
@@ -18,6 +18,7 @@ At any time you can hit ESC-key to go back.
 At any time you can change music with keys 1-5, or silence with the 0-key.
 
 **In game:**
+
 Use arrow keys to move the snake around.
 You are not allowed to hit the walls or yourself with the head of the snake.
 
