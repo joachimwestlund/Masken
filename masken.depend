@@ -404,7 +404,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1684682026 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
+1684682818 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
 	<stdio.h>
 	<SDL2/SDL.h>
 	"debug.h"
@@ -420,7 +420,7 @@
 1684422129 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
 	"input.h"
 
-1684090090 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h
+1684682849 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h
 	<SDL2/SDL.h>
 	"debug.h"
 	"common.h"
@@ -449,7 +449,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1684681891 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
+1684682832 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
 	<stdio.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_ttf.h>
@@ -460,7 +460,7 @@
 	"game_objects.h"
 	"hiscore.h"
 
-1684414544 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_objects.h
+1684682841 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_objects.h
 
 1684567919 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.c
 	"renderer.h"

@@ -2,6 +2,12 @@
 
 A snake clone written in C for educational purposes.
 
+It is coded with [Code::Blocks IDE](https://www.codeblocks.org)
+
+It won't compile on Linux because the use of itoa() function that is not in the ANSI C standard.
+But that can easily be changed with snprintf() function. But I will not do it now.
+I'm sure there are other things too.
+
 [Simple DirectMedia Layer (SDL2)](https://www.libsdl.org) is used for various things.
 
 * Rendering pixels to the screen
