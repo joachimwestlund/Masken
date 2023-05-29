@@ -1,32 +1,32 @@
-\hypertarget{common_8c}{}\section{common.\+c File Reference}
-\label{common_8c}\index{common.c@{common.c}}
-{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
-\subsection*{Functions}
+\doxysection{common.\+c File Reference}
+\hypertarget{common_8c}{}\label{common_8c}\index{common.c@{common.c}}
+{\ttfamily \#include \"{}common.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{common_8c_a3aad31e40815defd4a43af38f14bbcf6}{sdl\+\_\+init}} (void)
-\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+L2 graphics library for this game. \end{DoxyCompactList}\item 
-S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8c_ad870ef04e6cb0ebb550fd6495604c0bb}{load\+\_\+bmp}} (char $\ast$path)
-\begin{DoxyCompactList}\small\item\em Loads an image of B\+MP format to an R\+GB format S\+D\+L\+\_\+surface. \end{DoxyCompactList}\item 
-S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{common_8c_acb97cbd03475631aab91f8d002de3f5b}{load\+\_\+png}} (char $\ast$path)
-\begin{DoxyCompactList}\small\item\em Loads an image of P\+NG format to an R\+G\+BA format S\+D\+L\+\_\+surface. \end{DoxyCompactList}\item 
-S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_a36ebe304df124b309e2528ac98b9b96b}{load\+\_\+texture}} (char $\ast$path, S\+D\+L\+\_\+\+Renderer $\ast$r)
+SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{common_8c_ad8fc8c3127f1a0bea68dc942f4b6f3b1}{sdl\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the SDL2 graphics library for this game. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{common_8c_a68869401be4ab831412afc8a03789634}{load\+\_\+bmp}} (char \texorpdfstring{$\ast$}{*}path)
+\begin{DoxyCompactList}\small\item\em Loads an image of BMP format to an RGB format SDL\+\_\+surface. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{common_8c_a3383ac31fdef3aaeafc71d6b36a22bbd}{load\+\_\+png}} (char \texorpdfstring{$\ast$}{*}path)
+\begin{DoxyCompactList}\small\item\em Loads an image of PNG format to an RGBA format SDL\+\_\+surface. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{common_8c_a516cce52371b129220ed505abe5af6ae}{load\+\_\+texture}} (char \texorpdfstring{$\ast$}{*}path, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r)
 \begin{DoxyCompactList}\small\item\em Loads a texture from disk. \end{DoxyCompactList}\item 
-T\+T\+F\+\_\+\+Font $\ast$ \mbox{\hyperlink{common_8c_abd552a7f4932221f1527394cdbb450c9}{load\+\_\+font}} (char $\ast$path, int size)
+TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{common_8c_ab7743433a438f03302e8221857ba95d2}{load\+\_\+font}} (char \texorpdfstring{$\ast$}{*}path, int size)
 \begin{DoxyCompactList}\small\item\em Loads a true type font. \end{DoxyCompactList}\item 
-char \mbox{\hyperlink{common_8c_ad794f7778df193a3f1c3e0abfb3ca482}{print\+\_\+text}} (T\+T\+F\+\_\+\+Font $\ast$fnt, char $\ast$text, S\+D\+L\+\_\+\+Color $\ast$color, S\+D\+L\+\_\+\+Surface $\ast$destination, int x, int y)
+char \mbox{\hyperlink{common_8c_ad794f7778df193a3f1c3e0abfb3ca482}{print\+\_\+text}} (TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}fnt, char \texorpdfstring{$\ast$}{*}text, SDL\+\_\+\+Color \texorpdfstring{$\ast$}{*}color, SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*}destination, int x, int y)
 \begin{DoxyCompactList}\small\item\em Blits a font to a surface. \end{DoxyCompactList}\item 
-Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{common_8c_aab46d4a34c2d80343c934bc1d41d23ec}{load\+\_\+music}} (char $\ast$filename)
+Mix\+\_\+\+Music \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{common_8c_a707b0847b911ccb3b77cd02e4f028973}{load\+\_\+music}} (char \texorpdfstring{$\ast$}{*}filename)
 \begin{DoxyCompactList}\small\item\em Loads an vorbis ogg file. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{common_8c_a96e70232c7c96eb4b821fb26037f36b5}{init\+\_\+music}} (void)
 \begin{DoxyCompactList}\small\item\em Loads all 5 songs to be used in this game. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{common_8c_a3f7d079ae164240677e5fc1c6f435c9a}{change\+\_\+music}} (int nr)
 \begin{DoxyCompactList}\small\item\em Change between the 5 songs loaded or pause music. \end{DoxyCompactList}\item 
-S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_a8d0b8a0ab30bd9bf8b237d52d07f3b3b}{init\+\_\+game\+\_\+over\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{common_8c_a3e42444a54808a28f68a1a51618d5c33}{init\+\_\+game\+\_\+over\+\_\+screen}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
 \begin{DoxyCompactList}\small\item\em Initialize and create the game over screen graphics. \end{DoxyCompactList}\item 
-S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_ad1c960adbe60d68cd658b40ef4c82f78}{init\+\_\+title\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{common_8c_ac9629745031628fa0af0bb71040dc782}{init\+\_\+title\+\_\+screen}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
 \begin{DoxyCompactList}\small\item\em Initialize and create the title screen graphics. \end{DoxyCompactList}\item 
-S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{common_8c_ae91aea3417ef6310746cd4e2aa4c7387}{init\+\_\+game\+\_\+screen}} (S\+D\+L\+\_\+\+Renderer $\ast$\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{common_8c_aac408c6b738fc0bab4c241c87574c0d8}{init\+\_\+game\+\_\+screen}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}})
 \begin{DoxyCompactList}\small\item\em Initialize and create the game screen graphics. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{common_8c_a119bd4ef50181b6e984da9d9d265ccc9}{init\+\_\+player}} (void)
 \begin{DoxyCompactList}\small\item\em Initialize and create the player graphics and position. \end{DoxyCompactList}\item 
@@ -38,11 +38,11 @@ char \mbox{\hyperlink{common_8c_a1bfaa2825b9205d2c4fbc6c2d7bae5af}{init\+\_\+bod
 \begin{DoxyCompactList}\small\item\em Initialize and create the body graphics and position. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Function Documentation}
-\mbox{\Hypertarget{common_8c_a3f7d079ae164240677e5fc1c6f435c9a}\label{common_8c_a3f7d079ae164240677e5fc1c6f435c9a}} 
+\doxysubsection{Function Documentation}
+\Hypertarget{common_8c_a3f7d079ae164240677e5fc1c6f435c9a}\label{common_8c_a3f7d079ae164240677e5fc1c6f435c9a} 
 \index{common.c@{common.c}!change\_music@{change\_music}}
 \index{change\_music@{change\_music}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{change\_music()}{change\_music()}}
+\doxysubsubsection{\texorpdfstring{change\_music()}{change\_music()}}
 {\footnotesize\ttfamily char change\+\_\+music (\begin{DoxyParamCaption}\item[{int}]{nr }\end{DoxyParamCaption})}
 
 
@@ -55,12 +55,12 @@ Change between the 5 songs loaded or pause music.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns T\+R\+UE on success or F\+A\+IL on failiure. 
+Returns TRUE on success or FAIL on failiure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_a1bfaa2825b9205d2c4fbc6c2d7bae5af}\label{common_8c_a1bfaa2825b9205d2c4fbc6c2d7bae5af}} 
+\Hypertarget{common_8c_a1bfaa2825b9205d2c4fbc6c2d7bae5af}\label{common_8c_a1bfaa2825b9205d2c4fbc6c2d7bae5af} 
 \index{common.c@{common.c}!init\_body@{init\_body}}
 \index{init\_body@{init\_body}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{init\_body()}{init\_body()}}
+\doxysubsubsection{\texorpdfstring{init\_body()}{init\_body()}}
 {\footnotesize\ttfamily char init\+\_\+body (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
@@ -68,12 +68,12 @@ Returns T\+R\+UE on success or F\+A\+IL on failiure.
 Initialize and create the body graphics and position. 
 
 \begin{DoxyReturn}{Returns}
-T\+R\+UE on success or F\+A\+L\+SE on failure. 
+TRUE on success or FALSE on failure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_a233f7ef2b2fa3ea7d2b40def4954da59}\label{common_8c_a233f7ef2b2fa3ea7d2b40def4954da59}} 
+\Hypertarget{common_8c_a233f7ef2b2fa3ea7d2b40def4954da59}\label{common_8c_a233f7ef2b2fa3ea7d2b40def4954da59} 
 \index{common.c@{common.c}!init\_food@{init\_food}}
 \index{init\_food@{init\_food}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{init\_food()}{init\_food()}}
+\doxysubsubsection{\texorpdfstring{init\_food()}{init\_food()}}
 {\footnotesize\ttfamily char init\+\_\+food (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
@@ -81,13 +81,13 @@ T\+R\+UE on success or F\+A\+L\+SE on failure.
 Initialize and create the food graphics and position and score. 
 
 \begin{DoxyReturn}{Returns}
-T\+R\+UE on success or F\+A\+L\+SE on failure. 
+TRUE on success or FALSE on failure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_a8d0b8a0ab30bd9bf8b237d52d07f3b3b}\label{common_8c_a8d0b8a0ab30bd9bf8b237d52d07f3b3b}} 
+\Hypertarget{common_8c_a3e42444a54808a28f68a1a51618d5c33}\label{common_8c_a3e42444a54808a28f68a1a51618d5c33} 
 \index{common.c@{common.c}!init\_game\_over\_screen@{init\_game\_over\_screen}}
 \index{init\_game\_over\_screen@{init\_game\_over\_screen}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{init\_game\_over\_screen()}{init\_game\_over\_screen()}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ init\+\_\+game\+\_\+over\+\_\+screen (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{init\_game\_over\_screen()}{init\_game\_over\_screen()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} init\+\_\+game\+\_\+over\+\_\+screen (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})}
 
 
 
@@ -99,13 +99,13 @@ Initialize and create the game over screen graphics.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-a S\+D\+L\+\_\+\+Texture containing the game over screen. Or N\+U\+LL on failure. 
+a SDL\+\_\+\+Texture containing the game over screen. Or NULL on failure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_ae91aea3417ef6310746cd4e2aa4c7387}\label{common_8c_ae91aea3417ef6310746cd4e2aa4c7387}} 
+\Hypertarget{common_8c_aac408c6b738fc0bab4c241c87574c0d8}\label{common_8c_aac408c6b738fc0bab4c241c87574c0d8} 
 \index{common.c@{common.c}!init\_game\_screen@{init\_game\_screen}}
 \index{init\_game\_screen@{init\_game\_screen}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{init\_game\_screen()}{init\_game\_screen()}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ init\+\_\+game\+\_\+screen (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{init\_game\_screen()}{init\_game\_screen()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} init\+\_\+game\+\_\+screen (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})}
 
 
 
@@ -117,12 +117,12 @@ Initialize and create the game screen graphics.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-a S\+D\+L\+\_\+\+Texture containing the game screen. Or N\+U\+LL on failure. 
+a SDL\+\_\+\+Texture containing the game screen. Or NULL on failure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_a96e70232c7c96eb4b821fb26037f36b5}\label{common_8c_a96e70232c7c96eb4b821fb26037f36b5}} 
+\Hypertarget{common_8c_a96e70232c7c96eb4b821fb26037f36b5}\label{common_8c_a96e70232c7c96eb4b821fb26037f36b5} 
 \index{common.c@{common.c}!init\_music@{init\_music}}
 \index{init\_music@{init\_music}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{init\_music()}{init\_music()}}
+\doxysubsubsection{\texorpdfstring{init\_music()}{init\_music()}}
 {\footnotesize\ttfamily char init\+\_\+music (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
@@ -130,12 +130,12 @@ a S\+D\+L\+\_\+\+Texture containing the game screen. Or N\+U\+LL on failure.
 Loads all 5 songs to be used in this game. 
 
 \begin{DoxyReturn}{Returns}
-Returns T\+R\+UE on success or F\+A\+IL on failiure. 
+Returns TRUE on success or FAIL on failiure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_a119bd4ef50181b6e984da9d9d265ccc9}\label{common_8c_a119bd4ef50181b6e984da9d9d265ccc9}} 
+\Hypertarget{common_8c_a119bd4ef50181b6e984da9d9d265ccc9}\label{common_8c_a119bd4ef50181b6e984da9d9d265ccc9} 
 \index{common.c@{common.c}!init\_player@{init\_player}}
 \index{init\_player@{init\_player}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{init\_player()}{init\_player()}}
+\doxysubsubsection{\texorpdfstring{init\_player()}{init\_player()}}
 {\footnotesize\ttfamily char init\+\_\+player (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
@@ -143,13 +143,13 @@ Returns T\+R\+UE on success or F\+A\+IL on failiure.
 Initialize and create the player graphics and position. 
 
 \begin{DoxyReturn}{Returns}
-T\+R\+UE on success or F\+A\+L\+SE on failure. 
+TRUE on success or FALSE on failure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_ad1c960adbe60d68cd658b40ef4c82f78}\label{common_8c_ad1c960adbe60d68cd658b40ef4c82f78}} 
+\Hypertarget{common_8c_ac9629745031628fa0af0bb71040dc782}\label{common_8c_ac9629745031628fa0af0bb71040dc782} 
 \index{common.c@{common.c}!init\_title\_screen@{init\_title\_screen}}
 \index{init\_title\_screen@{init\_title\_screen}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{init\_title\_screen()}{init\_title\_screen()}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ init\+\_\+title\+\_\+screen (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{init\_title\_screen()}{init\_title\_screen()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} init\+\_\+title\+\_\+screen (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})}
 
 
 
@@ -161,17 +161,17 @@ Initialize and create the title screen graphics.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-a S\+D\+L\+\_\+\+Texture containing the title screen. Or N\+U\+LL on failure. 
+a SDL\+\_\+\+Texture containing the title screen. Or NULL on failure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_ad870ef04e6cb0ebb550fd6495604c0bb}\label{common_8c_ad870ef04e6cb0ebb550fd6495604c0bb}} 
+\Hypertarget{common_8c_a68869401be4ab831412afc8a03789634}\label{common_8c_a68869401be4ab831412afc8a03789634} 
 \index{common.c@{common.c}!load\_bmp@{load\_bmp}}
 \index{load\_bmp@{load\_bmp}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{load\_bmp()}{load\_bmp()}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ load\+\_\+bmp (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{load\_bmp()}{load\_bmp()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} load\+\_\+bmp (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path }\end{DoxyParamCaption})}
 
 
 
-Loads an image of B\+MP format to an R\+GB format S\+D\+L\+\_\+surface. 
+Loads an image of BMP format to an RGB format SDL\+\_\+surface. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -179,13 +179,13 @@ Loads an image of B\+MP format to an R\+GB format S\+D\+L\+\_\+surface.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns a pointer to a S\+D\+L\+\_\+\+Surface containing the image. 
+Returns a pointer to a SDL\+\_\+\+Surface containing the image. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_abd552a7f4932221f1527394cdbb450c9}\label{common_8c_abd552a7f4932221f1527394cdbb450c9}} 
+\Hypertarget{common_8c_ab7743433a438f03302e8221857ba95d2}\label{common_8c_ab7743433a438f03302e8221857ba95d2} 
 \index{common.c@{common.c}!load\_font@{load\_font}}
 \index{load\_font@{load\_font}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{load\_font()}{load\_font()}}
-{\footnotesize\ttfamily T\+T\+F\+\_\+\+Font$\ast$ load\+\_\+font (\begin{DoxyParamCaption}\item[{char $\ast$}]{path,  }\item[{int}]{size }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{load\_font()}{load\_font()}}
+{\footnotesize\ttfamily TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*} load\+\_\+font (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path,  }\item[{int}]{size }\end{DoxyParamCaption})}
 
 
 
@@ -199,13 +199,13 @@ Loads a true type font.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns a pointer to a T\+T\+F\+\_\+\+Font containing the font or N\+U\+LL on failiure. 
+Returns a pointer to a TTF\+\_\+\+Font containing the font or NULL on failiure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_aab46d4a34c2d80343c934bc1d41d23ec}\label{common_8c_aab46d4a34c2d80343c934bc1d41d23ec}} 
+\Hypertarget{common_8c_a707b0847b911ccb3b77cd02e4f028973}\label{common_8c_a707b0847b911ccb3b77cd02e4f028973} 
 \index{common.c@{common.c}!load\_music@{load\_music}}
 \index{load\_music@{load\_music}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{load\_music()}{load\_music()}}
-{\footnotesize\ttfamily Mix\+\_\+\+Music$\ast$ load\+\_\+music (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{load\_music()}{load\_music()}}
+{\footnotesize\ttfamily Mix\+\_\+\+Music \texorpdfstring{$\ast$}{*} load\+\_\+music (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
 
 
 
@@ -217,17 +217,17 @@ Loads an vorbis ogg file.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns a pointer to M\+I\+X\+\_\+\+Music containing the music or N\+U\+LL on failiure. 
+Returns a pointer to MIX\+\_\+\+Music containing the music or NULL on failiure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_acb97cbd03475631aab91f8d002de3f5b}\label{common_8c_acb97cbd03475631aab91f8d002de3f5b}} 
+\Hypertarget{common_8c_a3383ac31fdef3aaeafc71d6b36a22bbd}\label{common_8c_a3383ac31fdef3aaeafc71d6b36a22bbd} 
 \index{common.c@{common.c}!load\_png@{load\_png}}
 \index{load\_png@{load\_png}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{load\_png()}{load\_png()}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ load\+\_\+png (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{load\_png()}{load\_png()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} load\+\_\+png (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path }\end{DoxyParamCaption})}
 
 
 
-Loads an image of P\+NG format to an R\+G\+BA format S\+D\+L\+\_\+surface. 
+Loads an image of PNG format to an RGBA format SDL\+\_\+surface. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -235,13 +235,13 @@ Loads an image of P\+NG format to an R\+G\+BA format S\+D\+L\+\_\+surface.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns a pointer to a S\+D\+L\+\_\+\+Surface containing the image or N\+U\+LL on failiure. 
+Returns a pointer to a SDL\+\_\+\+Surface containing the image or NULL on failiure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_a36ebe304df124b309e2528ac98b9b96b}\label{common_8c_a36ebe304df124b309e2528ac98b9b96b}} 
+\Hypertarget{common_8c_a516cce52371b129220ed505abe5af6ae}\label{common_8c_a516cce52371b129220ed505abe5af6ae} 
 \index{common.c@{common.c}!load\_texture@{load\_texture}}
 \index{load\_texture@{load\_texture}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{load\_texture()}{load\_texture()}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ load\+\_\+texture (\begin{DoxyParamCaption}\item[{char $\ast$}]{path,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{r }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{load\_texture()}{load\_texture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} load\+\_\+texture (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path,  }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{r }\end{DoxyParamCaption})}
 
 
 
@@ -255,12 +255,12 @@ Loads a texture from disk.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns a pointer to a T\+T\+F\+\_\+\+Font containing the font or N\+U\+LL on failiure. 
+Returns a pointer to a TTF\+\_\+\+Font containing the font or NULL on failiure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_a9b9f5684b5ebc0299f0167628d38f7ee}\label{common_8c_a9b9f5684b5ebc0299f0167628d38f7ee}} 
+\Hypertarget{common_8c_a9b9f5684b5ebc0299f0167628d38f7ee}\label{common_8c_a9b9f5684b5ebc0299f0167628d38f7ee} 
 \index{common.c@{common.c}!new\_food@{new\_food}}
 \index{new\_food@{new\_food}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{new\_food()}{new\_food()}}
+\doxysubsubsection{\texorpdfstring{new\_food()}{new\_food()}}
 {\footnotesize\ttfamily char new\+\_\+food (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
@@ -268,13 +268,13 @@ Returns a pointer to a T\+T\+F\+\_\+\+Font containing the font or N\+U\+LL on fa
 Creates new food. 
 
 \begin{DoxyReturn}{Returns}
-T\+R\+UE on success or F\+A\+L\+SE on failure. 
+TRUE on success or FALSE on failure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_ad794f7778df193a3f1c3e0abfb3ca482}\label{common_8c_ad794f7778df193a3f1c3e0abfb3ca482}} 
+\Hypertarget{common_8c_ad794f7778df193a3f1c3e0abfb3ca482}\label{common_8c_ad794f7778df193a3f1c3e0abfb3ca482} 
 \index{common.c@{common.c}!print\_text@{print\_text}}
 \index{print\_text@{print\_text}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{print\_text()}{print\_text()}}
-{\footnotesize\ttfamily char print\+\_\+text (\begin{DoxyParamCaption}\item[{T\+T\+F\+\_\+\+Font $\ast$}]{fnt,  }\item[{char $\ast$}]{text,  }\item[{S\+D\+L\+\_\+\+Color $\ast$}]{color,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{destination,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{print\_text()}{print\_text()}}
+{\footnotesize\ttfamily char print\+\_\+text (\begin{DoxyParamCaption}\item[{TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}}]{fnt,  }\item[{char \texorpdfstring{$\ast$}{*}}]{text,  }\item[{SDL\+\_\+\+Color \texorpdfstring{$\ast$}{*}}]{color,  }\item[{SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*}}]{destination,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
 
 
 
@@ -286,7 +286,7 @@ Blits a font to a surface.
 \hline
 {\em text} & the text to be rendered. \\
 \hline
-{\em color} & S\+D\+L\+\_\+\+Color to color the thing. \\
+{\em color} & SDL\+\_\+\+Color to color the thing. \\
 \hline
 {\em destination} & surface that the font should be blitted to. \\
 \hline
@@ -296,18 +296,18 @@ Blits a font to a surface.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns T\+R\+UE if success and F\+A\+L\+SE on failiure. 
+Returns TRUE if success and FALSE on failiure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{common_8c_a3aad31e40815defd4a43af38f14bbcf6}\label{common_8c_a3aad31e40815defd4a43af38f14bbcf6}} 
+\Hypertarget{common_8c_ad8fc8c3127f1a0bea68dc942f4b6f3b1}\label{common_8c_ad8fc8c3127f1a0bea68dc942f4b6f3b1} 
 \index{common.c@{common.c}!sdl\_init@{sdl\_init}}
 \index{sdl\_init@{sdl\_init}!common.c@{common.c}}
-\subsubsection{\texorpdfstring{sdl\_init()}{sdl\_init()}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ sdl\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{sdl\_init()}{sdl\_init()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} sdl\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-Initializes the S\+D\+L2 graphics library for this game. 
+Initializes the SDL2 graphics library for this game. 
 
 \begin{DoxyReturn}{Returns}
-success = S\+D\+L\+\_\+\+Window pointer failure = N\+U\+LL 
+success = SDL\+\_\+\+Window pointer failure = NULL 
 \end{DoxyReturn}

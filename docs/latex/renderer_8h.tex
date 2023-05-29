@@ -1,56 +1,56 @@
-\hypertarget{renderer_8h}{}\section{renderer.\+h File Reference}
-\label{renderer_8h}\index{renderer.h@{renderer.h}}
-{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+\doxysection{renderer.\+h File Reference}
+\hypertarget{renderer_8h}{}\label{renderer_8h}\index{renderer.h@{renderer.h}}
+{\ttfamily \#include \"{}common.\+h\"{}}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
-\subsection*{Data Structures}
+\doxysubsubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structrender__objects}{render\+\_\+objects}}
 \end{DoxyCompactItemize}
-\subsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-char \mbox{\hyperlink{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}{init\+\_\+renderer}} (S\+D\+L\+\_\+\+Window $\ast$window)
+char \mbox{\hyperlink{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}{init\+\_\+renderer}} (SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}window)
 \begin{DoxyCompactList}\small\item\em Initialize the renerer for the game. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{renderer_8h_a6765cdcebe5c8445969d5f76345df457}{render}} (void)
 \begin{DoxyCompactList}\small\item\em this is the renderer that the game loop should call \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{renderer_8h_a7171d26350ede501f757875cd5e3dae2}{add\+\_\+to\+\_\+render\+\_\+queue}} (S\+D\+L\+\_\+\+Texture $\ast$texture, S\+D\+L\+\_\+\+Rect rect, int angle)
+void \mbox{\hyperlink{renderer_8h_a7171d26350ede501f757875cd5e3dae2}{add\+\_\+to\+\_\+render\+\_\+queue}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture, SDL\+\_\+\+Rect rect, int angle)
 \begin{DoxyCompactList}\small\item\em this function will take in a texture and render it to the offscreen buffer. For now only 100 items can be added. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{renderer_8h_a746750d82ff06f8bca0faf22f52eb1c2}{render\+\_\+queue}} (void)
 \begin{DoxyCompactList}\small\item\em This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer. \end{DoxyCompactList}\item 
-char $\ast$ \mbox{\hyperlink{renderer_8h_a61f8eab3dd5ea48db40c570b17b7de63}{convert\+\_\+score\+\_\+to\+\_\+str}} ()
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{renderer_8h_a3a03bfb8ef4288310d583fbb5ea2e950}{convert\+\_\+score\+\_\+to\+\_\+str}} ()
 \end{DoxyCompactItemize}
-\subsection*{Variables}
+\doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structrender__objects}{render\+\_\+objects}} \mbox{\hyperlink{renderer_8h_a9f57190cf4ad8db9efbb4e3dba0ae79b}{r\+\_\+objects}} \mbox{[}300\mbox{]}
 \item 
 int \mbox{\hyperlink{renderer_8h_ac3445b19afe20b3c03c9a8ddc8f64c3d}{r\+\_\+objects\+\_\+count}}
 \item 
-S\+D\+L\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}}
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}}
 \item 
-S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{renderer_8h_acb08658d623221f17749b1c1b82eae64}{buffer}}
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{renderer_8h_acb08658d623221f17749b1c1b82eae64}{buffer}}
 \item 
-T\+T\+F\+\_\+\+Font $\ast$ \mbox{\hyperlink{renderer_8h_a766ffa05ac794a0a5b9439434285bb8f}{score\+\_\+fnt}}
+TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{renderer_8h_a766ffa05ac794a0a5b9439434285bb8f}{score\+\_\+fnt}}
 \item 
 char \mbox{\hyperlink{renderer_8h_a74a7db40aa981311f8bf27c85cbf1c2f}{score\+\_\+str}} \mbox{[}32\mbox{]}
 \item 
-S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{renderer_8h_a7fecd7fcf8fbbb7a1f873d7df280eada}{score\+\_\+surface}}
+SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{renderer_8h_a7fecd7fcf8fbbb7a1f873d7df280eada}{score\+\_\+surface}}
 \item 
-S\+D\+L\+\_\+\+Color \mbox{\hyperlink{renderer_8h_a71aff7549234721470ce826f5b5ab6e3}{score\+\_\+color}}
+SDL\+\_\+\+Color \mbox{\hyperlink{renderer_8h_a71aff7549234721470ce826f5b5ab6e3}{score\+\_\+color}}
 \item 
-S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{renderer_8h_a8ff7536c336c4f29d1f055ed7aa4d23a}{score\+\_\+texture}}
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{renderer_8h_a8ff7536c336c4f29d1f055ed7aa4d23a}{score\+\_\+texture}}
 \item 
-S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{renderer_8h_a5d04490d014b769a23004403d360479b}{score\+\_\+rect}}
+SDL\+\_\+\+Rect \mbox{\hyperlink{renderer_8h_a5d04490d014b769a23004403d360479b}{score\+\_\+rect}}
 \end{DoxyCompactItemize}
 
 
-\subsection{Function Documentation}
-\mbox{\Hypertarget{renderer_8h_a7171d26350ede501f757875cd5e3dae2}\label{renderer_8h_a7171d26350ede501f757875cd5e3dae2}} 
+\doxysubsection{Function Documentation}
+\Hypertarget{renderer_8h_a7171d26350ede501f757875cd5e3dae2}\label{renderer_8h_a7171d26350ede501f757875cd5e3dae2} 
 \index{renderer.h@{renderer.h}!add\_to\_render\_queue@{add\_to\_render\_queue}}
 \index{add\_to\_render\_queue@{add\_to\_render\_queue}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{add\_to\_render\_queue()}{add\_to\_render\_queue()}}
-{\footnotesize\ttfamily void add\+\_\+to\+\_\+render\+\_\+queue (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{texture,  }\item[{S\+D\+L\+\_\+\+Rect}]{rect,  }\item[{int}]{angle }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{add\_to\_render\_queue()}{add\_to\_render\_queue()}}
+{\footnotesize\ttfamily void add\+\_\+to\+\_\+render\+\_\+queue (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{texture,  }\item[{SDL\+\_\+\+Rect}]{rect,  }\item[{int}]{angle }\end{DoxyParamCaption})}
 
 
 
@@ -65,17 +65,17 @@ this function will take in a texture and render it to the offscreen buffer. For 
 {\em angle} & of rotation of the texture. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{renderer_8h_a61f8eab3dd5ea48db40c570b17b7de63}\label{renderer_8h_a61f8eab3dd5ea48db40c570b17b7de63}} 
+\Hypertarget{renderer_8h_a3a03bfb8ef4288310d583fbb5ea2e950}\label{renderer_8h_a3a03bfb8ef4288310d583fbb5ea2e950} 
 \index{renderer.h@{renderer.h}!convert\_score\_to\_str@{convert\_score\_to\_str}}
 \index{convert\_score\_to\_str@{convert\_score\_to\_str}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{convert\_score\_to\_str()}{convert\_score\_to\_str()}}
-{\footnotesize\ttfamily char$\ast$ convert\+\_\+score\+\_\+to\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{convert\_score\_to\_str()}{convert\_score\_to\_str()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} convert\+\_\+score\+\_\+to\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}\label{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}} 
+\Hypertarget{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0}\label{renderer_8h_a8211bb7e3d7bf5e33f03d2200b3e23f0} 
 \index{renderer.h@{renderer.h}!init\_renderer@{init\_renderer}}
 \index{init\_renderer@{init\_renderer}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{init\_renderer()}{init\_renderer()}}
-{\footnotesize\ttfamily char init\+\_\+renderer (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{init\_renderer()}{init\_renderer()}}
+{\footnotesize\ttfamily char init\+\_\+renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})}
 
 
 
@@ -83,26 +83,26 @@ Initialize the renerer for the game.
 
 
 \begin{DoxyParams}{Parameters}
-{\em window} & the S\+D\+L\+\_\+\+Window to render to. \\
+{\em window} & the SDL\+\_\+\+Window to render to. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-T\+R\+UE on success or F\+A\+L\+SE on failure. 
+TRUE on success or FALSE on failure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{renderer_8h_a6765cdcebe5c8445969d5f76345df457}\label{renderer_8h_a6765cdcebe5c8445969d5f76345df457}} 
+\Hypertarget{renderer_8h_a6765cdcebe5c8445969d5f76345df457}\label{renderer_8h_a6765cdcebe5c8445969d5f76345df457} 
 \index{renderer.h@{renderer.h}!render@{render}}
 \index{render@{render}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{render()}{render()}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
 {\footnotesize\ttfamily void render (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
 this is the renderer that the game loop should call 
 
-\mbox{\Hypertarget{renderer_8h_a746750d82ff06f8bca0faf22f52eb1c2}\label{renderer_8h_a746750d82ff06f8bca0faf22f52eb1c2}} 
+\Hypertarget{renderer_8h_a746750d82ff06f8bca0faf22f52eb1c2}\label{renderer_8h_a746750d82ff06f8bca0faf22f52eb1c2} 
 \index{renderer.h@{renderer.h}!render\_queue@{render\_queue}}
 \index{render\_queue@{render\_queue}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{render\_queue()}{render\_queue()}}
+\doxysubsubsection{\texorpdfstring{render\_queue()}{render\_queue()}}
 {\footnotesize\ttfamily void render\+\_\+queue (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
@@ -111,64 +111,64 @@ This function renders the the render queue to the double buffered screen. This i
 
 
 
-\subsection{Variable Documentation}
-\mbox{\Hypertarget{renderer_8h_acb08658d623221f17749b1c1b82eae64}\label{renderer_8h_acb08658d623221f17749b1c1b82eae64}} 
+\doxysubsection{Variable Documentation}
+\Hypertarget{renderer_8h_acb08658d623221f17749b1c1b82eae64}\label{renderer_8h_acb08658d623221f17749b1c1b82eae64} 
 \index{renderer.h@{renderer.h}!buffer@{buffer}}
 \index{buffer@{buffer}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{buffer}{buffer}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ buffer}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} buffer}
 
-this will act as some sort of buffer. It will be written to and later rendered to the game\+\_\+texture \mbox{\Hypertarget{renderer_8h_a9f57190cf4ad8db9efbb4e3dba0ae79b}\label{renderer_8h_a9f57190cf4ad8db9efbb4e3dba0ae79b}} 
+this will act as some sort of buffer. It will be written to and later rendered to the game\+\_\+texture \Hypertarget{renderer_8h_a9f57190cf4ad8db9efbb4e3dba0ae79b}\label{renderer_8h_a9f57190cf4ad8db9efbb4e3dba0ae79b} 
 \index{renderer.h@{renderer.h}!r\_objects@{r\_objects}}
 \index{r\_objects@{r\_objects}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{r\_objects}{r\_objects}}
+\doxysubsubsection{\texorpdfstring{r\_objects}{r\_objects}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{structrender__objects}{render\+\_\+objects}} r\+\_\+objects\mbox{[}300\mbox{]}}
 
-instantiated render objects array, render queue. This is the amount of object that can be rendered per frame \mbox{\Hypertarget{renderer_8h_ac3445b19afe20b3c03c9a8ddc8f64c3d}\label{renderer_8h_ac3445b19afe20b3c03c9a8ddc8f64c3d}} 
+instantiated render objects array, render queue. This is the amount of object that can be rendered per frame \Hypertarget{renderer_8h_ac3445b19afe20b3c03c9a8ddc8f64c3d}\label{renderer_8h_ac3445b19afe20b3c03c9a8ddc8f64c3d} 
 \index{renderer.h@{renderer.h}!r\_objects\_count@{r\_objects\_count}}
 \index{r\_objects\_count@{r\_objects\_count}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{r\_objects\_count}{r\_objects\_count}}
+\doxysubsubsection{\texorpdfstring{r\_objects\_count}{r\_objects\_count}}
 {\footnotesize\ttfamily int r\+\_\+objects\+\_\+count}
 
-number of object in renderer queue \mbox{\Hypertarget{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}\label{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}} 
+number of object in renderer queue \Hypertarget{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452}\label{renderer_8h_a966da7a60c4ea3ba301e26ccc5efe452} 
 \index{renderer.h@{renderer.h}!renderer@{renderer}}
 \index{renderer@{renderer}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{renderer}{renderer}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer$\ast$ renderer}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} renderer}
 
-The renerer for this game \mbox{\Hypertarget{renderer_8h_a71aff7549234721470ce826f5b5ab6e3}\label{renderer_8h_a71aff7549234721470ce826f5b5ab6e3}} 
+The renerer for this game \Hypertarget{renderer_8h_a71aff7549234721470ce826f5b5ab6e3}\label{renderer_8h_a71aff7549234721470ce826f5b5ab6e3} 
 \index{renderer.h@{renderer.h}!score\_color@{score\_color}}
 \index{score\_color@{score\_color}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{score\_color}{score\_color}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Color score\+\_\+color}
+\doxysubsubsection{\texorpdfstring{score\_color}{score\_color}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color score\+\_\+color}
 
-\mbox{\Hypertarget{renderer_8h_a766ffa05ac794a0a5b9439434285bb8f}\label{renderer_8h_a766ffa05ac794a0a5b9439434285bb8f}} 
+\Hypertarget{renderer_8h_a766ffa05ac794a0a5b9439434285bb8f}\label{renderer_8h_a766ffa05ac794a0a5b9439434285bb8f} 
 \index{renderer.h@{renderer.h}!score\_fnt@{score\_fnt}}
 \index{score\_fnt@{score\_fnt}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{score\_fnt}{score\_fnt}}
-{\footnotesize\ttfamily T\+T\+F\+\_\+\+Font$\ast$ score\+\_\+fnt}
+\doxysubsubsection{\texorpdfstring{score\_fnt}{score\_fnt}}
+{\footnotesize\ttfamily TTF\+\_\+\+Font\texorpdfstring{$\ast$}{*} score\+\_\+fnt}
 
-\mbox{\Hypertarget{renderer_8h_a5d04490d014b769a23004403d360479b}\label{renderer_8h_a5d04490d014b769a23004403d360479b}} 
+\Hypertarget{renderer_8h_a5d04490d014b769a23004403d360479b}\label{renderer_8h_a5d04490d014b769a23004403d360479b} 
 \index{renderer.h@{renderer.h}!score\_rect@{score\_rect}}
 \index{score\_rect@{score\_rect}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{score\_rect}{score\_rect}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect score\+\_\+rect}
+\doxysubsubsection{\texorpdfstring{score\_rect}{score\_rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect score\+\_\+rect}
 
-\mbox{\Hypertarget{renderer_8h_a74a7db40aa981311f8bf27c85cbf1c2f}\label{renderer_8h_a74a7db40aa981311f8bf27c85cbf1c2f}} 
+\Hypertarget{renderer_8h_a74a7db40aa981311f8bf27c85cbf1c2f}\label{renderer_8h_a74a7db40aa981311f8bf27c85cbf1c2f} 
 \index{renderer.h@{renderer.h}!score\_str@{score\_str}}
 \index{score\_str@{score\_str}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{score\_str}{score\_str}}
+\doxysubsubsection{\texorpdfstring{score\_str}{score\_str}}
 {\footnotesize\ttfamily char score\+\_\+str\mbox{[}32\mbox{]}}
 
-\mbox{\Hypertarget{renderer_8h_a7fecd7fcf8fbbb7a1f873d7df280eada}\label{renderer_8h_a7fecd7fcf8fbbb7a1f873d7df280eada}} 
+\Hypertarget{renderer_8h_a7fecd7fcf8fbbb7a1f873d7df280eada}\label{renderer_8h_a7fecd7fcf8fbbb7a1f873d7df280eada} 
 \index{renderer.h@{renderer.h}!score\_surface@{score\_surface}}
 \index{score\_surface@{score\_surface}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{score\_surface}{score\_surface}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ score\+\_\+surface}
+\doxysubsubsection{\texorpdfstring{score\_surface}{score\_surface}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface\texorpdfstring{$\ast$}{*} score\+\_\+surface}
 
-\mbox{\Hypertarget{renderer_8h_a8ff7536c336c4f29d1f055ed7aa4d23a}\label{renderer_8h_a8ff7536c336c4f29d1f055ed7aa4d23a}} 
+\Hypertarget{renderer_8h_a8ff7536c336c4f29d1f055ed7aa4d23a}\label{renderer_8h_a8ff7536c336c4f29d1f055ed7aa4d23a} 
 \index{renderer.h@{renderer.h}!score\_texture@{score\_texture}}
 \index{score\_texture@{score\_texture}!renderer.h@{renderer.h}}
-\subsubsection{\texorpdfstring{score\_texture}{score\_texture}}
-{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ score\+\_\+texture}
+\doxysubsubsection{\texorpdfstring{score\_texture}{score\_texture}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} score\+\_\+texture}
 

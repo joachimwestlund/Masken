@@ -1,0 +1,63 @@
+\doxysection{game\+\_\+logic.\+h}
+\hypertarget{game__logic_8h_source}{}\label{game__logic_8h_source}\mbox{\hyperlink{game__logic_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_GAME\_LOGIC\_H\_\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_GAME\_LOGIC\_H\_\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_ttf.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{debug_8h}{debug.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{common_8h}{common.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{input_8h}{input.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{game__objects_8h}{game\_objects.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{hiscore_8h}{hiscore.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}{move\_point\_index}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmove__point}{move\_point}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structmove__point_a6a0d40b2ed6d9e674f93396212f0028f}{dx}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structmove__point_a4817151aee120cc100c400d3076f4b93}{dy}};}
+\DoxyCodeLine{00022\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{structmove__point_a55aefd071649ac9dd8133e2d8a52d11f}{rect}};}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmove__point}{move\_point}}\ \mbox{\hyperlink{game__logic_8h_a63dcab37e35c86eb1478c9bfc31c34de}{move\_points}}[500];}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structplayer__movement}{player\_movement}}}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structplayer__movement_a6a0d40b2ed6d9e674f93396212f0028f}{dx}};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structplayer__movement_a4817151aee120cc100c400d3076f4b93}{dy}};}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structplayer__movement}{player\_movement}}\ \mbox{\hyperlink{game__logic_8h_a8f28a6e47af069b27e0599dfda57a5a4}{player\_pos}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_abdfb298c4eb2fba465cab1235f1c3723}{play}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_a54e0cce8af203ff63735b09ba427b3e2}{reset\_game}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_af3d7b3f9d578fb9e1b47e777ba27f887}{game\_over\_func}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_a98ae56f79ae954e0d3a2ff2bfd47edbd}{handle\_input}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_a7b661375fbf2de3e6f92726b502d5a08}{move\_player}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_ac1ebf23fb52af2cfcf25f72f13f7bc91}{check\_and\_handle\_collisions}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_aa3313eb8e023e3f4d21ffc9ec9b1f394}{add\_body\_parts}}(\textcolor{keywordtype}{int}\ no);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_afc0188d2c8d842b0b471f2a78e2f1018}{add\_move\_point}}(SDL\_Rect\ rect,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structplayer__movement_a6a0d40b2ed6d9e674f93396212f0028f}{dx}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structplayer__movement_a4817151aee120cc100c400d3076f4b93}{dy}});}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_abfb248477ebebd7907f0d69fdbd56f21}{add\_to\_score}}(\textcolor{keywordtype}{int}\ s);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00088\ clock\_t\ \mbox{\hyperlink{game__logic_8h_ab162dafab314b773b5956bcc76564d7f}{start\_t}};}
+\DoxyCodeLine{00090\ clock\_t\ \mbox{\hyperlink{game__logic_8h_a373445dd75a85e7c6854500f6dc89175}{end\_t}};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\_clock}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00101\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{game__logic_8h_aec9d524e1f6bea01d3b8d1c8873d7f51}{get\_number\_of\_seconds}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_GAME\_LOGIC\_H\_\_}}
+
+\end{DoxyCode}

@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1684690158 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
+1685347059 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.c
 	"common.h"
 
-1684678615 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\common.h
 	<stdio.h>
 	<stdlib.h>
 	<SDL2/SDL.h>
@@ -15,7 +15,7 @@
 	"renderer.h"
 	"hiscore.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_assert.h"
@@ -53,12 +53,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -87,29 +87,29 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_config.h
 	"SDL_platform.h"
 	<winsdkver.h>
 	<sdkddkver.h>
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
 	<AvailabilityMacros.h>
 	<TargetConditionals.h>
 	<winapifamily.h>
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\begin_code.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\begin_code.h
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\close_code.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\close_code.h
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	<signal.h>
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
 	"SDL_stdinc.h"
 	"SDL_platform.h"
 	"begin_code.h"
@@ -117,7 +117,7 @@
 	<mbarrier.h>
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -127,12 +127,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<endian.h>
@@ -141,13 +141,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_atomic.h"
@@ -158,18 +158,18 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<intrin.h>
@@ -191,7 +191,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -205,7 +205,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -213,13 +213,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
 	"SDL_stdinc.h"
 	"SDL_endian.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_pixels.h"
@@ -227,7 +227,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -236,11 +236,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keycode.h"
@@ -248,34 +248,34 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
 	"SDL_stdinc.h"
 	"SDL_scancode.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
 	"SDL_stdinc.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_guid.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_guid.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_guid.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
@@ -284,17 +284,17 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_sensor.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_sensor.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -302,70 +302,70 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_joystick.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_hidapi.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_hidapi.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_log.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
 	"SDL_stdinc.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_metal.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_metal.h
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_power.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_render.h
 	"SDL_stdinc.h"
 	"SDL_rect.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -374,7 +374,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_system.h
 	"SDL_stdinc.h"
 	"SDL_keyboard.h"
 	"SDL_render.h"
@@ -382,29 +382,29 @@
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_locale.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_locale.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1680720481 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_misc.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_misc.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1684695684 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
+1685347059 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\main.c
 	<stdio.h>
 	<SDL2/SDL.h>
 	"debug.h"
@@ -415,32 +415,32 @@
 	"renderer.h"
 	"hiscore.h"
 
-1684568723 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\debug.h
 
-1684422129 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
+1685347059 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.c
 	"input.h"
 
-1684682849 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\input.h
 	<SDL2/SDL.h>
 	"debug.h"
 	"common.h"
 	"game_logic.h"
 
-1684681137 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.c
+1685347059 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.c
 	"game_logic.h"
 
-1675734272 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_image.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_image.h
 	"SDL.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
 
-1675736113 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_ttf.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_ttf.h
 	"SDL.h"
 	"begin_code.h"
 	"close_code.h"
 
-1675735049 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_mixer.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\sdl2-2.26.5\x86_64-w64-mingw32\include\sdl2\sdl_mixer.h
 	"SDL_stdinc.h"
 	"SDL_rwops.h"
 	"SDL_audio.h"
@@ -449,7 +449,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1684682832 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_logic.h
 	<stdio.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_ttf.h>
@@ -460,19 +460,19 @@
 	"game_objects.h"
 	"hiscore.h"
 
-1684682841 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_objects.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\game_objects.h
 
-1684690202 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.c
+1685347060 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.c
 	"renderer.h"
 
-1684418017 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.h
+1685347060 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\renderer.h
 	"common.h"
 	<stdlib.h>
 
-1684690235 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.c
+1685347059 source:c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.c
 	"hiscore.h"
 
-1684568580 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.h
+1685347059 c:\users\jocke\onedrive\dokument\skola\10. programmeringsmetodik\masken\hiscore.h
 	<stdio.h>
 	<stdlib.h>
 	"common.h"

@@ -1,22 +1,22 @@
-\hypertarget{game__logic_8h}{}\section{game\+\_\+logic.\+h File Reference}
-\label{game__logic_8h}\index{game\_logic.h@{game\_logic.h}}
+\doxysection{game\+\_\+logic.\+h File Reference}
+\hypertarget{game__logic_8h}{}\label{game__logic_8h}\index{game\_logic.h@{game\_logic.h}}
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
-{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
-{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$SDL2/\+SDL.\+h$>$}\newline
+{\ttfamily \#include $<$SDL2/\+SDL\+\_\+ttf.\+h$>$}\newline
 {\ttfamily \#include $<$time.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}game\+\_\+objects.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}hiscore.\+h\char`\"{}}\newline
-\subsection*{Data Structures}
+{\ttfamily \#include \"{}debug.\+h\"{}}\newline
+{\ttfamily \#include \"{}common.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include \"{}game\+\_\+objects.\+h\"{}}\newline
+{\ttfamily \#include \"{}hiscore.\+h\"{}}\newline
+\doxysubsubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structmove__point}{move\+\_\+point}}
 \item 
 struct \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}}
 \end{DoxyCompactItemize}
-\subsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{game__logic_8h_abdfb298c4eb2fba465cab1235f1c3723}{play}} (void)
@@ -28,20 +28,20 @@ void \mbox{\hyperlink{game__logic_8h_af3d7b3f9d578fb9e1b47e777ba27f887}{game\+\_
 void \mbox{\hyperlink{game__logic_8h_a98ae56f79ae954e0d3a2ff2bfd47edbd}{handle\+\_\+input}} (void)
 \begin{DoxyCompactList}\small\item\em This function will check the input struct every frame and uppdate direction. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8h_a7b661375fbf2de3e6f92726b502d5a08}{move\+\_\+player}} (void)
-\begin{DoxyCompactList}\small\item\em This function will move the player based on \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} struct. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This function will move the player based on \doxylink{structplayer__movement}{player\+\_\+movement} struct. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8h_ac1ebf23fb52af2cfcf25f72f13f7bc91}{check\+\_\+and\+\_\+handle\+\_\+collisions}} (void)
 \begin{DoxyCompactList}\small\item\em This function handles the collisions in the game. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8h_aa3313eb8e023e3f4d21ffc9ec9b1f394}{add\+\_\+body\+\_\+parts}} (int no)
 \begin{DoxyCompactList}\small\item\em A function to add body parts to the snake and based on the food score. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{game__logic_8h_afc0188d2c8d842b0b471f2a78e2f1018}{add\+\_\+move\+\_\+point}} (S\+D\+L\+\_\+\+Rect rect, int dx, int dy)
+void \mbox{\hyperlink{game__logic_8h_afc0188d2c8d842b0b471f2a78e2f1018}{add\+\_\+move\+\_\+point}} (SDL\+\_\+\+Rect rect, int dx, int dy)
 \begin{DoxyCompactList}\small\item\em This function adds a move point to the array in a semi stack sense. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8h_abfb248477ebebd7907f0d69fdbd56f21}{add\+\_\+to\+\_\+score}} (int s)
 \begin{DoxyCompactList}\small\item\em This functions adds an amount to the total score. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock}} (void)
 \begin{DoxyCompactList}\small\item\em This function starts and resets the timer that is used for speed boost. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{game__logic_8h_aec9d524e1f6bea01d3b8d1c8873d7f51}{get\+\_\+number\+\_\+of\+\_\+seconds}} (void)
-\begin{DoxyCompactList}\small\item\em This function calculates how many seconds has past since \mbox{\hyperlink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock()}} function was last called. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Variables}
+\begin{DoxyCompactList}\small\item\em This function calculates how many seconds has past since \doxylink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock()} function was last called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}{move\+\_\+point\+\_\+index}}
@@ -56,11 +56,11 @@ clock\+\_\+t \mbox{\hyperlink{game__logic_8h_a373445dd75a85e7c6854500f6dc89175}{
 \end{DoxyCompactItemize}
 
 
-\subsection{Function Documentation}
-\mbox{\Hypertarget{game__logic_8h_aa3313eb8e023e3f4d21ffc9ec9b1f394}\label{game__logic_8h_aa3313eb8e023e3f4d21ffc9ec9b1f394}} 
+\doxysubsection{Function Documentation}
+\Hypertarget{game__logic_8h_aa3313eb8e023e3f4d21ffc9ec9b1f394}\label{game__logic_8h_aa3313eb8e023e3f4d21ffc9ec9b1f394} 
 \index{game\_logic.h@{game\_logic.h}!add\_body\_parts@{add\_body\_parts}}
 \index{add\_body\_parts@{add\_body\_parts}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{add\_body\_parts()}{add\_body\_parts()}}
+\doxysubsubsection{\texorpdfstring{add\_body\_parts()}{add\_body\_parts()}}
 {\footnotesize\ttfamily void add\+\_\+body\+\_\+parts (\begin{DoxyParamCaption}\item[{int}]{no }\end{DoxyParamCaption})}
 
 
@@ -72,20 +72,20 @@ A function to add body parts to the snake and based on the food score.
 {\em no} & Number of body parts to be added. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{game__logic_8h_afc0188d2c8d842b0b471f2a78e2f1018}\label{game__logic_8h_afc0188d2c8d842b0b471f2a78e2f1018}} 
+\Hypertarget{game__logic_8h_afc0188d2c8d842b0b471f2a78e2f1018}\label{game__logic_8h_afc0188d2c8d842b0b471f2a78e2f1018} 
 \index{game\_logic.h@{game\_logic.h}!add\_move\_point@{add\_move\_point}}
 \index{add\_move\_point@{add\_move\_point}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{add\_move\_point()}{add\_move\_point()}}
-{\footnotesize\ttfamily void add\+\_\+move\+\_\+point (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{rect,  }\item[{int}]{dx,  }\item[{int}]{dy }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{add\_move\_point()}{add\_move\_point()}}
+{\footnotesize\ttfamily void add\+\_\+move\+\_\+point (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Rect}]{rect,  }\item[{int}]{dx,  }\item[{int}]{dy }\end{DoxyParamCaption})}
 
 
 
 This function adds a move point to the array in a semi stack sense. 
 
-\mbox{\Hypertarget{game__logic_8h_abfb248477ebebd7907f0d69fdbd56f21}\label{game__logic_8h_abfb248477ebebd7907f0d69fdbd56f21}} 
+\Hypertarget{game__logic_8h_abfb248477ebebd7907f0d69fdbd56f21}\label{game__logic_8h_abfb248477ebebd7907f0d69fdbd56f21} 
 \index{game\_logic.h@{game\_logic.h}!add\_to\_score@{add\_to\_score}}
 \index{add\_to\_score@{add\_to\_score}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{add\_to\_score()}{add\_to\_score()}}
+\doxysubsubsection{\texorpdfstring{add\_to\_score()}{add\_to\_score()}}
 {\footnotesize\ttfamily void add\+\_\+to\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})}
 
 
@@ -97,83 +97,83 @@ This functions adds an amount to the total score.
 {\em s} & the amount to be added to the score \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{game__logic_8h_ac1ebf23fb52af2cfcf25f72f13f7bc91}\label{game__logic_8h_ac1ebf23fb52af2cfcf25f72f13f7bc91}} 
+\Hypertarget{game__logic_8h_ac1ebf23fb52af2cfcf25f72f13f7bc91}\label{game__logic_8h_ac1ebf23fb52af2cfcf25f72f13f7bc91} 
 \index{game\_logic.h@{game\_logic.h}!check\_and\_handle\_collisions@{check\_and\_handle\_collisions}}
 \index{check\_and\_handle\_collisions@{check\_and\_handle\_collisions}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{check\_and\_handle\_collisions()}{check\_and\_handle\_collisions()}}
+\doxysubsubsection{\texorpdfstring{check\_and\_handle\_collisions()}{check\_and\_handle\_collisions()}}
 {\footnotesize\ttfamily void check\+\_\+and\+\_\+handle\+\_\+collisions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
 This function handles the collisions in the game. 
 
-\mbox{\Hypertarget{game__logic_8h_af3d7b3f9d578fb9e1b47e777ba27f887}\label{game__logic_8h_af3d7b3f9d578fb9e1b47e777ba27f887}} 
+\Hypertarget{game__logic_8h_af3d7b3f9d578fb9e1b47e777ba27f887}\label{game__logic_8h_af3d7b3f9d578fb9e1b47e777ba27f887} 
 \index{game\_logic.h@{game\_logic.h}!game\_over\_func@{game\_over\_func}}
 \index{game\_over\_func@{game\_over\_func}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{game\_over\_func()}{game\_over\_func()}}
+\doxysubsubsection{\texorpdfstring{game\_over\_func()}{game\_over\_func()}}
 {\footnotesize\ttfamily void game\+\_\+over\+\_\+func (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
 This function will end the game when it\textquotesingle{}s game over. 
 
-\mbox{\Hypertarget{game__logic_8h_aec9d524e1f6bea01d3b8d1c8873d7f51}\label{game__logic_8h_aec9d524e1f6bea01d3b8d1c8873d7f51}} 
+\Hypertarget{game__logic_8h_aec9d524e1f6bea01d3b8d1c8873d7f51}\label{game__logic_8h_aec9d524e1f6bea01d3b8d1c8873d7f51} 
 \index{game\_logic.h@{game\_logic.h}!get\_number\_of\_seconds@{get\_number\_of\_seconds}}
 \index{get\_number\_of\_seconds@{get\_number\_of\_seconds}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{get\_number\_of\_seconds()}{get\_number\_of\_seconds()}}
+\doxysubsubsection{\texorpdfstring{get\_number\_of\_seconds()}{get\_number\_of\_seconds()}}
 {\footnotesize\ttfamily double get\+\_\+number\+\_\+of\+\_\+seconds (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-This function calculates how many seconds has past since \mbox{\hyperlink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock()}} function was last called. 
+This function calculates how many seconds has past since \doxylink{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}{start\+\_\+clock()} function was last called. 
 
 \begin{DoxyReturn}{Returns}
 It returns seconds in double format 
 \end{DoxyReturn}
-\mbox{\Hypertarget{game__logic_8h_a98ae56f79ae954e0d3a2ff2bfd47edbd}\label{game__logic_8h_a98ae56f79ae954e0d3a2ff2bfd47edbd}} 
+\Hypertarget{game__logic_8h_a98ae56f79ae954e0d3a2ff2bfd47edbd}\label{game__logic_8h_a98ae56f79ae954e0d3a2ff2bfd47edbd} 
 \index{game\_logic.h@{game\_logic.h}!handle\_input@{handle\_input}}
 \index{handle\_input@{handle\_input}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
+\doxysubsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
 {\footnotesize\ttfamily void handle\+\_\+input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
 This function will check the input struct every frame and uppdate direction. 
 
-\mbox{\Hypertarget{game__logic_8h_a7b661375fbf2de3e6f92726b502d5a08}\label{game__logic_8h_a7b661375fbf2de3e6f92726b502d5a08}} 
+\Hypertarget{game__logic_8h_a7b661375fbf2de3e6f92726b502d5a08}\label{game__logic_8h_a7b661375fbf2de3e6f92726b502d5a08} 
 \index{game\_logic.h@{game\_logic.h}!move\_player@{move\_player}}
 \index{move\_player@{move\_player}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{move\_player()}{move\_player()}}
+\doxysubsubsection{\texorpdfstring{move\_player()}{move\_player()}}
 {\footnotesize\ttfamily void move\+\_\+player (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-This function will move the player based on \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} struct. 
+This function will move the player based on \doxylink{structplayer__movement}{player\+\_\+movement} struct. 
 
-\mbox{\Hypertarget{game__logic_8h_abdfb298c4eb2fba465cab1235f1c3723}\label{game__logic_8h_abdfb298c4eb2fba465cab1235f1c3723}} 
+\Hypertarget{game__logic_8h_abdfb298c4eb2fba465cab1235f1c3723}\label{game__logic_8h_abdfb298c4eb2fba465cab1235f1c3723} 
 \index{game\_logic.h@{game\_logic.h}!play@{play}}
 \index{play@{play}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{play()}{play()}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
 {\footnotesize\ttfamily void play (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
 This function will start the game from the title screen. 
 
-\mbox{\Hypertarget{game__logic_8h_a54e0cce8af203ff63735b09ba427b3e2}\label{game__logic_8h_a54e0cce8af203ff63735b09ba427b3e2}} 
+\Hypertarget{game__logic_8h_a54e0cce8af203ff63735b09ba427b3e2}\label{game__logic_8h_a54e0cce8af203ff63735b09ba427b3e2} 
 \index{game\_logic.h@{game\_logic.h}!reset\_game@{reset\_game}}
 \index{reset\_game@{reset\_game}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{reset\_game()}{reset\_game()}}
+\doxysubsubsection{\texorpdfstring{reset\_game()}{reset\_game()}}
 {\footnotesize\ttfamily void reset\+\_\+game (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
 This function will reset the game variables to be able to start from a new game. 
 
-\mbox{\Hypertarget{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}\label{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}} 
+\Hypertarget{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5}\label{game__logic_8h_ad95ad2967d7c7e8bbcc1bddcc50359c5} 
 \index{game\_logic.h@{game\_logic.h}!start\_clock@{start\_clock}}
 \index{start\_clock@{start\_clock}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{start\_clock()}{start\_clock()}}
+\doxysubsubsection{\texorpdfstring{start\_clock()}{start\_clock()}}
 {\footnotesize\ttfamily void start\+\_\+clock (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
@@ -182,35 +182,35 @@ This function starts and resets the timer that is used for speed boost.
 
 
 
-\subsection{Variable Documentation}
-\mbox{\Hypertarget{game__logic_8h_a373445dd75a85e7c6854500f6dc89175}\label{game__logic_8h_a373445dd75a85e7c6854500f6dc89175}} 
+\doxysubsection{Variable Documentation}
+\Hypertarget{game__logic_8h_a373445dd75a85e7c6854500f6dc89175}\label{game__logic_8h_a373445dd75a85e7c6854500f6dc89175} 
 \index{game\_logic.h@{game\_logic.h}!end\_t@{end\_t}}
 \index{end\_t@{end\_t}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{end\_t}{end\_t}}
+\doxysubsubsection{\texorpdfstring{end\_t}{end\_t}}
 {\footnotesize\ttfamily clock\+\_\+t end\+\_\+t}
 
-this is used to calculate time together with start\+\_\+t. \mbox{\Hypertarget{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}\label{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}} 
+this is used to calculate time together with start\+\_\+t. \Hypertarget{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801}\label{game__logic_8h_a86449421fb9e673ffee3835cc6cd9801} 
 \index{game\_logic.h@{game\_logic.h}!move\_point\_index@{move\_point\_index}}
 \index{move\_point\_index@{move\_point\_index}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{move\_point\_index}{move\_point\_index}}
+\doxysubsubsection{\texorpdfstring{move\_point\_index}{move\_point\_index}}
 {\footnotesize\ttfamily int move\+\_\+point\+\_\+index}
 
-Index of how many moves the head has done \mbox{\Hypertarget{game__logic_8h_a63dcab37e35c86eb1478c9bfc31c34de}\label{game__logic_8h_a63dcab37e35c86eb1478c9bfc31c34de}} 
+Index of how many moves the head has done \Hypertarget{game__logic_8h_a63dcab37e35c86eb1478c9bfc31c34de}\label{game__logic_8h_a63dcab37e35c86eb1478c9bfc31c34de} 
 \index{game\_logic.h@{game\_logic.h}!move\_points@{move\_points}}
 \index{move\_points@{move\_points}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{move\_points}{move\_points}}
+\doxysubsubsection{\texorpdfstring{move\_points}{move\_points}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{structmove__point}{move\+\_\+point}} move\+\_\+points\mbox{[}500\mbox{]}}
 
-Instantiated array of move points for the body to follow \mbox{\Hypertarget{game__logic_8h_a8f28a6e47af069b27e0599dfda57a5a4}\label{game__logic_8h_a8f28a6e47af069b27e0599dfda57a5a4}} 
+Instantiated array of move points for the body to follow \Hypertarget{game__logic_8h_a8f28a6e47af069b27e0599dfda57a5a4}\label{game__logic_8h_a8f28a6e47af069b27e0599dfda57a5a4} 
 \index{game\_logic.h@{game\_logic.h}!player\_pos@{player\_pos}}
 \index{player\_pos@{player\_pos}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{player\_pos}{player\_pos}}
+\doxysubsubsection{\texorpdfstring{player\_pos}{player\_pos}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{structplayer__movement}{player\+\_\+movement}} player\+\_\+pos}
 
-the instantiated player position and movement structure \mbox{\Hypertarget{game__logic_8h_ab162dafab314b773b5956bcc76564d7f}\label{game__logic_8h_ab162dafab314b773b5956bcc76564d7f}} 
+the instantiated player position and movement structure \Hypertarget{game__logic_8h_ab162dafab314b773b5956bcc76564d7f}\label{game__logic_8h_ab162dafab314b773b5956bcc76564d7f} 
 \index{game\_logic.h@{game\_logic.h}!start\_t@{start\_t}}
 \index{start\_t@{start\_t}!game\_logic.h@{game\_logic.h}}
-\subsubsection{\texorpdfstring{start\_t}{start\_t}}
+\doxysubsubsection{\texorpdfstring{start\_t}{start\_t}}
 {\footnotesize\ttfamily clock\+\_\+t start\+\_\+t}
 
 this timer will count to 30 seconds before adding a speed increase for the game. 

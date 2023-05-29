@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['left',['LEFT',['../structinputs.html#abf3a99e39f90b8c0b0adb499e8be44cb',1,'inputs']]],
-  ['load_5fbmp',['load_bmp',['../common_8c.html#ad870ef04e6cb0ebb550fd6495604c0bb',1,'load_bmp(char *path):&#160;common.c'],['../common_8h.html#ad870ef04e6cb0ebb550fd6495604c0bb',1,'load_bmp(char *path):&#160;common.c']]],
-  ['load_5ffont',['load_font',['../common_8c.html#abd552a7f4932221f1527394cdbb450c9',1,'load_font(char *path, int size):&#160;common.c'],['../common_8h.html#abd552a7f4932221f1527394cdbb450c9',1,'load_font(char *path, int size):&#160;common.c']]],
-  ['load_5fmusic',['load_music',['../common_8c.html#aab46d4a34c2d80343c934bc1d41d23ec',1,'load_music(char *filename):&#160;common.c'],['../common_8h.html#aab46d4a34c2d80343c934bc1d41d23ec',1,'load_music(char *filename):&#160;common.c']]],
-  ['load_5fpng',['load_png',['../common_8c.html#acb97cbd03475631aab91f8d002de3f5b',1,'load_png(char *path):&#160;common.c'],['../common_8h.html#acb97cbd03475631aab91f8d002de3f5b',1,'load_png(char *path):&#160;common.c']]],
-  ['load_5ftexture',['load_texture',['../common_8c.html#a36ebe304df124b309e2528ac98b9b96b',1,'load_texture(char *path, SDL_Renderer *r):&#160;common.c'],['../common_8h.html#a36ebe304df124b309e2528ac98b9b96b',1,'load_texture(char *path, SDL_Renderer *r):&#160;common.c']]]
+  ['left_0',['LEFT',['../structinputs.html#abf3a99e39f90b8c0b0adb499e8be44cb',1,'inputs']]],
+  ['load_5fbmp_1',['load_bmp',['../common_8c.html#a68869401be4ab831412afc8a03789634',1,'load_bmp(char *path):&#160;common.c'],['../common_8h.html#a68869401be4ab831412afc8a03789634',1,'load_bmp(char *path):&#160;common.c']]],
+  ['load_5ffont_2',['load_font',['../common_8c.html#ab7743433a438f03302e8221857ba95d2',1,'load_font(char *path, int size):&#160;common.c'],['../common_8h.html#ab7743433a438f03302e8221857ba95d2',1,'load_font(char *path, int size):&#160;common.c']]],
+  ['load_5fmusic_3',['load_music',['../common_8c.html#a707b0847b911ccb3b77cd02e4f028973',1,'load_music(char *filename):&#160;common.c'],['../common_8h.html#a707b0847b911ccb3b77cd02e4f028973',1,'load_music(char *filename):&#160;common.c']]],
+  ['load_5fpng_4',['load_png',['../common_8c.html#a3383ac31fdef3aaeafc71d6b36a22bbd',1,'load_png(char *path):&#160;common.c'],['../common_8h.html#a3383ac31fdef3aaeafc71d6b36a22bbd',1,'load_png(char *path):&#160;common.c']]],
+  ['load_5ftexture_5',['load_texture',['../common_8c.html#a516cce52371b129220ed505abe5af6ae',1,'load_texture(char *path, SDL_Renderer *r):&#160;common.c'],['../common_8h.html#a516cce52371b129220ed505abe5af6ae',1,'load_texture(char *path, SDL_Renderer *r):&#160;common.c']]]
 ];

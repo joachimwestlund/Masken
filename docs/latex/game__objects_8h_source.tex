@@ -1,0 +1,55 @@
+\doxysection{game\+\_\+objects.\+h}
+\hypertarget{game__objects_8h_source}{}\label{game__objects_8h_source}\mbox{\hyperlink{game__objects_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_GAME\_OBJECTS\_H\_\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_GAME\_OBJECTS\_H\_\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structplayer__object}{player\_object}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{structplayer__object_a156af47b8be9c09879c063ad443877a5}{head}};}
+\DoxyCodeLine{00010\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{structplayer__object_a55aefd071649ac9dd8133e2d8a52d11f}{rect}};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structplayer__object_a06948963e49fd8de64945937788fc3f8}{no\_body\_sections}};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structplayer__object_a63177970cacb40efba67ce501ea89210}{angle}};}
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbody__object}{body\_object}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{structbody__object_a78cbc3f4a306ce98ce51b731549a5cf0}{body}};}
+\DoxyCodeLine{00023\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{structbody__object_a55aefd071649ac9dd8133e2d8a52d11f}{rect}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structbody__object_a63177970cacb40efba67ce501ea89210}{angle}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structbody__object_a6a0d40b2ed6d9e674f93396212f0028f}{dx}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structbody__object_a4817151aee120cc100c400d3076f4b93}{dy}};}
+\DoxyCodeLine{00031\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{structbody__object_a7abd7a5b88f5115b8c83092f283b8c83}{change\_pos}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structfood__object}{food\_object}}}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{structfood__object_a859b8efbf9abe8e82757ee5c75a0c97c}{texture}};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structfood__object_a63177970cacb40efba67ce501ea89210}{angle}};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structfood__object_aef160b7437d94056f1dc59646cd5b87d}{score}};}
+\DoxyCodeLine{00045\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{structfood__object_a55aefd071649ac9dd8133e2d8a52d11f}{rect}};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{game__objects_8h_a140a53ed171ef02a1ecf57e6e11a5394}{max\_number\_of\_objects}};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{game__objects_8h_a2f390a846c2137f525c61ce0e9e1fe7a}{max\_number\_of\_body\_objects}};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structplayer__object}{player\_object}}\ \mbox{\hyperlink{game__objects_8h_a4bda856d25401a0536d06bad8f9dd9ca}{player}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbody__object}{body\_object}}\ \mbox{\hyperlink{game__objects_8h_a8e8f846b6ecb9105517230f093a03f19}{body}};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbody__object}{body\_object}}\ \mbox{\hyperlink{game__objects_8h_af9f4ddf3f8fb50871c3599190e907a8e}{body\_sections}}[500];}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structfood__object}{food\_object}}\ \mbox{\hyperlink{game__objects_8h_add091b0d3acada1da2bca27523bf7b6b}{food}};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00068\ SDL\_Texture*\ \mbox{\hyperlink{game__objects_8h_a4abd965f9ba7c99a8527d175c6243a3a}{title\_screen}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00071\ SDL\_Texture*\ \mbox{\hyperlink{game__objects_8h_a4396cf124f193202515929dbffb3202c}{game\_screen}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ SDL\_Texture*\ \mbox{\hyperlink{game__objects_8h_a889602a2448e07061aa151ea2f807dd7}{game\_over\_screen}};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_GAME\_OBJECTS\_H\_\_}}
+
+\end{DoxyCode}

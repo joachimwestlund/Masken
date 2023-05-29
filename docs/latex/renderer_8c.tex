@@ -1,27 +1,27 @@
-\hypertarget{renderer_8c}{}\section{renderer.\+c File Reference}
-\label{renderer_8c}\index{renderer.c@{renderer.c}}
-{\ttfamily \#include \char`\"{}renderer.\+h\char`\"{}}\newline
-\subsection*{Functions}
+\doxysection{renderer.\+c File Reference}
+\hypertarget{renderer_8c}{}\label{renderer_8c}\index{renderer.c@{renderer.c}}
+{\ttfamily \#include \"{}renderer.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-char \mbox{\hyperlink{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}{init\+\_\+renderer}} (S\+D\+L\+\_\+\+Window $\ast$window)
+char \mbox{\hyperlink{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}{init\+\_\+renderer}} (SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}window)
 \begin{DoxyCompactList}\small\item\em Initialize the renerer for the game. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{renderer_8c_a6765cdcebe5c8445969d5f76345df457}{render}} (void)
 \begin{DoxyCompactList}\small\item\em this is the renderer that the game loop should call \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{renderer_8c_a746750d82ff06f8bca0faf22f52eb1c2}{render\+\_\+queue}} (void)
 \begin{DoxyCompactList}\small\item\em This function renders the the render queue to the double buffered screen. This is in a way the real renderer. the render function is more of a scene renderer. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{renderer_8c_a7171d26350ede501f757875cd5e3dae2}{add\+\_\+to\+\_\+render\+\_\+queue}} (S\+D\+L\+\_\+\+Texture $\ast$texture, S\+D\+L\+\_\+\+Rect rect, int angle)
+void \mbox{\hyperlink{renderer_8c_a7171d26350ede501f757875cd5e3dae2}{add\+\_\+to\+\_\+render\+\_\+queue}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture, SDL\+\_\+\+Rect rect, int angle)
 \begin{DoxyCompactList}\small\item\em this function will take in a texture and render it to the offscreen buffer. For now only 100 items can be added. \end{DoxyCompactList}\item 
-char $\ast$ \mbox{\hyperlink{renderer_8c_a61f8eab3dd5ea48db40c570b17b7de63}{convert\+\_\+score\+\_\+to\+\_\+str}} ()
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{renderer_8c_a3a03bfb8ef4288310d583fbb5ea2e950}{convert\+\_\+score\+\_\+to\+\_\+str}} ()
 \end{DoxyCompactItemize}
 
 
-\subsection{Function Documentation}
-\mbox{\Hypertarget{renderer_8c_a7171d26350ede501f757875cd5e3dae2}\label{renderer_8c_a7171d26350ede501f757875cd5e3dae2}} 
+\doxysubsection{Function Documentation}
+\Hypertarget{renderer_8c_a7171d26350ede501f757875cd5e3dae2}\label{renderer_8c_a7171d26350ede501f757875cd5e3dae2} 
 \index{renderer.c@{renderer.c}!add\_to\_render\_queue@{add\_to\_render\_queue}}
 \index{add\_to\_render\_queue@{add\_to\_render\_queue}!renderer.c@{renderer.c}}
-\subsubsection{\texorpdfstring{add\_to\_render\_queue()}{add\_to\_render\_queue()}}
-{\footnotesize\ttfamily void add\+\_\+to\+\_\+render\+\_\+queue (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{texture,  }\item[{S\+D\+L\+\_\+\+Rect}]{rect,  }\item[{int}]{angle }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{add\_to\_render\_queue()}{add\_to\_render\_queue()}}
+{\footnotesize\ttfamily void add\+\_\+to\+\_\+render\+\_\+queue (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{texture,  }\item[{SDL\+\_\+\+Rect}]{rect,  }\item[{int}]{angle }\end{DoxyParamCaption})}
 
 
 
@@ -36,17 +36,17 @@ this function will take in a texture and render it to the offscreen buffer. For 
 {\em angle} & of rotation of the texture. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{renderer_8c_a61f8eab3dd5ea48db40c570b17b7de63}\label{renderer_8c_a61f8eab3dd5ea48db40c570b17b7de63}} 
+\Hypertarget{renderer_8c_a3a03bfb8ef4288310d583fbb5ea2e950}\label{renderer_8c_a3a03bfb8ef4288310d583fbb5ea2e950} 
 \index{renderer.c@{renderer.c}!convert\_score\_to\_str@{convert\_score\_to\_str}}
 \index{convert\_score\_to\_str@{convert\_score\_to\_str}!renderer.c@{renderer.c}}
-\subsubsection{\texorpdfstring{convert\_score\_to\_str()}{convert\_score\_to\_str()}}
-{\footnotesize\ttfamily char$\ast$ convert\+\_\+score\+\_\+to\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{convert\_score\_to\_str()}{convert\_score\_to\_str()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} convert\+\_\+score\+\_\+to\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}\label{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}} 
+\Hypertarget{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0}\label{renderer_8c_a8211bb7e3d7bf5e33f03d2200b3e23f0} 
 \index{renderer.c@{renderer.c}!init\_renderer@{init\_renderer}}
 \index{init\_renderer@{init\_renderer}!renderer.c@{renderer.c}}
-\subsubsection{\texorpdfstring{init\_renderer()}{init\_renderer()}}
-{\footnotesize\ttfamily char init\+\_\+renderer (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{init\_renderer()}{init\_renderer()}}
+{\footnotesize\ttfamily char init\+\_\+renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})}
 
 
 
@@ -54,26 +54,26 @@ Initialize the renerer for the game.
 
 
 \begin{DoxyParams}{Parameters}
-{\em window} & the S\+D\+L\+\_\+\+Window to render to. \\
+{\em window} & the SDL\+\_\+\+Window to render to. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-T\+R\+UE on success or F\+A\+L\+SE on failure. 
+TRUE on success or FALSE on failure. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{renderer_8c_a6765cdcebe5c8445969d5f76345df457}\label{renderer_8c_a6765cdcebe5c8445969d5f76345df457}} 
+\Hypertarget{renderer_8c_a6765cdcebe5c8445969d5f76345df457}\label{renderer_8c_a6765cdcebe5c8445969d5f76345df457} 
 \index{renderer.c@{renderer.c}!render@{render}}
 \index{render@{render}!renderer.c@{renderer.c}}
-\subsubsection{\texorpdfstring{render()}{render()}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
 {\footnotesize\ttfamily void render (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
 this is the renderer that the game loop should call 
 
-\mbox{\Hypertarget{renderer_8c_a746750d82ff06f8bca0faf22f52eb1c2}\label{renderer_8c_a746750d82ff06f8bca0faf22f52eb1c2}} 
+\Hypertarget{renderer_8c_a746750d82ff06f8bca0faf22f52eb1c2}\label{renderer_8c_a746750d82ff06f8bca0faf22f52eb1c2} 
 \index{renderer.c@{renderer.c}!render\_queue@{render\_queue}}
 \index{render\_queue@{render\_queue}!renderer.c@{renderer.c}}
-\subsubsection{\texorpdfstring{render\_queue()}{render\_queue()}}
+\doxysubsubsection{\texorpdfstring{render\_queue()}{render\_queue()}}
 {\footnotesize\ttfamily void render\+\_\+queue (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
